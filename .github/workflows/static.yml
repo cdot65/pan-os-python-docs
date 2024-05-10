@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install sphinx sphinx_rtd_theme  # Include any other dependencies
+        pip install sphinx sphinx_rtd_theme setuptools  # Ensure setuptools is included if using Python 3.12 or later
 
     - name: Build Sphinx Documentation
       run: |
