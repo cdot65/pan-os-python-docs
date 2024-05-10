@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started &mdash; Palo Alto Networks PAN-OS SDK for Python 1.11.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=6cf1fb80"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How-to Guides" href="howto.html" />
+    <link rel="prev" title="Palo Alto Networks PAN-OS SDK for Python" href="readme.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Palo Alto Networks PAN-OS SDK for Python
+          </a>
+              <div class="version">
+                1.11.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Palo Alto Networks PAN-OS SDK for Python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install">Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#import-the-classes">Import the classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-to-a-firewall-or-panorama">Connect to a Firewall or Panorama</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operational-commands">Operational commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-opstate-namespace">The <code class="docutils literal notranslate"><span class="pre">opstate</span></code> namespace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configure-your-device">Configure your device</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Palo Alto Networks PAN-OS SDK for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Getting Started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/getting-started.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
+<section id="install">
+<h2>Install<a class="headerlink" href="#install" title="Link to this heading">¶</a></h2>
+<p>Install using pip:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pan</span><span class="o">-</span><span class="n">os</span><span class="o">-</span><span class="n">python</span>
+</pre></div>
+</div>
+<p>Upgrade to the latest version:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pan</span><span class="o">-</span><span class="n">os</span><span class="o">-</span><span class="n">python</span>
+</pre></div>
+</div>
+<p>If you have poetry installed, you can also add pan-os-python to your project:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poetry</span> <span class="n">add</span> <span class="n">pan</span><span class="o">-</span><span class="n">os</span><span class="o">-</span><span class="n">python</span>
+</pre></div>
+</div>
+</section>
+<section id="import-the-classes">
+<h2>Import the classes<a class="headerlink" href="#import-the-classes" title="Link to this heading">¶</a></h2>
+<p>To use pan-os-python in a project:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">panos</span>
+</pre></div>
+</div>
+<p>You can also be more specific about which modules you want to import:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">base</span>
+<span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">firewall</span>
+<span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">panorama</span>
+<span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">policies</span>
+<span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">objects</span>
+<span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">network</span>
+<span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">device</span>
+<span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">plugins</span>
+</pre></div>
+</div>
+<p>Or, even <em>more</em> specific by importing a specific class:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+</pre></div>
+</div>
+</section>
+<section id="connect-to-a-firewall-or-panorama">
+<h2>Connect to a Firewall or Panorama<a class="headerlink" href="#connect-to-a-firewall-or-panorama" title="Link to this heading">¶</a></h2>
+<p>A PanDevice is a Firewall or a Panorama. It’s called a PanDevice because that is the class
+that Firewall and Panorama inherit from. Everything connects back to a PanDevice, so
+creating one is often the first step:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+<span class="kn">from</span> <span class="nn">panos.panorama</span> <span class="kn">import</span> <span class="n">Panorama</span>
+<span class="n">fw</span> <span class="o">=</span> <span class="n">Firewall</span><span class="p">(</span><span class="s1">&#39;10.0.0.1&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">)</span>  <span class="c1"># Create a firewall object</span>
+<span class="n">pano</span> <span class="o">=</span> <span class="n">Panorama</span><span class="p">(</span><span class="s1">&#39;10.0.0.5&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">)</span>  <span class="c1"># Create a panorama object</span>
+</pre></div>
+</div>
+<p>You can also create a Firewall or Panorama object from a live device. In this
+example, 10.0.0.1 is a firewall and 10.0.0.5 is a Panorama. The device type is
+determined by checking the live device.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">panos.base</span> <span class="kn">import</span> <span class="n">PanDevice</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device1</span> <span class="o">=</span> <span class="n">PanDevice</span><span class="o">.</span><span class="n">create_from_device</span><span class="p">(</span><span class="s1">&#39;10.0.0.1&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">device1</span><span class="p">)</span>
+<span class="go">&lt;class &#39;panos.firewall.Firewall&#39;&gt;</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device2</span> <span class="o">=</span> <span class="n">PanDevice</span><span class="o">.</span><span class="n">create_from_device</span><span class="p">(</span><span class="s1">&#39;10.0.0.5&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">device2</span><span class="p">)</span>
+<span class="go">&lt;class &#39;panos.panorama.Panorama&#39;&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="operational-commands">
+<h2>Operational commands<a class="headerlink" href="#operational-commands" title="Link to this heading">¶</a></h2>
+<p>Operational commands are used to get or clear the current operational state of
+the device or make operational requests such as content upgrades. Most any
+command that is not a config mode or debug command is an operational command.
+These include many ‘show’ commands such as <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">system</span> <span class="pre">info</span></code> and <code class="docutils literal notranslate"><span class="pre">show</span>
+<span class="pre">interface</span> <span class="pre">ethernet1/1</span></code> and ‘request’ commands. You cannot use operational
+commands to change the running configuration of the firewall or Panorama. See
+<a class="reference internal" href="#configure-your-device">Configure your device</a> below to configure your firewall by changing the
+running configuration.</p>
+<p>Perform operational commands using the <code class="docutils literal notranslate"><span class="pre">op</span></code> method on a PanDevice instance.
+By default, the return value is an xml.etree.ElementTree object which can be
+easily parsed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">firewall</span>
+<span class="n">fw</span> <span class="o">=</span> <span class="n">firewall</span><span class="o">.</span><span class="n">Firewall</span><span class="p">(</span><span class="s1">&#39;10.0.0.1&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">)</span>
+<span class="n">element_response</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">op</span><span class="p">(</span><span class="s1">&#39;show system info&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">xml</span></code> argument to return a string of xml. This is harder to parse, but
+sometimes a string is needed such as when saving to a file.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xml_str_response</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">op</span><span class="p">(</span><span class="s1">&#39;show system info&#39;</span><span class="p">,</span> <span class="n">xml</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Important:</strong> When passing the cmd as a command string (not XML) you must include any
+non-keyword strings in the command inside double quotes (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>). Here’s some
+examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fw</span><span class="o">.</span><span class="n">op</span><span class="p">(</span><span class="s1">&#39;clear session all filter application &quot;facebook-base&quot;&#39;</span><span class="p">)</span>
+<span class="c1"># The string &quot;facebook-base&quot; must be in quotes because it is not a keyword</span>
+
+<span class="n">fw</span><span class="o">.</span><span class="n">op</span><span class="p">(</span><span class="s1">&#39;show interface &quot;ethernet1/1&quot;&#39;</span><span class="p">)</span>
+<span class="c1"># The string &quot;ethernet1/1&quot; must be in quotes because it is not a keyword</span>
+</pre></div>
+</div>
+<p>This works by converting all unquoted arguments in cmd to XML elements and
+double quoted arguments as text after removing the quotes. For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">system</span> <span class="pre">info</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&lt;show&gt;&lt;system&gt;&lt;info&gt;&lt;/info&gt;&lt;/system&gt;&lt;/show&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">interface</span> <span class="pre">&quot;ethernet1/1&quot;</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&lt;show&gt;&lt;interface&gt;ethernet1/1&lt;/interface&gt;&lt;/show&gt;</span></code></p></li>
+</ul>
+<p>The command’s XML is then sent to the firewall.</p>
+<p><strong>Discovering an operational command’s syntax</strong></p>
+<p>If you are trying to execute an operational command and the auto-formatting that
+pan-os-python performs doesn’t seem to be working, SSH to your PAN-OS appliance and
+enable debugging to see how PAN-OS is formatting the command.  Let’s take the CLI
+command <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">arp</span> <span class="pre">all</span></code> as an example.  Let’s SSH to PAN-OS and see what we get back:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">debug</span> <span class="n">cli</span> <span class="n">on</span>
+<span class="o">&gt;</span> <span class="n">show</span> <span class="n">arp</span> <span class="nb">all</span>
+
+<span class="o">&lt;</span><span class="n">request</span> <span class="n">cmd</span><span class="o">=</span><span class="s2">&quot;op&quot;</span> <span class="n">cookie</span><span class="o">=</span><span class="s2">&quot;2801768344648204&quot;</span> <span class="n">uid</span><span class="o">=</span><span class="s2">&quot;1000&quot;</span><span class="o">&gt;&lt;</span><span class="n">operations</span><span class="o">&gt;&lt;</span><span class="n">show</span><span class="o">&gt;&lt;</span><span class="n">arp</span><span class="o">&gt;&lt;</span><span class="n">entry</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="o">/&gt;&lt;/</span><span class="n">arp</span><span class="o">&gt;&lt;/</span><span class="n">show</span><span class="o">&gt;&lt;/</span><span class="n">operations</span><span class="o">&gt;&lt;/</span><span class="n">request</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>When taking debug CLI output and turning it into an operational command string, you’ll
+want to take all the XML inside of the <code class="docutils literal notranslate"><span class="pre">&lt;operations&gt;</span></code> tag.  Thus, our command to XML
+conversion looks like this:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">arp</span> <span class="pre">all</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&lt;show&gt;&lt;arp&gt;&lt;entry</span> <span class="pre">name='all'/&gt;&lt;/arp&gt;&lt;/show&gt;</span></code></p></li>
+</ul>
+<p>Operational commands that have an <code class="docutils literal notranslate"><span class="pre">&lt;entry&gt;</span></code> tag with an attribute (here,
+<code class="docutils literal notranslate"><span class="pre">name='all'</span></code>) is not a format that pan-os-python can convert to on your behalf.
+Thus, you will have to send in the XML yourself and instruct pan-os-python that the
+<code class="docutils literal notranslate"><span class="pre">cmd</span></code> argument does not need to be turned into XML:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ans</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">op</span><span class="p">(</span><span class="s2">&quot;&lt;show&gt;&lt;arp&gt;&lt;entry name=&#39;all&#39;/&gt;&lt;/arp&gt;&lt;/show&gt;&quot;</span><span class="p">,</span> <span class="n">cmd_xml</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Parse the result</strong></p>
+<p>You can parse an ElementTree using the <a class="reference external" href="https://docs.python.org/3/library/xml.etree.elementtree.html">python ElementTree library</a>.</p>
+<p>Assuming the first <code class="docutils literal notranslate"><span class="pre">op()</span></code> call returns a response with this XML (output
+simplified for example purposes):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">response</span> <span class="n">status</span><span class="o">=</span><span class="s2">&quot;success&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">result</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">ifnet</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">counters</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">ifnet</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="n">entry</span><span class="o">&gt;</span>
+                        <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">ethernet1</span><span class="o">/</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+                        <span class="o">&lt;</span><span class="n">ipackets</span><span class="o">&gt;</span><span class="mi">329744</span><span class="o">&lt;/</span><span class="n">ipackets</span><span class="o">&gt;</span>
+                        <span class="o">&lt;</span><span class="n">opackets</span><span class="o">&gt;</span><span class="mi">508805</span><span class="o">&lt;/</span><span class="n">opackets</span><span class="o">&gt;</span>
+                        <span class="o">&lt;</span><span class="n">ierrors</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&lt;/</span><span class="n">ierrors</span><span class="o">&gt;</span>
+                    <span class="o">&lt;/</span><span class="n">entry</span><span class="o">&gt;</span>
+                <span class="o">&lt;/</span><span class="n">ifnet</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">counters</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">ethernet1</span><span class="o">/</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">zone</span><span class="o">&gt;</span><span class="n">DMZ</span><span class="o">&lt;/</span><span class="n">zone</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">ifnet</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">hw</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">ethernet1</span><span class="o">/</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">mac</span><span class="o">&gt;</span><span class="mi">08</span><span class="p">:</span><span class="mi">30</span><span class="p">:</span><span class="mi">6</span><span class="n">b</span><span class="p">:</span><span class="mi">1</span><span class="n">e</span><span class="p">:</span><span class="mi">55</span><span class="p">:</span><span class="mi">42</span><span class="o">&lt;/</span><span class="n">mac</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">state</span><span class="o">&gt;</span><span class="n">up</span><span class="o">&lt;/</span><span class="n">state</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">hw</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">result</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">response</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Then this example collects the zone, mac address, and packet output for
+ethernet1/1:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">op</span><span class="p">(</span><span class="s1">&#39;show interface &quot;ethernet1/1&quot;&#39;</span><span class="p">)</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;.//zone&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+<span class="c1"># name = &quot;DMZ&quot;</span>
+
+<span class="n">mac_address</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;./result/hw/mac&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+<span class="c1"># mac_address = &quot;08:30:6b:1e:55:42&quot;</span>
+
+<span class="n">counter_entries</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">&quot;.//counters/ifnet/entry&quot;</span><span class="p">)</span>
+<span class="n">packets_out</span> <span class="o">=</span> <span class="p">[(</span><span class="n">counters</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;./name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">counters</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;./opackets&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">))</span> <span class="k">for</span> <span class="n">counters</span> <span class="ow">in</span> <span class="n">counter_entries</span><span class="p">]</span>
+<span class="c1"># packets_out = [(&quot;ethernet1/1&quot;, 508805)]</span>
+</pre></div>
+</div>
+<p>In the example above, we use a deep search to find the <code class="docutils literal notranslate"><span class="pre">&lt;zone&gt;</span></code> element, an
+absolute path to get the <code class="docutils literal notranslate"><span class="pre">&lt;mac&gt;</span></code> element, and a findall with both deep search and
+relative path to get packets out for every subinterface. In this example there
+are no subinterfaces, so it returns one list item.</p>
+</section>
+<section id="the-opstate-namespace">
+<h2>The <code class="docutils literal notranslate"><span class="pre">opstate</span></code> namespace<a class="headerlink" href="#the-opstate-namespace" title="Link to this heading">¶</a></h2>
+<p>All pan-os-python objects have a special <code class="docutils literal notranslate"><span class="pre">opstate</span></code> namespace.  <code class="docutils literal notranslate"><span class="pre">opstate</span></code> is short
+for “operational state” and is meant to be a central place that objects can have
+non-configuration utility that the object may need.  For example, the Panorama object
+has an <code class="docutils literal notranslate"><span class="pre">opstate</span></code> for handling device group hierarchies and security rules have an
+<code class="docutils literal notranslate"><span class="pre">opstate</span></code> for handling audit comments.  An object may also have an empty <code class="docutils literal notranslate"><span class="pre">opstate</span></code>
+if nothing is applicable or nothing has been implemented yet.</p>
+<p>In order to find out which opstates are available, you can use <code class="docutils literal notranslate"><span class="pre">.opstate.about()</span></code>
+to see what is available for this specific object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">panos.policies</span> <span class="kn">import</span> <span class="n">SecurityRule</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rule</span> <span class="o">=</span> <span class="n">SecurityRule</span><span class="p">(</span><span class="s2">&quot;my rule name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rule</span><span class="o">.</span><span class="n">opstate</span><span class="o">.</span><span class="n">about</span><span class="p">()</span>
+<span class="go">{&#39;audit_comment&#39;: &lt;panos.policies.RuleAuditComment at 0x1024d2210&gt;,</span>
+<span class="go"> &#39;hit_count&#39;: &lt;panos.policies.HitCount at 0x1024d2590&gt;}</span>
+</pre></div>
+</div>
+<p>Since the full class path is provided in the output, you can use that to refer to the
+documentation for further information on how a particular <code class="docutils literal notranslate"><span class="pre">opstate</span></code> namespace works.</p>
+<p><strong>Using opstate namespaces</strong></p>
+<p>Since the <code class="docutils literal notranslate"><span class="pre">opstate</span></code> namespaces are always initialized, they are always ready to be
+used.</p>
+<p>Here’s a firewall example where we want to create a new security rule and then configure
+an “initial config” audit comment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+<span class="kn">from</span> <span class="nn">panos.policies</span> <span class="kn">import</span> <span class="n">Rulebase</span><span class="p">,</span> <span class="n">SecurityRule</span>
+
+<span class="n">fw</span> <span class="o">=</span> <span class="n">Firewall</span><span class="p">(</span><span class="o">.......</span><span class="p">)</span>
+
+<span class="n">base</span> <span class="o">=</span> <span class="n">Rulebase</span><span class="p">()</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">base</span><span class="p">)</span>
+
+<span class="n">rule</span> <span class="o">=</span> <span class="n">SecurityRule</span><span class="p">(</span><span class="s2">&quot;Int to Ext&quot;</span><span class="p">,</span> <span class="o">.......</span><span class="p">)</span>
+<span class="n">base</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">rule</span><span class="p">)</span>
+
+<span class="n">rule</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+<span class="n">rule</span><span class="o">.</span><span class="n">opstate</span><span class="o">.</span><span class="n">audit_comment</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="s2">&quot;initial config&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here’s another example using Panorama where we want to change an existing rule’s
+description then configure an audit comment saying as much:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.panorama</span> <span class="kn">import</span> <span class="n">Panorama</span><span class="p">,</span> <span class="n">DeviceGroup</span>
+<span class="kn">from</span> <span class="nn">panos.policies</span> <span class="kn">import</span> <span class="n">PreRulebase</span><span class="p">,</span> <span class="n">SecurityRule</span>
+
+<span class="n">pano</span> <span class="o">=</span> <span class="n">Panorama</span><span class="p">(</span><span class="o">.........</span><span class="p">)</span>
+
+<span class="n">dg</span> <span class="o">=</span> <span class="n">DeviceGroup</span><span class="p">(</span><span class="s2">&quot;myDg&quot;</span><span class="p">)</span>
+<span class="n">pano</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">dg</span><span class="p">)</span>
+
+<span class="n">base</span> <span class="o">=</span> <span class="n">PreRulebase</span><span class="p">()</span>
+<span class="n">dg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">base</span><span class="p">)</span>
+
+<span class="n">rule</span> <span class="o">=</span> <span class="n">SecurityRule</span><span class="p">(</span><span class="s2">&quot;Int to Ext&quot;</span><span class="p">)</span>
+<span class="n">base</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">rule</span><span class="p">)</span>
+<span class="n">rule</span><span class="o">.</span><span class="n">refresh</span><span class="p">()</span>
+
+<span class="c1"># Update the rule description</span>
+<span class="n">rule</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;My new description&quot;</span>
+
+<span class="n">rule</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
+<span class="n">rule</span><span class="o">.</span><span class="n">opstate</span><span class="o">.</span><span class="n">audit_comment</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="s2">&quot;ID 12345 updating rule description&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="configure-your-device">
+<h2>Configure your device<a class="headerlink" href="#configure-your-device" title="Link to this heading">¶</a></h2>
+<p>You can configure your firewall or Panorama with a configuration tree using PanObjects.
+Everything in pan-os-python is a PanObject. They are like building blocks to build
+out a configuration. There are many methods available to build up the
+configuration tree and interact with the live device:</p>
+<p><strong>Common configuration methods of PanObject</strong></p>
+<p>Build the configuration tree: <code class="docutils literal notranslate"><span class="pre">add()</span></code>, <code class="docutils literal notranslate"><span class="pre">remove()</span></code>, <code class="docutils literal notranslate"><span class="pre">find()</span></code>, and <code class="docutils literal notranslate"><span class="pre">findall()</span></code></p>
+<p>Push changed configuration to the live device: <code class="docutils literal notranslate"><span class="pre">apply()</span></code>, <code class="docutils literal notranslate"><span class="pre">create()</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">delete()</span></code></p>
+<p>Pull configuration from the live device: <code class="docutils literal notranslate"><span class="pre">refresh()</span></code>, <code class="docutils literal notranslate"><span class="pre">refreshall()</span></code></p>
+<p>There are other useful methods besides these. See <a class="reference internal" href="useful-methods.html#useful-methods"><span class="std std-ref">Useful Methods</span></a> for a table of all the
+methods and what they do. All methods are also documented in the
+<code class="xref py py-class docutils literal notranslate"><span class="pre">panos.base.PanObject</span></code> API reference.</p>
+<p><strong>Configuration examples</strong></p>
+<p>In each of these examples, assume a Firewall and Panorama object have been instantiated:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+<span class="kn">from</span> <span class="nn">panos.panorama</span> <span class="kn">import</span> <span class="n">Panorama</span>
+<span class="kn">from</span> <span class="nn">panos.objects</span> <span class="kn">import</span> <span class="n">AddressObject</span>
+
+<span class="n">fw</span> <span class="o">=</span> <span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">)</span>
+<span class="n">pano</span> <span class="o">=</span> <span class="n">Panorama</span><span class="p">(</span><span class="s2">&quot;10.0.0.5&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Create an address object on a firewall:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">webserver</span> <span class="o">=</span> <span class="n">AddressObject</span><span class="p">(</span><span class="s2">&quot;Apache-webserver&quot;</span><span class="p">,</span> <span class="s2">&quot;5.5.5.5&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Company web server&quot;</span><span class="p">)</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">webserver</span><span class="p">)</span>
+<span class="n">webserver</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>In this example, add() makes the AddressObject a child of the Firewall. This does not make any change to
+the live device. The create() method pushes the new AddressObject to the live device represented by ‘fw’.</p>
+<p>If you lose the handle to the AddressObject, you can always retreive it from a parent node with one of
+the <cite>find</cite> methods. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">webserver</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;Apache-webserver&quot;</span><span class="p">,</span> <span class="n">AddressObject</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Remove the description of that same address object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">webserver</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">webserver</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The apply() method is used instead of create() because it is destructive.  The create() method will never
+remove a variable or object, only add or change it.</p>
+<p>Delete the entire address object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">webserver</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The delete() method removes the object from the live device <cite>and</cite> the configuration tree. In this example,
+after delete() is called, ‘webserver’ is no longer a child of ‘fw’.</p>
+<p><strong>Retrieve configuration</strong></p>
+<p>The previous section describes how to build a configuration tree yourself. But many cases require you to
+pull configuration from the firewall to populate a PanDevice configuration tree. This technique allows many
+advantages including tracking current state of the device, and checking if the configuration change is
+already on the firewall to prevent an unnecessary commit.</p>
+<p>In this example, the live device has 3 address objects. Pull the address objects from the live
+device and add them into the configuration tree:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fw</span><span class="o">.</span><span class="n">children</span>
+<span class="go">[]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">AddressObject</span><span class="o">.</span><span class="n">refreshall</span><span class="p">(</span><span class="n">fw</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fw</span><span class="o">.</span><span class="n">children</span>
+<span class="go">[&lt;panos.objects.AddressObject object at 0x108080e90&gt;,</span>
+<span class="go"> &lt;panos.objects.AddressObject object at 0x108080f50&gt;,</span>
+<span class="go"> &lt;panos.objects.AddressObject object at 0x108080ed0&gt;]</span>
+</pre></div>
+</div>
+<p>It’s also possible to refresh the variables of an existing object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">adserver</span> <span class="o">=</span> <span class="n">AddressObject</span><span class="p">(</span><span class="s2">&quot;ADServer&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">adserver</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adserver</span><span class="o">.</span><span class="n">value</span>
+<span class="go">None</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adserver</span><span class="o">.</span><span class="n">refresh</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adserver</span><span class="o">.</span><span class="n">value</span>
+<span class="go">&quot;4.4.4.4&quot;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="readme.html" class="btn btn-neutral float-left" title="Palo Alto Networks PAN-OS SDK for Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="howto.html" class="btn btn-neutral float-right" title="How-to Guides" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, Brian Torres-Gil.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

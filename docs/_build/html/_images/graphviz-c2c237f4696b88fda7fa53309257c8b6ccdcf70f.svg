@@ -1,0 +1,195 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="262pt" height="248pt" viewBox="0.07 0.07 262.07 248.07">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4.07 244.07)">
+<ns0:title>configtree</ns0:title>
+<ns0:polygon fill="white" stroke="transparent" points="-4,4 -4,-244 258,-244 258,4 -4,4" />
+
+<ns0:g id="node1" class="node">
+<ns0:title>PostRulebase</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../../module-policies.html#panos.policies.PostRulebase" ns1:title="PostRulebase" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="83,-175 0,-175 0,-150 83,-150 83,-175" />
+<ns0:text text-anchor="middle" x="41.5" y="-160" font-family="Times,serif" font-size="10.00">PostRulebase</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>ApplicationOverride</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../../module-policies.html#panos.policies.ApplicationOverride" ns1:title="ApplicationOverride" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="245,-240 128,-240 128,-215 245,-215 245,-240" />
+<ns0:text text-anchor="middle" x="186.5" y="-225" font-family="Times,serif" font-size="10.00">ApplicationOverride</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>PostRulebase-&gt;ApplicationOverride</ns0:title>
+<ns0:path fill="none" stroke="black" d="M61.7,-175.1C76.82,-184.64 98.66,-197.56 119,-206.5 123.04,-208.27 127.27,-209.97 131.57,-211.57" />
+<ns0:polygon fill="black" stroke="black" points="130.41,-214.87 141.01,-214.92 132.75,-208.28 130.41,-214.87" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>AuthenticationRule</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../../module-policies.html#panos.policies.AuthenticationRule" ns1:title="AuthenticationRule" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="243,-197 130,-197 130,-172 243,-172 243,-197" />
+<ns0:text text-anchor="middle" x="186.5" y="-182" font-family="Times,serif" font-size="10.00">AuthenticationRule</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>PostRulebase-&gt;AuthenticationRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M83.1,-168.75C94.56,-170.51 107.34,-172.48 119.88,-174.4" />
+<ns0:polygon fill="black" stroke="black" points="119.44,-177.88 129.85,-175.94 120.5,-170.96 119.44,-177.88" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>DecryptionRule</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../../module-policies.html#panos.policies.DecryptionRule" ns1:title="DecryptionRule" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="233.5,-154 139.5,-154 139.5,-129 233.5,-129 233.5,-154" />
+<ns0:text text-anchor="middle" x="186.5" y="-139" font-family="Times,serif" font-size="10.00">DecryptionRule</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>PostRulebase-&gt;DecryptionRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M83.1,-156.54C97.46,-154.43 113.87,-152.02 129.3,-149.75" />
+<ns0:polygon fill="black" stroke="black" points="129.87,-153.21 139.26,-148.29 128.85,-146.28 129.87,-153.21" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>NatRule</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../../module-policies.html#panos.policies.NatRule" ns1:title="NatRule" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="215,-111 158,-111 158,-86 215,-86 215,-111" />
+<ns0:text text-anchor="middle" x="186.5" y="-96" font-family="Times,serif" font-size="10.00">NatRule</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>PostRulebase-&gt;NatRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M67.45,-149.81C72.62,-147.11 78,-144.25 83,-141.5 99.23,-132.57 102.12,-128.12 119,-120.5 128.21,-116.34 138.46,-112.57 148.09,-109.36" />
+<ns0:polygon fill="black" stroke="black" points="149.38,-112.62 157.83,-106.24 147.24,-105.96 149.38,-112.62" />
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>PolicyBasedForwarding</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:href="../../module-policies.html#panos.policies.PolicyBasedForwarding" ns1:title="PolicyBasedForwarding" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="254,-68 119,-68 119,-43 254,-43 254,-68" />
+<ns0:text text-anchor="middle" x="186.5" y="-53" font-family="Times,serif" font-size="10.00">PolicyBasedForwarding</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>PostRulebase-&gt;PolicyBasedForwarding</ns0:title>
+<ns0:path fill="none" stroke="black" d="M71.78,-149.97C75.81,-147.52 79.7,-144.69 83,-141.5 106.47,-118.82 93.81,-98.25 119,-77.5 120.97,-75.88 123.07,-74.37 125.25,-72.98" />
+<ns0:polygon fill="black" stroke="black" points="126.99,-76.01 134.06,-68.12 123.61,-69.88 126.99,-76.01" />
+</ns0:g>
+
+<ns0:g id="node7" class="node">
+<ns0:title>SecurityRule</ns0:title>
+<ns0:g id="a_node7"><ns0:a ns1:href="../../module-policies.html#panos.policies.SecurityRule" ns1:title="SecurityRule" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="226.5,-25 146.5,-25 146.5,0 226.5,0 226.5,-25" />
+<ns0:text text-anchor="middle" x="186.5" y="-10" font-family="Times,serif" font-size="10.00">SecurityRule</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge6" class="edge">
+<ns0:title>PostRulebase-&gt;SecurityRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M73.16,-149.98C76.81,-147.56 80.22,-144.75 83,-141.5 115.65,-103.4 83.43,-69.89 119,-34.5 123.98,-29.54 130.1,-25.7 136.59,-22.73" />
+<ns0:polygon fill="black" stroke="black" points="138.23,-25.85 146.28,-18.96 135.69,-19.33 138.23,-25.85" />
+</ns0:g>
+
+<ns0:g id="node8" class="node">
+<ns0:title>PreRulebase</ns0:title>
+<ns0:g id="a_node8"><ns0:a ns1:href="../../module-policies.html#panos.policies.PreRulebase" ns1:title="PreRulebase" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="81,-132 2,-132 2,-107 81,-107 81,-132" />
+<ns0:text text-anchor="middle" x="41.5" y="-117" font-family="Times,serif" font-size="10.00">PreRulebase</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge7" class="edge">
+<ns0:title>PreRulebase-&gt;ApplicationOverride</ns0:title>
+<ns0:path fill="none" stroke="black" d="M70.96,-132.23C75.29,-134.91 79.48,-138.01 83,-141.5 106.45,-164.76 93.44,-185.6 119,-206.5 120.39,-207.63 121.83,-208.7 123.33,-209.72" />
+<ns0:polygon fill="black" stroke="black" points="121.96,-212.97 132.37,-214.92 125.45,-206.9 121.96,-212.97" />
+</ns0:g>
+
+<ns0:g id="edge8" class="edge">
+<ns0:title>PreRulebase-&gt;AuthenticationRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M66.17,-132.1C71.72,-135.12 77.59,-138.38 83,-141.5 99.24,-150.87 101.93,-155.73 119,-163.5 122.84,-165.25 126.87,-166.91 130.97,-168.48" />
+<ns0:polygon fill="black" stroke="black" points="129.99,-171.85 140.58,-171.96 132.37,-165.26 129.99,-171.85" />
+</ns0:g>
+
+<ns0:g id="edge9" class="edge">
+<ns0:title>PreRulebase-&gt;DecryptionRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M81.2,-125.45C96.06,-127.74 113.34,-130.4 129.51,-132.89" />
+<ns0:polygon fill="black" stroke="black" points="128.98,-136.35 139.4,-134.41 130.05,-129.43 128.98,-136.35" />
+</ns0:g>
+
+<ns0:g id="edge10" class="edge">
+<ns0:title>PreRulebase-&gt;NatRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M81.2,-113.82C101.86,-110.78 127.19,-107.06 147.71,-104.05" />
+<ns0:polygon fill="black" stroke="black" points="148.27,-107.51 157.66,-102.59 147.25,-100.58 148.27,-107.51" />
+</ns0:g>
+
+<ns0:g id="edge11" class="edge">
+<ns0:title>PreRulebase-&gt;PolicyBasedForwarding</ns0:title>
+<ns0:path fill="none" stroke="black" d="M67.45,-106.81C72.62,-104.11 78,-101.25 83,-98.5 99.23,-89.57 102.12,-85.12 119,-77.5 123.66,-75.4 128.58,-73.39 133.56,-71.51" />
+<ns0:polygon fill="black" stroke="black" points="134.92,-74.74 143.13,-68.04 132.54,-68.16 134.92,-74.74" />
+</ns0:g>
+
+<ns0:g id="edge12" class="edge">
+<ns0:title>PreRulebase-&gt;SecurityRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M71.78,-106.97C75.81,-104.52 79.7,-101.69 83,-98.5 106.47,-75.82 93.81,-55.25 119,-34.5 124.3,-30.14 130.49,-26.63 136.93,-23.81" />
+<ns0:polygon fill="black" stroke="black" points="138.38,-27 146.46,-20.15 135.87,-20.47 138.38,-27" />
+</ns0:g>
+
+<ns0:g id="node9" class="node">
+<ns0:title>Rulebase</ns0:title>
+<ns0:g id="a_node9"><ns0:a ns1:href="../../module-policies.html#panos.policies.Rulebase" ns1:title="Rulebase" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="72.5,-89 10.5,-89 10.5,-64 72.5,-64 72.5,-89" />
+<ns0:text text-anchor="middle" x="41.5" y="-74" font-family="Times,serif" font-size="10.00">Rulebase</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge13" class="edge">
+<ns0:title>Rulebase-&gt;ApplicationOverride</ns0:title>
+<ns0:path fill="none" stroke="black" d="M72.36,-89.24C76.31,-91.87 80.02,-94.94 83,-98.5 115.5,-137.28 82.94,-171.01 119,-206.5 119.95,-207.43 120.93,-208.32 121.96,-209.17" />
+<ns0:polygon fill="black" stroke="black" points="120.18,-212.2 130.41,-214.95 124.13,-206.42 120.18,-212.2" />
+</ns0:g>
+
+<ns0:g id="edge14" class="edge">
+<ns0:title>Rulebase-&gt;AuthenticationRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M70.96,-89.23C75.29,-91.91 79.48,-95.01 83,-98.5 106.45,-121.76 93.44,-142.6 119,-163.5 120.39,-164.63 121.83,-165.7 123.33,-166.72" />
+<ns0:polygon fill="black" stroke="black" points="121.96,-169.97 132.37,-171.92 125.45,-163.9 121.96,-169.97" />
+</ns0:g>
+
+<ns0:g id="edge15" class="edge">
+<ns0:title>Rulebase-&gt;DecryptionRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M66.17,-89.1C71.72,-92.12 77.59,-95.38 83,-98.5 99.24,-107.87 101.93,-112.73 119,-120.5 122.84,-122.25 126.87,-123.91 130.97,-125.48" />
+<ns0:polygon fill="black" stroke="black" points="129.99,-128.85 140.58,-128.96 132.37,-122.26 129.99,-128.85" />
+</ns0:g>
+
+<ns0:g id="edge16" class="edge">
+<ns0:title>Rulebase-&gt;NatRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M72.83,-81.17C94.68,-84.53 124.32,-89.09 147.71,-92.69" />
+<ns0:polygon fill="black" stroke="black" points="147.23,-96.15 157.64,-94.21 148.29,-89.23 147.23,-96.15" />
+</ns0:g>
+
+<ns0:g id="edge17" class="edge">
+<ns0:title>Rulebase-&gt;PolicyBasedForwarding</ns0:title>
+<ns0:path fill="none" stroke="black" d="M72.83,-72.05C83.44,-70.49 95.88,-68.66 108.55,-66.8" />
+<ns0:polygon fill="black" stroke="black" points="109.35,-70.22 118.74,-65.3 108.33,-63.29 109.35,-70.22" />
+</ns0:g>
+
+<ns0:g id="edge18" class="edge">
+<ns0:title>Rulebase-&gt;SecurityRule</ns0:title>
+<ns0:path fill="none" stroke="black" d="M63.09,-63.85C78.2,-54.91 99.41,-43.03 119,-34.5 124.71,-32.01 130.79,-29.64 136.87,-27.44" />
+<ns0:polygon fill="black" stroke="black" points="138.08,-30.72 146.37,-24.12 135.78,-24.12 138.08,-30.72" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuration tree diagrams &mdash; Palo Alto Networks PAN-OS SDK for Python 1.11.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=6cf1fb80"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module: base" href="module-base.html" />
+    <link rel="prev" title="Useful Methods" href="useful-methods.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Palo Alto Networks PAN-OS SDK for Python
+          </a>
+              <div class="version">
+                1.11.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Palo Alto Networks PAN-OS SDK for Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="useful-methods.html">Useful Methods</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuration tree diagrams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-legend">Module Legend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#panorama">Panorama</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#firewall">Firewall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#device">Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ha">HA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#network">Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#policies">Policies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugins">Plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="module-base.html">Module: base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-device.html">Module: device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-errors.html">Module: errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-firewall.html">Module: firewall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-ha.html">Module: ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-network.html">Module: network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-objects.html">Module: objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-panorama.html">Module: panorama</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-plugins.html">Module: plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-policies.html">Module: policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-predefined.html">Module: predefined</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-updater.html">Module: updater</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-userid.html">Module: userid</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Palo Alto Networks PAN-OS SDK for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="reference.html">API Reference</a></li>
+      <li class="breadcrumb-item active">Configuration tree diagrams</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/configtree.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuration-tree-diagrams">
+<span id="classtree"></span><h1>Configuration tree diagrams<a class="headerlink" href="#configuration-tree-diagrams" title="Link to this heading">¶</a></h1>
+<p>These diagrams illustrates the possible tree structures for a Firewall/Panorama configuration.</p>
+<p>The tree diagrams are broken out into partial diagrams by module or function for better readability.
+The nodes are color coded by the module they are in according to the legend.</p>
+<section id="module-legend">
+<h2>Module Legend<a class="headerlink" href="#module-legend" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/graphviz-e8927651869952790e959ebf81661c3a37c9d797.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">graph configtree {
+    graph [fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];
+    device [style=filled fillcolor=lightpink]
+    firewall [style=filled fillcolor=lightblue]
+    ha [style=filled fillcolor=lavender]
+    network [style=filled fillcolor=lightcyan]
+    objects [style=filled fillcolor=lemonchiffon]
+    panorama [style=filled fillcolor=darkseagreen2]
+    plugins [style=filled fillcolor=wheat]
+    policies [style=filled fillcolor=lightsalmon]
+}</p></object></div>
+</section>
+<section id="panorama">
+<span id="panoramatree"></span><h2>Panorama<a class="headerlink" href="#panorama" title="Link to this heading">¶</a></h2>
+<p>A Panorama object can contain a DeviceGroup or Firewall, each of which
+can contain configuration objects. (see <a class="reference internal" href="#firewalltree"><span class="std std-ref">Firewall</span></a> below for objects that
+can be added to the Firewall object)</p>
+<div class="graphviz"><object data="_images/graphviz-63a465b2e977e48c672f138f60dcaff7bdd77b7c.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph configtree {
+    graph [rankdir=LR, fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];    DeviceGroup [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.DeviceGroup&quot; target=&quot;_top&quot;];
+    Firewall [style=filled fillcolor=lightblue URL=&quot;../module-firewall.html#panos.firewall.Firewall&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; Firewall;
+    AddressGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.AddressGroup&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; AddressGroup;
+    AddressObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.AddressObject&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; AddressObject;
+    ApplicationFilter [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationFilter&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ApplicationFilter;
+    ApplicationGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationGroup&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ApplicationGroup;
+    ApplicationObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationObject&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ApplicationObject;
+    ApplicationTag [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationTag&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ApplicationTag;
+    CustomUrlCategory [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.CustomUrlCategory&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; CustomUrlCategory;
+    Edl [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Edl&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; Edl;
+    LogForwardingProfile [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.LogForwardingProfile&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; LogForwardingProfile;
+    Region [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Region&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; Region;
+    ScheduleObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ScheduleObject&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ScheduleObject;
+    SecurityProfileGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.SecurityProfileGroup&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; SecurityProfileGroup;
+    ServiceGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ServiceGroup&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ServiceGroup;
+    ServiceObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ServiceObject&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ServiceObject;
+    PostRulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PostRulebase&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; PostRulebase;
+    PreRulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PreRulebase&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; PreRulebase;
+    Panorama [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.Panorama&quot; target=&quot;_top&quot;];
+    Administrator [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.Administrator&quot; target=&quot;_top&quot;];
+    Panorama -&gt; Administrator;
+    CertificateProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.CertificateProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; CertificateProfile;
+    EmailServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.EmailServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; EmailServerProfile;
+    HttpServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; HttpServerProfile;
+    LdapServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LdapServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; LdapServerProfile;
+    PasswordProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.PasswordProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; PasswordProfile;
+    SnmpServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SnmpServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; SnmpServerProfile;
+    SslDecrypt [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SslDecrypt&quot; target=&quot;_top&quot;];
+    Panorama -&gt; SslDecrypt;
+    SyslogServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SyslogServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; SyslogServerProfile;
+    Panorama -&gt; Firewall;
+    Panorama -&gt; AddressGroup;
+    Panorama -&gt; AddressObject;
+    ApplicationContainer [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationContainer&quot; target=&quot;_top&quot;];
+    Panorama -&gt; ApplicationContainer;
+    Panorama -&gt; ApplicationFilter;
+    Panorama -&gt; ApplicationGroup;
+    Panorama -&gt; ApplicationObject;
+    Panorama -&gt; ApplicationTag;
+    Panorama -&gt; CustomUrlCategory;
+    DynamicUserGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.DynamicUserGroup&quot; target=&quot;_top&quot;];
+    Panorama -&gt; DynamicUserGroup;
+    Panorama -&gt; Edl;
+    Panorama -&gt; LogForwardingProfile;
+    Panorama -&gt; Region;
+    Panorama -&gt; ScheduleObject;
+    Panorama -&gt; SecurityProfileGroup;
+    Panorama -&gt; ServiceGroup;
+    Panorama -&gt; ServiceObject;
+    Tag [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Tag&quot; target=&quot;_top&quot;];
+    Panorama -&gt; Tag;
+    Panorama -&gt; DeviceGroup;
+    Template [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.Template&quot; target=&quot;_top&quot;];
+    Panorama -&gt; Template;
+    TemplateStack [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.TemplateStack&quot; target=&quot;_top&quot;];
+    Panorama -&gt; TemplateStack;
+    CloudServicesPlugin [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.CloudServicesPlugin&quot; target=&quot;_top&quot;];
+    Panorama -&gt; CloudServicesPlugin;
+    Rulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.Rulebase&quot; target=&quot;_top&quot;];
+    Panorama -&gt; Rulebase;
+    Template -&gt; Administrator;
+    LocalUserDatabaseGroup [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LocalUserDatabaseGroup&quot; target=&quot;_top&quot;];
+    Template -&gt; LocalUserDatabaseGroup;
+    LocalUserDatabaseUser [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LocalUserDatabaseUser&quot; target=&quot;_top&quot;];
+    Template -&gt; LocalUserDatabaseUser;
+    LogSettingsConfig [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LogSettingsConfig&quot; target=&quot;_top&quot;];
+    Template -&gt; LogSettingsConfig;
+    LogSettingsSystem [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LogSettingsSystem&quot; target=&quot;_top&quot;];
+    Template -&gt; LogSettingsSystem;
+    Template -&gt; PasswordProfile;
+    Template -&gt; SslDecrypt;
+    SystemSettings [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SystemSettings&quot; target=&quot;_top&quot;];
+    Template -&gt; SystemSettings;
+    Vsys [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.Vsys&quot; target=&quot;_top&quot;];
+    Template -&gt; Vsys;
+    VsysResources [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.VsysResources&quot; target=&quot;_top&quot;];
+    Template -&gt; VsysResources;
+    HighAvailability [style=filled fillcolor=lavender URL=&quot;../module-ha.html#panos.ha.HighAvailability&quot; target=&quot;_top&quot;];
+    Template -&gt; HighAvailability;
+    AggregateInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.AggregateInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; AggregateInterface;
+    EthernetInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.EthernetInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; EthernetInterface;
+    GreTunnel [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.GreTunnel&quot; target=&quot;_top&quot;];
+    Template -&gt; GreTunnel;
+    IkeCryptoProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IkeCryptoProfile&quot; target=&quot;_top&quot;];
+    Template -&gt; IkeCryptoProfile;
+    IkeGateway [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IkeGateway&quot; target=&quot;_top&quot;];
+    Template -&gt; IkeGateway;
+    IpsecCryptoProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecCryptoProfile&quot; target=&quot;_top&quot;];
+    Template -&gt; IpsecCryptoProfile;
+    IpsecTunnel [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnel&quot; target=&quot;_top&quot;];
+    Template -&gt; IpsecTunnel;
+    IpsecTunnelIpv4ProxyId [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnelIpv4ProxyId&quot; target=&quot;_top&quot;];
+    Template -&gt; IpsecTunnelIpv4ProxyId;
+    IpsecTunnelIpv6ProxyId [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnelIpv6ProxyId&quot; target=&quot;_top&quot;];
+    Template -&gt; IpsecTunnelIpv6ProxyId;
+    Layer2Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer2Subinterface&quot; target=&quot;_top&quot;];
+    Template -&gt; Layer2Subinterface;
+    Layer3Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer3Subinterface&quot; target=&quot;_top&quot;];
+    Template -&gt; Layer3Subinterface;
+    LogicalRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LogicalRouter&quot; target=&quot;_top&quot;];
+    Template -&gt; LogicalRouter;
+    LoopbackInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LoopbackInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; LoopbackInterface;
+    ManagementProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.ManagementProfile&quot; target=&quot;_top&quot;];
+    Template -&gt; ManagementProfile;
+    TunnelInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.TunnelInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; TunnelInterface;
+    VirtualRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VirtualRouter&quot; target=&quot;_top&quot;];
+    Template -&gt; VirtualRouter;
+    VirtualWire [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VirtualWire&quot; target=&quot;_top&quot;];
+    Template -&gt; VirtualWire;
+    Vlan [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vlan&quot; target=&quot;_top&quot;];
+    Template -&gt; Vlan;
+    VlanInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VlanInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; VlanInterface;
+    Vrf [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vrf&quot; target=&quot;_top&quot;];
+    Template -&gt; Vrf;
+    Zone [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Zone&quot; target=&quot;_top&quot;];
+    Template -&gt; Zone;
+    TemplateVariable [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.TemplateVariable&quot; target=&quot;_top&quot;];
+    Template -&gt; TemplateVariable;
+    TemplateStack -&gt; Administrator;
+    TemplateStack -&gt; LogSettingsConfig;
+    TemplateStack -&gt; LogSettingsSystem;
+    TemplateStack -&gt; PasswordProfile;
+    TemplateStack -&gt; SystemSettings;
+    TemplateStack -&gt; Vsys;
+    TemplateStack -&gt; HighAvailability;
+    TemplateStack -&gt; AggregateInterface;
+    TemplateStack -&gt; EthernetInterface;
+    TemplateStack -&gt; GreTunnel;
+    TemplateStack -&gt; IkeCryptoProfile;
+    TemplateStack -&gt; IkeGateway;
+    TemplateStack -&gt; IpsecCryptoProfile;
+    TemplateStack -&gt; IpsecTunnel;
+    TemplateStack -&gt; IpsecTunnelIpv4ProxyId;
+    TemplateStack -&gt; IpsecTunnelIpv6ProxyId;
+    TemplateStack -&gt; Layer2Subinterface;
+    TemplateStack -&gt; Layer3Subinterface;
+    TemplateStack -&gt; LogicalRouter;
+    TemplateStack -&gt; LoopbackInterface;
+    TemplateStack -&gt; ManagementProfile;
+    TemplateStack -&gt; TunnelInterface;
+    TemplateStack -&gt; VirtualRouter;
+    TemplateStack -&gt; VirtualWire;
+    TemplateStack -&gt; Vlan;
+    TemplateStack -&gt; VlanInterface;
+    TemplateStack -&gt; Vrf;
+    TemplateStack -&gt; Zone;
+    TemplateStack -&gt; TemplateVariable;
+}</p></object></div>
+</section>
+<section id="firewall">
+<span id="firewalltree"></span><h2>Firewall<a class="headerlink" href="#firewall" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/graphviz-fc15920fecedbae98ea7aee3938e5362555510cd.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph configtree {
+    graph [rankdir=LR, fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];    Firewall [style=filled fillcolor=lightblue URL=&quot;../module-firewall.html#panos.firewall.Firewall&quot; target=&quot;_top&quot;];
+    Administrator [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.Administrator&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Administrator;
+    AdvancedRoutingEngine [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.AdvancedRoutingEngine&quot; target=&quot;_top&quot;];
+    Firewall -&gt; AdvancedRoutingEngine;
+    AuthenticationProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.AuthenticationProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; AuthenticationProfile;
+    AuthenticationSequence [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.AuthenticationSequence&quot; target=&quot;_top&quot;];
+    Firewall -&gt; AuthenticationSequence;
+    CertificateProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.CertificateProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; CertificateProfile;
+    EmailServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.EmailServerProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; EmailServerProfile;
+    HttpServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpServerProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; HttpServerProfile;
+    LdapServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LdapServerProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; LdapServerProfile;
+    LocalUserDatabaseGroup [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LocalUserDatabaseGroup&quot; target=&quot;_top&quot;];
+    Firewall -&gt; LocalUserDatabaseGroup;
+    LocalUserDatabaseUser [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LocalUserDatabaseUser&quot; target=&quot;_top&quot;];
+    Firewall -&gt; LocalUserDatabaseUser;
+    LogSettingsConfig [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LogSettingsConfig&quot; target=&quot;_top&quot;];
+    Firewall -&gt; LogSettingsConfig;
+    LogSettingsSystem [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LogSettingsSystem&quot; target=&quot;_top&quot;];
+    Firewall -&gt; LogSettingsSystem;
+    PasswordProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.PasswordProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; PasswordProfile;
+    SnmpServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SnmpServerProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; SnmpServerProfile;
+    SslDecrypt [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SslDecrypt&quot; target=&quot;_top&quot;];
+    Firewall -&gt; SslDecrypt;
+    SyslogServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SyslogServerProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; SyslogServerProfile;
+    SystemSettings [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SystemSettings&quot; target=&quot;_top&quot;];
+    Firewall -&gt; SystemSettings;
+    Telemetry [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.Telemetry&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Telemetry;
+    Vsys [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.Vsys&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Vsys;
+    VsysResources [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.VsysResources&quot; target=&quot;_top&quot;];
+    Firewall -&gt; VsysResources;
+    HighAvailability [style=filled fillcolor=lavender URL=&quot;../module-ha.html#panos.ha.HighAvailability&quot; target=&quot;_top&quot;];
+    Firewall -&gt; HighAvailability;
+    AggregateInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.AggregateInterface&quot; target=&quot;_top&quot;];
+    Firewall -&gt; AggregateInterface;
+    Dhcp [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Dhcp&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Dhcp;
+    EthernetInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.EthernetInterface&quot; target=&quot;_top&quot;];
+    Firewall -&gt; EthernetInterface;
+    GreTunnel [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.GreTunnel&quot; target=&quot;_top&quot;];
+    Firewall -&gt; GreTunnel;
+    IkeCryptoProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IkeCryptoProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; IkeCryptoProfile;
+    IkeGateway [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IkeGateway&quot; target=&quot;_top&quot;];
+    Firewall -&gt; IkeGateway;
+    IpsecCryptoProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecCryptoProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; IpsecCryptoProfile;
+    IpsecTunnel [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnel&quot; target=&quot;_top&quot;];
+    Firewall -&gt; IpsecTunnel;
+    Layer2Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer2Subinterface&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Layer2Subinterface;
+    Layer3Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer3Subinterface&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Layer3Subinterface;
+    LogicalRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LogicalRouter&quot; target=&quot;_top&quot;];
+    Firewall -&gt; LogicalRouter;
+    LoopbackInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LoopbackInterface&quot; target=&quot;_top&quot;];
+    Firewall -&gt; LoopbackInterface;
+    ManagementProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.ManagementProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; ManagementProfile;
+    TunnelInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.TunnelInterface&quot; target=&quot;_top&quot;];
+    Firewall -&gt; TunnelInterface;
+    VirtualRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VirtualRouter&quot; target=&quot;_top&quot;];
+    Firewall -&gt; VirtualRouter;
+    VirtualWire [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VirtualWire&quot; target=&quot;_top&quot;];
+    Firewall -&gt; VirtualWire;
+    Vlan [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vlan&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Vlan;
+    VlanInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VlanInterface&quot; target=&quot;_top&quot;];
+    Firewall -&gt; VlanInterface;
+    Vrf [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vrf&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Vrf;
+    Zone [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Zone&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Zone;
+    AddressGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.AddressGroup&quot; target=&quot;_top&quot;];
+    Firewall -&gt; AddressGroup;
+    AddressObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.AddressObject&quot; target=&quot;_top&quot;];
+    Firewall -&gt; AddressObject;
+    ApplicationContainer [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationContainer&quot; target=&quot;_top&quot;];
+    Firewall -&gt; ApplicationContainer;
+    ApplicationFilter [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationFilter&quot; target=&quot;_top&quot;];
+    Firewall -&gt; ApplicationFilter;
+    ApplicationGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationGroup&quot; target=&quot;_top&quot;];
+    Firewall -&gt; ApplicationGroup;
+    ApplicationObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationObject&quot; target=&quot;_top&quot;];
+    Firewall -&gt; ApplicationObject;
+    ApplicationTag [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationTag&quot; target=&quot;_top&quot;];
+    Firewall -&gt; ApplicationTag;
+    CustomUrlCategory [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.CustomUrlCategory&quot; target=&quot;_top&quot;];
+    Firewall -&gt; CustomUrlCategory;
+    DynamicUserGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.DynamicUserGroup&quot; target=&quot;_top&quot;];
+    Firewall -&gt; DynamicUserGroup;
+    Edl [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Edl&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Edl;
+    LogForwardingProfile [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.LogForwardingProfile&quot; target=&quot;_top&quot;];
+    Firewall -&gt; LogForwardingProfile;
+    Region [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Region&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Region;
+    ScheduleObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ScheduleObject&quot; target=&quot;_top&quot;];
+    Firewall -&gt; ScheduleObject;
+    SecurityProfileGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.SecurityProfileGroup&quot; target=&quot;_top&quot;];
+    Firewall -&gt; SecurityProfileGroup;
+    ServiceGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ServiceGroup&quot; target=&quot;_top&quot;];
+    Firewall -&gt; ServiceGroup;
+    ServiceObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ServiceObject&quot; target=&quot;_top&quot;];
+    Firewall -&gt; ServiceObject;
+    Tag [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Tag&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Tag;
+    Rulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.Rulebase&quot; target=&quot;_top&quot;];
+    Firewall -&gt; Rulebase;
+}</p></object></div>
+</section>
+<section id="device">
+<span id="devicetree"></span><h2>Device<a class="headerlink" href="#device" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/graphviz-82639daa485d2a6697e11069e94a6f0ae051890b.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph configtree {
+    graph [rankdir=LR, fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];    CertificateProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.CertificateProfile&quot; target=&quot;_top&quot;];
+    CertificateProfileCaCertificate [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.CertificateProfileCaCertificate&quot; target=&quot;_top&quot;];
+    CertificateProfile -&gt; CertificateProfileCaCertificate;
+    EmailServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.EmailServerProfile&quot; target=&quot;_top&quot;];
+    EmailServer [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.EmailServer&quot; target=&quot;_top&quot;];
+    EmailServerProfile -&gt; EmailServer;
+    HttpServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpServerProfile&quot; target=&quot;_top&quot;];
+    HttpAuthHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpAuthHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpAuthHeader;
+    HttpAuthParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpAuthParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpAuthParam;
+    HttpConfigHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpConfigHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpConfigHeader;
+    HttpConfigParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpConfigParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpConfigParam;
+    HttpDataHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpDataHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpDataHeader;
+    HttpDataParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpDataParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpDataParam;
+    HttpDecryptionHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpDecryptionHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpDecryptionHeader;
+    HttpDecryptionParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpDecryptionParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpDecryptionParam;
+    HttpGlobalProtectHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpGlobalProtectHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpGlobalProtectHeader;
+    HttpGlobalProtectParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpGlobalProtectParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpGlobalProtectParam;
+    HttpGtpHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpGtpHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpGtpHeader;
+    HttpGtpParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpGtpParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpGtpParam;
+    HttpHipMatchHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpHipMatchHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpHipMatchHeader;
+    HttpHipMatchParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpHipMatchParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpHipMatchParam;
+    HttpIpTagHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpIpTagHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpIpTagHeader;
+    HttpIpTagParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpIpTagParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpIpTagParam;
+    HttpSctpHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpSctpHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpSctpHeader;
+    HttpSctpParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpSctpParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpSctpParam;
+    HttpServer [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpServer&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpServer;
+    HttpSystemHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpSystemHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpSystemHeader;
+    HttpSystemParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpSystemParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpSystemParam;
+    HttpThreatHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpThreatHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpThreatHeader;
+    HttpThreatParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpThreatParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpThreatParam;
+    HttpTrafficHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpTrafficHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpTrafficHeader;
+    HttpTrafficParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpTrafficParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpTrafficParam;
+    HttpTunnelHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpTunnelHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpTunnelHeader;
+    HttpTunnelParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpTunnelParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpTunnelParam;
+    HttpUrlHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpUrlHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpUrlHeader;
+    HttpUrlParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpUrlParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpUrlParam;
+    HttpUserIdHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpUserIdHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpUserIdHeader;
+    HttpUserIdParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpUserIdParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpUserIdParam;
+    HttpWildfireHeader [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpWildfireHeader&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpWildfireHeader;
+    HttpWildfireParam [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpWildfireParam&quot; target=&quot;_top&quot;];
+    HttpServerProfile -&gt; HttpWildfireParam;
+    LdapServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LdapServerProfile&quot; target=&quot;_top&quot;];
+    LdapServer [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LdapServer&quot; target=&quot;_top&quot;];
+    LdapServerProfile -&gt; LdapServer;
+    SnmpServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SnmpServerProfile&quot; target=&quot;_top&quot;];
+    SnmpV2cServer [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SnmpV2cServer&quot; target=&quot;_top&quot;];
+    SnmpServerProfile -&gt; SnmpV2cServer;
+    SnmpV3Server [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SnmpV3Server&quot; target=&quot;_top&quot;];
+    SnmpServerProfile -&gt; SnmpV3Server;
+    SslDecrypt [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SslDecrypt&quot; target=&quot;_top&quot;];
+    SslDecryptExcludeCert [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SslDecryptExcludeCert&quot; target=&quot;_top&quot;];
+    SslDecrypt -&gt; SslDecryptExcludeCert;
+    SyslogServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SyslogServerProfile&quot; target=&quot;_top&quot;];
+    SyslogServer [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SyslogServer&quot; target=&quot;_top&quot;];
+    SyslogServerProfile -&gt; SyslogServer;
+    SystemSettings [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SystemSettings&quot; target=&quot;_top&quot;];
+    NTPServerPrimary [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.NTPServerPrimary&quot; target=&quot;_top&quot;];
+    SystemSettings -&gt; NTPServerPrimary;
+    NTPServerSecondary [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.NTPServerSecondary&quot; target=&quot;_top&quot;];
+    SystemSettings -&gt; NTPServerSecondary;
+    Telemetry [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.Telemetry&quot; target=&quot;_top&quot;];
+    SystemSettings -&gt; Telemetry;
+    Vsys [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.Vsys&quot; target=&quot;_top&quot;];
+    AuthenticationProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.AuthenticationProfile&quot; target=&quot;_top&quot;];
+    Vsys -&gt; AuthenticationProfile;
+    AuthenticationSequence [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.AuthenticationSequence&quot; target=&quot;_top&quot;];
+    Vsys -&gt; AuthenticationSequence;
+    Vsys -&gt; CertificateProfile;
+    Vsys -&gt; EmailServerProfile;
+    Vsys -&gt; HttpServerProfile;
+    Vsys -&gt; LdapServerProfile;
+    LocalUserDatabaseGroup [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LocalUserDatabaseGroup&quot; target=&quot;_top&quot;];
+    Vsys -&gt; LocalUserDatabaseGroup;
+    LocalUserDatabaseUser [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LocalUserDatabaseUser&quot; target=&quot;_top&quot;];
+    Vsys -&gt; LocalUserDatabaseUser;
+    LogSettingsConfig [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LogSettingsConfig&quot; target=&quot;_top&quot;];
+    Vsys -&gt; LogSettingsConfig;
+    LogSettingsSystem [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LogSettingsSystem&quot; target=&quot;_top&quot;];
+    Vsys -&gt; LogSettingsSystem;
+    Vsys -&gt; SnmpServerProfile;
+    Vsys -&gt; SslDecrypt;
+    Vsys -&gt; SyslogServerProfile;
+    VsysResources [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.VsysResources&quot; target=&quot;_top&quot;];
+    Vsys -&gt; VsysResources;
+    AggregateInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.AggregateInterface&quot; target=&quot;_top&quot;];
+    Vsys -&gt; AggregateInterface;
+    EthernetInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.EthernetInterface&quot; target=&quot;_top&quot;];
+    Vsys -&gt; EthernetInterface;
+    Layer2Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer2Subinterface&quot; target=&quot;_top&quot;];
+    Vsys -&gt; Layer2Subinterface;
+    Layer3Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer3Subinterface&quot; target=&quot;_top&quot;];
+    Vsys -&gt; Layer3Subinterface;
+    LogicalRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LogicalRouter&quot; target=&quot;_top&quot;];
+    Vsys -&gt; LogicalRouter;
+    LoopbackInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LoopbackInterface&quot; target=&quot;_top&quot;];
+    Vsys -&gt; LoopbackInterface;
+    TunnelInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.TunnelInterface&quot; target=&quot;_top&quot;];
+    Vsys -&gt; TunnelInterface;
+    VirtualRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VirtualRouter&quot; target=&quot;_top&quot;];
+    Vsys -&gt; VirtualRouter;
+    VirtualWire [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VirtualWire&quot; target=&quot;_top&quot;];
+    Vsys -&gt; VirtualWire;
+    Vlan [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vlan&quot; target=&quot;_top&quot;];
+    Vsys -&gt; Vlan;
+    VlanInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VlanInterface&quot; target=&quot;_top&quot;];
+    Vsys -&gt; VlanInterface;
+    Vrf [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vrf&quot; target=&quot;_top&quot;];
+    Vsys -&gt; Vrf;
+    Zone [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Zone&quot; target=&quot;_top&quot;];
+    Vsys -&gt; Zone;
+    AddressGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.AddressGroup&quot; target=&quot;_top&quot;];
+    Vsys -&gt; AddressGroup;
+    AddressObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.AddressObject&quot; target=&quot;_top&quot;];
+    Vsys -&gt; AddressObject;
+    ApplicationContainer [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationContainer&quot; target=&quot;_top&quot;];
+    Vsys -&gt; ApplicationContainer;
+    ApplicationFilter [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationFilter&quot; target=&quot;_top&quot;];
+    Vsys -&gt; ApplicationFilter;
+    ApplicationGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationGroup&quot; target=&quot;_top&quot;];
+    Vsys -&gt; ApplicationGroup;
+    ApplicationObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationObject&quot; target=&quot;_top&quot;];
+    Vsys -&gt; ApplicationObject;
+    ApplicationTag [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationTag&quot; target=&quot;_top&quot;];
+    Vsys -&gt; ApplicationTag;
+    CustomUrlCategory [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.CustomUrlCategory&quot; target=&quot;_top&quot;];
+    Vsys -&gt; CustomUrlCategory;
+    DynamicUserGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.DynamicUserGroup&quot; target=&quot;_top&quot;];
+    Vsys -&gt; DynamicUserGroup;
+    Edl [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Edl&quot; target=&quot;_top&quot;];
+    Vsys -&gt; Edl;
+    LogForwardingProfile [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.LogForwardingProfile&quot; target=&quot;_top&quot;];
+    Vsys -&gt; LogForwardingProfile;
+    Region [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Region&quot; target=&quot;_top&quot;];
+    Vsys -&gt; Region;
+    ScheduleObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ScheduleObject&quot; target=&quot;_top&quot;];
+    Vsys -&gt; ScheduleObject;
+    SecurityProfileGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.SecurityProfileGroup&quot; target=&quot;_top&quot;];
+    Vsys -&gt; SecurityProfileGroup;
+    ServiceGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ServiceGroup&quot; target=&quot;_top&quot;];
+    Vsys -&gt; ServiceGroup;
+    ServiceObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ServiceObject&quot; target=&quot;_top&quot;];
+    Vsys -&gt; ServiceObject;
+    Tag [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Tag&quot; target=&quot;_top&quot;];
+    Vsys -&gt; Tag;
+    Rulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.Rulebase&quot; target=&quot;_top&quot;];
+    Vsys -&gt; Rulebase;
+}</p></object></div>
+</section>
+<section id="ha">
+<span id="hatree"></span><h2>HA<a class="headerlink" href="#ha" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/graphviz-a844b2384a75d4e78251f4b15d38e0344cb50d00.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph configtree {
+    graph [rankdir=LR, fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];    HighAvailability [style=filled fillcolor=lavender URL=&quot;../module-ha.html#panos.ha.HighAvailability&quot; target=&quot;_top&quot;];
+    HA1 [style=filled fillcolor=lavender URL=&quot;../module-ha.html#panos.ha.HA1&quot; target=&quot;_top&quot;];
+    HighAvailability -&gt; HA1;
+    HA1Backup [style=filled fillcolor=lavender URL=&quot;../module-ha.html#panos.ha.HA1Backup&quot; target=&quot;_top&quot;];
+    HighAvailability -&gt; HA1Backup;
+    HA2 [style=filled fillcolor=lavender URL=&quot;../module-ha.html#panos.ha.HA2&quot; target=&quot;_top&quot;];
+    HighAvailability -&gt; HA2;
+    HA2Backup [style=filled fillcolor=lavender URL=&quot;../module-ha.html#panos.ha.HA2Backup&quot; target=&quot;_top&quot;];
+    HighAvailability -&gt; HA2Backup;
+    HA3 [style=filled fillcolor=lavender URL=&quot;../module-ha.html#panos.ha.HA3&quot; target=&quot;_top&quot;];
+    HighAvailability -&gt; HA3;
+}</p></object></div>
+</section>
+<section id="network">
+<span id="networktree"></span><h2>Network<a class="headerlink" href="#network" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/graphviz-7a2c3da2b379c7e91943d4f6496e57bc69c4da99.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph configtree {
+    graph [rankdir=LR, fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];    AggregateInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.AggregateInterface&quot; target=&quot;_top&quot;];
+    Arp [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Arp&quot; target=&quot;_top&quot;];
+    AggregateInterface -&gt; Arp;
+    IPv6Address [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IPv6Address&quot; target=&quot;_top&quot;];
+    AggregateInterface -&gt; IPv6Address;
+    Layer2Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer2Subinterface&quot; target=&quot;_top&quot;];
+    AggregateInterface -&gt; Layer2Subinterface;
+    Layer3Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer3Subinterface&quot; target=&quot;_top&quot;];
+    AggregateInterface -&gt; Layer3Subinterface;
+    Bgp [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Bgp&quot; target=&quot;_top&quot;];
+    BgpAuthProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpAuthProfile&quot; target=&quot;_top&quot;];
+    Bgp -&gt; BgpAuthProfile;
+    BgpDampeningProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpDampeningProfile&quot; target=&quot;_top&quot;];
+    Bgp -&gt; BgpDampeningProfile;
+    BgpPeerGroup [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPeerGroup&quot; target=&quot;_top&quot;];
+    Bgp -&gt; BgpPeerGroup;
+    BgpPolicyAggregationAddress [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPolicyAggregationAddress&quot; target=&quot;_top&quot;];
+    Bgp -&gt; BgpPolicyAggregationAddress;
+    BgpPolicyConditionalAdvertisement [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPolicyConditionalAdvertisement&quot; target=&quot;_top&quot;];
+    Bgp -&gt; BgpPolicyConditionalAdvertisement;
+    BgpPolicyExportRule [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPolicyExportRule&quot; target=&quot;_top&quot;];
+    Bgp -&gt; BgpPolicyExportRule;
+    BgpPolicyImportRule [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPolicyImportRule&quot; target=&quot;_top&quot;];
+    Bgp -&gt; BgpPolicyImportRule;
+    BgpRedistributionRule [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpRedistributionRule&quot; target=&quot;_top&quot;];
+    Bgp -&gt; BgpRedistributionRule;
+    BgpRoutingOptions [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpRoutingOptions&quot; target=&quot;_top&quot;];
+    Bgp -&gt; BgpRoutingOptions;
+    BgpPeer [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPeer&quot; target=&quot;_top&quot;];
+    BgpPeerGroup -&gt; BgpPeer;
+    BgpPolicyAdvertiseFilter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPolicyAdvertiseFilter&quot; target=&quot;_top&quot;];
+    BgpPolicyAddressPrefix [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPolicyAddressPrefix&quot; target=&quot;_top&quot;];
+    BgpPolicyAdvertiseFilter -&gt; BgpPolicyAddressPrefix;
+    BgpPolicyAggregationAddress -&gt; BgpPolicyAdvertiseFilter;
+    BgpPolicySuppressFilter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPolicySuppressFilter&quot; target=&quot;_top&quot;];
+    BgpPolicyAggregationAddress -&gt; BgpPolicySuppressFilter;
+    BgpPolicyConditionalAdvertisement -&gt; BgpPolicyAdvertiseFilter;
+    BgpPolicyNonExistFilter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpPolicyNonExistFilter&quot; target=&quot;_top&quot;];
+    BgpPolicyConditionalAdvertisement -&gt; BgpPolicyNonExistFilter;
+    BgpPolicyExportRule -&gt; BgpPolicyAddressPrefix;
+    BgpPolicyImportRule -&gt; BgpPolicyAddressPrefix;
+    BgpPolicyNonExistFilter -&gt; BgpPolicyAddressPrefix;
+    BgpPolicySuppressFilter -&gt; BgpPolicyAddressPrefix;
+    BgpOutboundRouteFilter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.BgpOutboundRouteFilter&quot; target=&quot;_top&quot;];
+    BgpRoutingOptions -&gt; BgpOutboundRouteFilter;
+    Dhcp [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Dhcp&quot; target=&quot;_top&quot;];
+    DhcpRelay [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.DhcpRelay&quot; target=&quot;_top&quot;];
+    Dhcp -&gt; DhcpRelay;
+    DhcpRelayIpv6Address [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.DhcpRelayIpv6Address&quot; target=&quot;_top&quot;];
+    DhcpRelay -&gt; DhcpRelayIpv6Address;
+    EthernetInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.EthernetInterface&quot; target=&quot;_top&quot;];
+    EthernetInterface -&gt; Arp;
+    EthernetInterface -&gt; IPv6Address;
+    EthernetInterface -&gt; Layer2Subinterface;
+    EthernetInterface -&gt; Layer3Subinterface;
+    IpsecTunnel [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnel&quot; target=&quot;_top&quot;];
+    IpsecTunnelIpv4ProxyId [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnelIpv4ProxyId&quot; target=&quot;_top&quot;];
+    IpsecTunnel -&gt; IpsecTunnelIpv4ProxyId;
+    IpsecTunnelIpv6ProxyId [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnelIpv6ProxyId&quot; target=&quot;_top&quot;];
+    IpsecTunnel -&gt; IpsecTunnelIpv6ProxyId;
+    Layer3Subinterface -&gt; Arp;
+    Layer3Subinterface -&gt; IPv6Address;
+    LogicalRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LogicalRouter&quot; target=&quot;_top&quot;];
+    Vrf [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vrf&quot; target=&quot;_top&quot;];
+    LogicalRouter -&gt; Vrf;
+    LoopbackInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LoopbackInterface&quot; target=&quot;_top&quot;];
+    LoopbackInterface -&gt; IPv6Address;
+    Ospf [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Ospf&quot; target=&quot;_top&quot;];
+    OspfArea [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.OspfArea&quot; target=&quot;_top&quot;];
+    Ospf -&gt; OspfArea;
+    OspfAuthProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.OspfAuthProfile&quot; target=&quot;_top&quot;];
+    Ospf -&gt; OspfAuthProfile;
+    OspfExportRules [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.OspfExportRules&quot; target=&quot;_top&quot;];
+    Ospf -&gt; OspfExportRules;
+    OspfAreaInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.OspfAreaInterface&quot; target=&quot;_top&quot;];
+    OspfArea -&gt; OspfAreaInterface;
+    OspfNssaExternalRange [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.OspfNssaExternalRange&quot; target=&quot;_top&quot;];
+    OspfArea -&gt; OspfNssaExternalRange;
+    OspfRange [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.OspfRange&quot; target=&quot;_top&quot;];
+    OspfArea -&gt; OspfRange;
+    OspfNeighbor [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.OspfNeighbor&quot; target=&quot;_top&quot;];
+    OspfAreaInterface -&gt; OspfNeighbor;
+    OspfAuthProfileMd5 [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.OspfAuthProfileMd5&quot; target=&quot;_top&quot;];
+    OspfAuthProfile -&gt; OspfAuthProfileMd5;
+    Rip [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Rip&quot; target=&quot;_top&quot;];
+    RipAuthProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RipAuthProfile&quot; target=&quot;_top&quot;];
+    Rip -&gt; RipAuthProfile;
+    RipExportRule [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RipExportRule&quot; target=&quot;_top&quot;];
+    Rip -&gt; RipExportRule;
+    RipInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RipInterface&quot; target=&quot;_top&quot;];
+    Rip -&gt; RipInterface;
+    RipAuthProfileMd5 [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RipAuthProfileMd5&quot; target=&quot;_top&quot;];
+    RipAuthProfile -&gt; RipAuthProfileMd5;
+    RoutingProfileFilterAccessList [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterAccessList&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterAccessListEntryIpv4 [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterAccessListEntryIpv4&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterAccessList -&gt; RoutingProfileFilterAccessListEntryIpv4;
+    RoutingProfileFilterAccessListEntryIpv6 [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterAccessListEntryIpv6&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterAccessList -&gt; RoutingProfileFilterAccessListEntryIpv6;
+    RoutingProfileFilterAsPathAccessList [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterAsPathAccessList&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterAsPathAccessListEntry [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterAsPathAccessListEntry&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterAsPathAccessList -&gt; RoutingProfileFilterAsPathAccessListEntry;
+    RoutingProfileFilterCommunityList [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterCommunityList&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterCommunityListEntryExtended [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterCommunityListEntryExtended&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterCommunityList -&gt; RoutingProfileFilterCommunityListEntryExtended;
+    RoutingProfileFilterCommunityListEntryLarge [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterCommunityListEntryLarge&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterCommunityList -&gt; RoutingProfileFilterCommunityListEntryLarge;
+    RoutingProfileFilterCommunityListEntryRegular [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterCommunityListEntryRegular&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterCommunityList -&gt; RoutingProfileFilterCommunityListEntryRegular;
+    RoutingProfileFilterPrefixList [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterPrefixList&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterPrefixListEntryIpv4 [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterPrefixListEntryIpv4&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterPrefixList -&gt; RoutingProfileFilterPrefixListEntryIpv4;
+    RoutingProfileFilterPrefixListEntryIpv6 [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterPrefixListEntryIpv6&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterPrefixList -&gt; RoutingProfileFilterPrefixListEntryIpv6;
+    RoutingProfileFilterRouteMaps [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterRouteMaps&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterRouteMapsEntry [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterRouteMapsEntry&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterRouteMaps -&gt; RoutingProfileFilterRouteMapsEntry;
+    RoutingProfileFilterRouteMapsRedistribution [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileFilterRouteMapsRedistribution&quot; target=&quot;_top&quot;];
+    RoutingProfileFilterRouteMapsRedistribution -&gt; RoutingProfileFilterRouteMapsEntry;
+    StaticRoute [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.StaticRoute&quot; target=&quot;_top&quot;];
+    PathMonitorDestination [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.PathMonitorDestination&quot; target=&quot;_top&quot;];
+    StaticRoute -&gt; PathMonitorDestination;
+    StaticRouteV6 [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.StaticRouteV6&quot; target=&quot;_top&quot;];
+    StaticRouteV6 -&gt; PathMonitorDestination;
+    TunnelInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.TunnelInterface&quot; target=&quot;_top&quot;];
+    TunnelInterface -&gt; IPv6Address;
+    VirtualRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VirtualRouter&quot; target=&quot;_top&quot;];
+    VirtualRouter -&gt; Bgp;
+    VirtualRouter -&gt; Ospf;
+    RedistributionProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RedistributionProfile&quot; target=&quot;_top&quot;];
+    VirtualRouter -&gt; RedistributionProfile;
+    RedistributionProfileIPv6 [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RedistributionProfileIPv6&quot; target=&quot;_top&quot;];
+    VirtualRouter -&gt; RedistributionProfileIPv6;
+    VirtualRouter -&gt; Rip;
+    VirtualRouter -&gt; StaticRoute;
+    VirtualRouter -&gt; StaticRouteV6;
+    Vlan [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vlan&quot; target=&quot;_top&quot;];
+    StaticMac [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.StaticMac&quot; target=&quot;_top&quot;];
+    Vlan -&gt; StaticMac;
+    VlanInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VlanInterface&quot; target=&quot;_top&quot;];
+    VlanInterface -&gt; Arp;
+    VlanInterface -&gt; IPv6Address;
+    RoutingProfileBfd [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileBfd&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileBfd;
+    RoutingProfileBgpAddressFamily [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileBgpAddressFamily&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileBgpAddressFamily;
+    RoutingProfileBgpAuth [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileBgpAuth&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileBgpAuth;
+    RoutingProfileBgpDampening [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileBgpDampening&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileBgpDampening;
+    RoutingProfileBgpFiltering [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileBgpFiltering&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileBgpFiltering;
+    RoutingProfileBgpRedistribution [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileBgpRedistribution&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileBgpRedistribution;
+    RoutingProfileBgpTimer [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileBgpTimer&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileBgpTimer;
+    Vrf -&gt; RoutingProfileFilterAccessList;
+    Vrf -&gt; RoutingProfileFilterAsPathAccessList;
+    Vrf -&gt; RoutingProfileFilterCommunityList;
+    Vrf -&gt; RoutingProfileFilterPrefixList;
+    Vrf -&gt; RoutingProfileFilterRouteMaps;
+    Vrf -&gt; RoutingProfileFilterRouteMapsRedistribution;
+    RoutingProfileOspfAuth [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileOspfAuth&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileOspfAuth;
+    RoutingProfileOspfIfTimer [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileOspfIfTimer&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileOspfIfTimer;
+    RoutingProfileOspfRedistribution [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileOspfRedistribution&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileOspfRedistribution;
+    RoutingProfileOspfSpfTimer [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileOspfSpfTimer&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileOspfSpfTimer;
+    RoutingProfileOspfv3Auth [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileOspfv3Auth&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileOspfv3Auth;
+    RoutingProfileOspfv3IfTimer [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileOspfv3IfTimer&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileOspfv3IfTimer;
+    RoutingProfileOspfv3Redistribution [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileOspfv3Redistribution&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileOspfv3Redistribution;
+    RoutingProfileOspfv3SpfTimer [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.RoutingProfileOspfv3SpfTimer&quot; target=&quot;_top&quot;];
+    Vrf -&gt; RoutingProfileOspfv3SpfTimer;
+    VrfBgpPeerGroup [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfBgpPeerGroup&quot; target=&quot;_top&quot;];
+    Vrf -&gt; VrfBgpPeerGroup;
+    VrfEcmpInterfaceWeight [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfEcmpInterfaceWeight&quot; target=&quot;_top&quot;];
+    Vrf -&gt; VrfEcmpInterfaceWeight;
+    VrfOspfArea [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfOspfArea&quot; target=&quot;_top&quot;];
+    Vrf -&gt; VrfOspfArea;
+    VrfOspfv3Area [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfOspfv3Area&quot; target=&quot;_top&quot;];
+    Vrf -&gt; VrfOspfv3Area;
+    VrfStaticRoute [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfStaticRoute&quot; target=&quot;_top&quot;];
+    Vrf -&gt; VrfStaticRoute;
+    VrfStaticRouteV6 [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfStaticRouteV6&quot; target=&quot;_top&quot;];
+    Vrf -&gt; VrfStaticRouteV6;
+    VrfBgpPeer [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfBgpPeer&quot; target=&quot;_top&quot;];
+    VrfBgpPeerGroup -&gt; VrfBgpPeer;
+    VrfOspfAreaInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfOspfAreaInterface&quot; target=&quot;_top&quot;];
+    VrfOspfArea -&gt; VrfOspfAreaInterface;
+    VrfOspfAreaRange [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfOspfAreaRange&quot; target=&quot;_top&quot;];
+    VrfOspfArea -&gt; VrfOspfAreaRange;
+    VrfOspfAreaVirtualLink [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfOspfAreaVirtualLink&quot; target=&quot;_top&quot;];
+    VrfOspfArea -&gt; VrfOspfAreaVirtualLink;
+    VrfOspfv3AreaInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfOspfv3AreaInterface&quot; target=&quot;_top&quot;];
+    VrfOspfv3Area -&gt; VrfOspfv3AreaInterface;
+    VrfOspfv3AreaRange [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfOspfv3AreaRange&quot; target=&quot;_top&quot;];
+    VrfOspfv3Area -&gt; VrfOspfv3AreaRange;
+    VrfOspfv3AreaVirtualLink [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VrfOspfv3AreaVirtualLink&quot; target=&quot;_top&quot;];
+    VrfOspfv3Area -&gt; VrfOspfv3AreaVirtualLink;
+    VrfStaticRoute -&gt; PathMonitorDestination;
+    VrfStaticRouteV6 -&gt; PathMonitorDestination;
+}</p></object></div>
+</section>
+<section id="policies">
+<span id="policytree"></span><h2>Policies<a class="headerlink" href="#policies" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/graphviz-c2c237f4696b88fda7fa53309257c8b6ccdcf70f.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph configtree {
+    graph [rankdir=LR, fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];    PostRulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PostRulebase&quot; target=&quot;_top&quot;];
+    ApplicationOverride [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.ApplicationOverride&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; ApplicationOverride;
+    AuthenticationRule [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.AuthenticationRule&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; AuthenticationRule;
+    DecryptionRule [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.DecryptionRule&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; DecryptionRule;
+    NatRule [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.NatRule&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; NatRule;
+    PolicyBasedForwarding [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PolicyBasedForwarding&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; PolicyBasedForwarding;
+    SecurityRule [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.SecurityRule&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; SecurityRule;
+    PreRulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PreRulebase&quot; target=&quot;_top&quot;];
+    PreRulebase -&gt; ApplicationOverride;
+    PreRulebase -&gt; AuthenticationRule;
+    PreRulebase -&gt; DecryptionRule;
+    PreRulebase -&gt; NatRule;
+    PreRulebase -&gt; PolicyBasedForwarding;
+    PreRulebase -&gt; SecurityRule;
+    Rulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.Rulebase&quot; target=&quot;_top&quot;];
+    Rulebase -&gt; ApplicationOverride;
+    Rulebase -&gt; AuthenticationRule;
+    Rulebase -&gt; DecryptionRule;
+    Rulebase -&gt; NatRule;
+    Rulebase -&gt; PolicyBasedForwarding;
+    Rulebase -&gt; SecurityRule;
+}</p></object></div>
+</section>
+<section id="plugins">
+<h2>Plugins<a class="headerlink" href="#plugins" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/graphviz-5fde5a4d0f55d7dc821b27bfae6da98d6244d6a9.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph configtree {
+    graph [rankdir=LR, fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];    AggBandwidth [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.AggBandwidth&quot; target=&quot;_top&quot;];
+    Region [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.Region&quot; target=&quot;_top&quot;];
+    AggBandwidth -&gt; Region;
+    CloudServicesPlugin [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.CloudServicesPlugin&quot; target=&quot;_top&quot;];
+    AccessDomain [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.AccessDomain&quot; target=&quot;_top&quot;];
+    CloudServicesPlugin -&gt; AccessDomain;
+    RemoteNetworks [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.RemoteNetworks&quot; target=&quot;_top&quot;];
+    CloudServicesPlugin -&gt; RemoteNetworks;
+    RoutingPreference [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.RoutingPreference&quot; target=&quot;_top&quot;];
+    CloudServicesPlugin -&gt; RoutingPreference;
+    Tenants [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.Tenants&quot; target=&quot;_top&quot;];
+    CloudServicesPlugin -&gt; Tenants;
+    InternalDnsMatch [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.InternalDnsMatch&quot; target=&quot;_top&quot;];
+    PrimaryInternalDNSServer [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.PrimaryInternalDNSServer&quot; target=&quot;_top&quot;];
+    InternalDnsMatch -&gt; PrimaryInternalDNSServer;
+    SecondaryInternalDNSServer [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.SecondaryInternalDNSServer&quot; target=&quot;_top&quot;];
+    InternalDnsMatch -&gt; SecondaryInternalDNSServer;
+    Link [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.Link&quot; target=&quot;_top&quot;];
+    Bgp [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.Bgp&quot; target=&quot;_top&quot;];
+    Link -&gt; Bgp;
+    RemoteNetwork [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.RemoteNetwork&quot; target=&quot;_top&quot;];
+    RemoteNetwork -&gt; Bgp;
+    BgpPeer [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.BgpPeer&quot; target=&quot;_top&quot;];
+    RemoteNetwork -&gt; BgpPeer;
+    RemoteNetwork -&gt; Link;
+    RemoteNetworks -&gt; AggBandwidth;
+    RemoteNetworks -&gt; InternalDnsMatch;
+    PrimaryPublicDNSServer [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.PrimaryPublicDNSServer&quot; target=&quot;_top&quot;];
+    RemoteNetworks -&gt; PrimaryPublicDNSServer;
+    RemoteNetworks -&gt; RemoteNetwork;
+    SecondaryPublicDNSServer [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.SecondaryPublicDNSServer&quot; target=&quot;_top&quot;];
+    RemoteNetworks -&gt; SecondaryPublicDNSServer;
+    Tenants -&gt; RemoteNetworks;
+}</p></object></div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="useful-methods.html" class="btn btn-neutral float-left" title="Useful Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="module-base.html" class="btn btn-neutral float-right" title="Module: base" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, Brian Torres-Gil.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

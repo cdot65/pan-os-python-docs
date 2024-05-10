@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examples &mdash; Palo Alto Networks PAN-OS SDK for Python 1.11.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=6cf1fb80"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="reference.html" />
+    <link rel="prev" title="How-to Guides" href="howto.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Palo Alto Networks PAN-OS SDK for Python
+          </a>
+              <div class="version">
+                1.11.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Palo Alto Networks PAN-OS SDK for Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to Guides</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#example-scripts">Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cookbook-examples">Cookbook examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-the-version-of-a-firewall">Get the version of a firewall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#print-a-firewall-rule">Print a firewall rule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-of-firewall-rules-by-name">List of firewall rules by name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-of-pre-rules-on-panorama">List of pre-rules on Panorama</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-firewall-devices-in-panorama">List firewall devices in Panorama</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#upgrade-a-firewall">Upgrade a firewall</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Palo Alto Networks PAN-OS SDK for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Examples</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/examples.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="examples">
+<span id="id1"></span><h1>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h1>
+<section id="example-scripts">
+<h2>Example scripts<a class="headerlink" href="#example-scripts" title="Link to this heading">¶</a></h2>
+<p>There are several example scripts written as CLI programs in the [examples
+directory](<a class="reference external" href="https://github.com/PaloAltoNetworks/pan-os-python/tree/develop/examples">https://github.com/PaloAltoNetworks/pan-os-python/tree/develop/examples</a>).</p>
+</section>
+<section id="cookbook-examples">
+<h2>Cookbook examples<a class="headerlink" href="#cookbook-examples" title="Link to this heading">¶</a></h2>
+<section id="get-the-version-of-a-firewall">
+<h3>Get the version of a firewall<a class="headerlink" href="#get-the-version-of-a-firewall" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+
+<span class="n">fw</span> <span class="o">=</span> <span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">)</span>
+<span class="n">version</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">refresh_system_info</span><span class="p">()</span><span class="o">.</span><span class="n">version</span>
+<span class="nb">print</span> <span class="n">version</span>
+</pre></div>
+</div>
+<p>Example output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">10.0.3</span>
+</pre></div>
+</div>
+<p>We use <code class="docutils literal notranslate"><span class="pre">refresh_system_info()</span></code> here instead of an op commands because this
+method saves the version information to the Firewall object which tells all
+future API calls what format to use to be compatible with this version.</p>
+</section>
+<section id="print-a-firewall-rule">
+<h3>Print a firewall rule<a class="headerlink" href="#print-a-firewall-rule" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+<span class="kn">from</span> <span class="nn">panos.policies</span> <span class="kn">import</span> <span class="n">Rulebase</span><span class="p">,</span> <span class="n">SecurityRule</span>
+
+<span class="c1"># Create a config tree for the rule</span>
+<span class="n">fw</span> <span class="o">=</span> <span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">,</span> <span class="n">vsys</span><span class="o">=</span><span class="s2">&quot;vsys1&quot;</span><span class="p">)</span>
+<span class="n">rulebase</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Rulebase</span><span class="p">())</span>
+<span class="n">rule</span> <span class="o">=</span> <span class="n">rulebase</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">SecurityRule</span><span class="p">(</span><span class="s2">&quot;my-rule&quot;</span><span class="p">))</span>
+
+<span class="c1"># Refresh the rule from the live device and print it</span>
+<span class="n">rule</span><span class="o">.</span><span class="n">refresh</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rule</span><span class="o">.</span><span class="n">about</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+<section id="list-of-firewall-rules-by-name">
+<h3>List of firewall rules by name<a class="headerlink" href="#list-of-firewall-rules-by-name" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+<span class="kn">from</span> <span class="nn">panos.policies</span> <span class="kn">import</span> <span class="n">Rulebase</span><span class="p">,</span> <span class="n">SecurityRule</span>
+
+<span class="c1"># Create config tree and refresh rules from live device</span>
+<span class="n">fw</span> <span class="o">=</span> <span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">,</span> <span class="n">vsys</span><span class="o">=</span><span class="s2">&quot;vsys1&quot;</span><span class="p">)</span>
+<span class="n">rulebase</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Rulebase</span><span class="p">())</span>
+<span class="n">rules</span> <span class="o">=</span> <span class="n">SecurityRule</span><span class="o">.</span><span class="n">refreshall</span><span class="p">(</span><span class="n">rulebase</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">rule</span> <span class="ow">in</span> <span class="n">rules</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rule</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="list-of-pre-rules-on-panorama">
+<h3>List of pre-rules on Panorama<a class="headerlink" href="#list-of-pre-rules-on-panorama" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.panorama</span> <span class="kn">import</span> <span class="n">Panorama</span>
+<span class="kn">from</span> <span class="nn">panos.policies</span> <span class="kn">import</span> <span class="n">PreRulebase</span><span class="p">,</span> <span class="n">SecurityRule</span>
+
+<span class="c1"># Create config tree and refresh rules from live device</span>
+<span class="n">pano</span> <span class="o">=</span> <span class="n">Panorama</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">)</span>
+<span class="n">pre_rulebase</span> <span class="o">=</span> <span class="n">pano</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">PreRulebase</span><span class="p">())</span>
+<span class="n">rules</span> <span class="o">=</span> <span class="n">SecurityRule</span><span class="o">.</span><span class="n">refreshall</span><span class="p">(</span><span class="n">pre_rulebase</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">rule</span> <span class="ow">in</span> <span class="n">rules</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rule</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="list-firewall-devices-in-panorama">
+<h3>List firewall devices in Panorama<a class="headerlink" href="#list-firewall-devices-in-panorama" title="Link to this heading">¶</a></h3>
+<p>Print the serial, hostname, and management IP of all firewalls
+that Panorama knows about.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.panorama</span> <span class="kn">import</span> <span class="n">Panorama</span>
+<span class="kn">from</span> <span class="nn">panos.device</span> <span class="kn">import</span> <span class="n">SystemSettings</span>
+
+<span class="c1"># Create config tree root</span>
+<span class="n">pano</span> <span class="o">=</span> <span class="n">Panorama</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">)</span>
+
+<span class="c1"># Refresh firewalls from live Panorama</span>
+<span class="n">devices</span> <span class="o">=</span> <span class="n">pano</span><span class="o">.</span><span class="n">refresh_devices</span><span class="p">(</span><span class="n">expand_vsys</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">include_device_groups</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Print each firewall&#39;s serial and management IP</span>
+<span class="k">for</span> <span class="n">device</span> <span class="ow">in</span> <span class="n">devices</span><span class="p">:</span>
+    <span class="n">system_settings</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">SystemSettings</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">device</span><span class="o">.</span><span class="n">serial</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">system_settings</span><span class="o">.</span><span class="n">hostname</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">system_settings</span><span class="o">.</span><span class="n">ip_address</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">310353000003333</span> <span class="n">PA</span><span class="o">-</span><span class="n">VM</span><span class="o">-</span><span class="mi">1</span> <span class="mf">10.1.1.1</span>
+<span class="mi">310353000003334</span> <span class="n">PA</span><span class="o">-</span><span class="n">VM</span><span class="o">-</span><span class="mi">2</span> <span class="mf">10.1.1.2</span>
+</pre></div>
+</div>
+</section>
+<section id="upgrade-a-firewall">
+<h3>Upgrade a firewall<a class="headerlink" href="#upgrade-a-firewall" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+
+<span class="n">fw</span> <span class="o">=</span> <span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">)</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">software</span><span class="o">.</span><span class="n">upgrade_to_version</span><span class="p">(</span><span class="s2">&quot;10.1.5&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This simple example will upgrade from any previous version to the target version
+and handle all intermediate upgrades and reboots.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="howto.html" class="btn btn-neutral float-left" title="How-to Guides" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="reference.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, Brian Torres-Gil.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
