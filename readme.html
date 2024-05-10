@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palo Alto Networks PAN-OS SDK for Python &mdash; Palo Alto Networks PAN-OS SDK for Python 1.11.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=6cf1fb80"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting Started" href="getting-started.html" />
+    <link rel="prev" title="Palo Alto Networks PAN-OS SDK for Python" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Palo Alto Networks PAN-OS SDK for Python
+          </a>
+              <div class="version">
+                1.11.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Palo Alto Networks PAN-OS SDK for Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#status">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install">Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-import">How to import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-few-examples">A few examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upgrade-from-pandevice">Upgrade from pandevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contributors">Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Palo Alto Networks PAN-OS SDK for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Palo Alto Networks PAN-OS SDK for Python</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="palo-alto-networks-pan-os-sdk-for-python">
+<h1>Palo Alto Networks PAN-OS SDK for Python<a class="headerlink" href="#palo-alto-networks-pan-os-sdk-for-python" title="Link to this heading">¶</a></h1>
+<p>The PAN-OS SDK for Python (pan-os-python) is a package to help interact with
+Palo Alto Networks devices (including physical and virtualized Next-generation
+Firewalls and Panorama).  The pan-os-python SDK is object oriented and mimics
+the traditional interaction with the device via the GUI or CLI/API.</p>
+<ul class="simple">
+<li><p>Documentation: <a class="reference external" href="http://pan-os-python.readthedocs.io">http://pan-os-python.readthedocs.io</a></p></li>
+</ul>
+<hr class="docutils" />
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/pan-os-python"><img alt="Latest version released on PyPi" src="https://img.shields.io/pypi/v/pan-os-python.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/pan-os-python"><img alt="Python versions" src="https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7%20%7C%203.8-blueviolet" /></a>
+<a class="reference external image-reference" href="https://github.com/PaloAltoNetworks/pan-os-python/blob/develop/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/pan-os-python" /></a>
+<a class="reference external image-reference" href="http://pan-os-python.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://img.shields.io/badge/docs-latest-brightgreen.svg" /></a>
+<a class="reference external image-reference" href="https://github.com/PaloAltoNetworks/pan-os-python/discussions"><img alt="Chat on GitHub Discussions" src="https://img.shields.io/badge/chat%20on-GitHub%20Discussions-brightgreen" /></a>
+<a class="reference external image-reference" href="https://github.com/semantic-release/semantic-release"><img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" /></a>
+<a class="reference external image-reference" href="https://conventionalcommits.org/"><img alt="Conventional Commits" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg" /></a>
+<a class="reference external image-reference" href="https://github.com/dephell/dephell"><img alt="Powered by DepHell" src="https://img.shields.io/badge/Powered%20by-DepHell-red" /></a>
+<a class="reference external image-reference" href="https://github.com/PaloAltoNetworks/pan-os-python/graphs/contributors/"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/PaloAltoNetworks/pan-os-python" /></a>
+<hr class="docutils" />
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Object model of Firewall and Panorama configuration</p></li>
+<li><p>Multiple connection methods including Panorama as a proxy</p></li>
+<li><p>All operations natively vsys-aware</p></li>
+<li><p>Support for high availability pairs and retry/recovery during node failure</p></li>
+<li><p>Batch User-ID operations</p></li>
+<li><p>Device API exception classification</p></li>
+</ul>
+</section>
+<section id="status">
+<h2>Status<a class="headerlink" href="#status" title="Link to this heading">¶</a></h2>
+<p>Palo Alto Networks PAN-OS SDK for Python is considered stable. It is fully tested
+and used in many production environments. Semantic versioning is applied to indicate
+bug fixes, new features, and breaking changes in each version.</p>
+</section>
+<section id="install">
+<h2>Install<a class="headerlink" href="#install" title="Link to this heading">¶</a></h2>
+<p>Install using pip:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>pan-os-python
+</pre></div>
+</div>
+<p>Upgrade to the latest version:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pan-os-python
+</pre></div>
+</div>
+<p>If you have poetry installed, you can also add pan-os-python to your project:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>add<span class="w"> </span>pan-os-python
+</pre></div>
+</div>
+</section>
+<section id="how-to-import">
+<h2>How to import<a class="headerlink" href="#how-to-import" title="Link to this heading">¶</a></h2>
+<p>To use pan-os-python in a project:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">panos</span>
+</pre></div>
+</div>
+<p>You can also be more specific about which modules you want to import:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">firewall</span>
+<span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">network</span>
+</pre></div>
+</div>
+</section>
+<section id="a-few-examples">
+<h2>A few examples<a class="headerlink" href="#a-few-examples" title="Link to this heading">¶</a></h2>
+<p>For configuration tasks, create a tree structure using the classes in
+each module. Nodes hierarchy must follow the model in the
+<a class="reference external" href="http://pan-os-python.readthedocs.io/en/latest/configtree.html">Configuration Tree</a>.</p>
+<p>The following examples assume the modules were imported as such:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">firewall</span>
+<span class="kn">from</span> <span class="nn">panos</span> <span class="kn">import</span> <span class="n">network</span>
+</pre></div>
+</div>
+<p>Create an interface and commit:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fw</span> <span class="o">=</span> <span class="n">firewall</span><span class="o">.</span><span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="n">api_username</span><span class="o">=</span><span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="n">api_password</span><span class="o">=</span><span class="s2">&quot;admin&quot;</span><span class="p">)</span>
+<span class="n">eth1</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">EthernetInterface</span><span class="p">(</span><span class="s2">&quot;ethernet1/1&quot;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;layer3&quot;</span><span class="p">)</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">eth1</span><span class="p">)</span>
+<span class="n">eth1</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Operational commands leverage the ‘op’ method of the device:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fw</span> <span class="o">=</span> <span class="n">firewall</span><span class="o">.</span><span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="n">api_username</span><span class="o">=</span><span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="n">api_password</span><span class="o">=</span><span class="s2">&quot;admin&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="n">fw</span><span class="o">.</span><span class="n">op</span><span class="p">(</span><span class="s2">&quot;show system info&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Some operational commands have methods to refresh the variables in an object:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># populates the version, serial, and model variables from the live device</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">refresh_system_info</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>See more examples in the <a class="reference external" href="http://pan-os-python.readthedocs.io/en/latest/usage.html">Usage Guide</a>.</p>
+</section>
+<section id="upgrade-from-pandevice">
+<h2>Upgrade from pandevice<a class="headerlink" href="#upgrade-from-pandevice" title="Link to this heading">¶</a></h2>
+<p>This <code class="docutils literal notranslate"><span class="pre">pan-os-python</span></code> package is the evolution of the older <code class="docutils literal notranslate"><span class="pre">pandevice</span></code> package. To
+upgrade from <code class="docutils literal notranslate"><span class="pre">pandevice</span></code> to <code class="docutils literal notranslate"><span class="pre">pan-os-python</span></code>, follow these steps.</p>
+<p>Step 1. Ensure you are using python3</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.python.org/doc/sunset-python-2/">Python2 is end-of-life</a> and not
+supported by <code class="docutils literal notranslate"><span class="pre">pan-os-python</span></code>.</p>
+</div></blockquote>
+<p>Step 2. Uninstall pandevice:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>uninstall<span class="w"> </span>pandevice
+<span class="w"> </span><span class="c1"># or</span>
+poetry<span class="w"> </span>remove<span class="w"> </span>pandevice
+</pre></div>
+</div>
+<p>Step 3. Install pan-os-python:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>install<span class="w"> </span>pan-os-python
+<span class="w"> </span><span class="c1"># or</span>
+poetry<span class="w"> </span>add<span class="w"> </span>pan-os-python
+</pre></div>
+</div>
+<p>Step 4. Change the import statements in your code from <code class="docutils literal notranslate"><span class="pre">pandevice</span></code> to <code class="docutils literal notranslate"><span class="pre">panos</span></code>. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandevice</span>
+<span class="kn">from</span> <span class="nn">pandevice.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+
+ <span class="c1"># would change to</span>
+
+<span class="kn">import</span> <span class="nn">panos</span>
+<span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+</pre></div>
+</div>
+<p>Step 5. Test your script or application</p>
+<blockquote>
+<div><p>There are no known breaking changes
+between <code class="docutils literal notranslate"><span class="pre">pandevice</span> <span class="pre">v0.14.0</span></code> and <code class="docutils literal notranslate"><span class="pre">pan-os-python</span> <span class="pre">v1.0.0</span></code>, but it is a major
+upgrade so please verify everything works as expected.</p>
+</div></blockquote>
+</section>
+<section id="contributors">
+<h2>Contributors<a class="headerlink" href="#contributors" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Brian Torres-Gil - <a class="reference external" href="https://github.com/btorresgil">btorresgil</a></p></li>
+<li><p>Garfield Freeman - <a class="reference external" href="https://github.com/shinmog">shinmog</a></p></li>
+<li><p>John Anderson - <a class="reference external" href="https://github.com/lampwins">lampwins</a></p></li>
+<li><p>Aditya Sripal - <a class="reference external" href="https://github.com/AdityaSripal">AdityaSripal</a></p></li>
+</ul>
+<p>Thank you to <a class="reference external" href="https://github.com/kevinsteves">Kevin Steves</a>, creator of the <a class="reference external" href="https://github.com/kevinsteves/pan-python">pan-python library</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Palo Alto Networks PAN-OS SDK for Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="getting-started.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, Brian Torres-Gil.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

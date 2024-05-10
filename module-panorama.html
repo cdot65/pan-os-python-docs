@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module: panorama &mdash; Palo Alto Networks PAN-OS SDK for Python 1.11.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=6cf1fb80"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module: plugins" href="module-plugins.html" />
+    <link rel="prev" title="Module: objects" href="module-objects.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Palo Alto Networks PAN-OS SDK for Python
+          </a>
+              <div class="version">
+                1.11.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Palo Alto Networks PAN-OS SDK for Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="useful-methods.html">Useful Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configtree.html">Configuration tree diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-base.html">Module: base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-device.html">Module: device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-errors.html">Module: errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-firewall.html">Module: firewall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-ha.html">Module: ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-network.html">Module: network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-objects.html">Module: objects</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Module: panorama</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#inheritance-diagram">Inheritance diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuration-tree-diagram">Configuration tree diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-panos.panorama">Class Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="module-plugins.html">Module: plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-policies.html">Module: policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-predefined.html">Module: predefined</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-updater.html">Module: updater</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-userid.html">Module: userid</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Palo Alto Networks PAN-OS SDK for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="reference.html">API Reference</a></li>
+      <li class="breadcrumb-item active">Module: panorama</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/module-panorama.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-panorama">
+<h1>Module: panorama<a class="headerlink" href="#module-panorama" title="Link to this heading">¶</a></h1>
+<section id="inheritance-diagram">
+<h2>Inheritance diagram<a class="headerlink" href="#inheritance-diagram" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/inheritance-d3443f01ccd02fc1c1b269547a419ae9bd7cbf38.svg" type="image/svg+xml" class="inheritance graphviz">
+<p class="warning">Inheritance diagram of panos.panorama</p></object></div>
+</section>
+<section id="configuration-tree-diagram">
+<h2>Configuration tree diagram<a class="headerlink" href="#configuration-tree-diagram" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/graphviz-cfb1c298859915878fbf5251e7f0479a6d34c9fe.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph configtree {
+    graph [rankdir=LR, fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];    DeviceGroup [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.DeviceGroup&quot; target=&quot;_top&quot;];
+    Firewall [style=filled fillcolor=lightblue URL=&quot;../module-firewall.html#panos.firewall.Firewall&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; Firewall;
+    AddressGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.AddressGroup&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; AddressGroup;
+    AddressObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.AddressObject&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; AddressObject;
+    ApplicationFilter [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationFilter&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ApplicationFilter;
+    ApplicationGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationGroup&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ApplicationGroup;
+    ApplicationObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationObject&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ApplicationObject;
+    ApplicationTag [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationTag&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ApplicationTag;
+    CustomUrlCategory [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.CustomUrlCategory&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; CustomUrlCategory;
+    Edl [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Edl&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; Edl;
+    LogForwardingProfile [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.LogForwardingProfile&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; LogForwardingProfile;
+    Region [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Region&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; Region;
+    ScheduleObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ScheduleObject&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ScheduleObject;
+    SecurityProfileGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.SecurityProfileGroup&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; SecurityProfileGroup;
+    ServiceGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ServiceGroup&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ServiceGroup;
+    ServiceObject [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ServiceObject&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; ServiceObject;
+    PostRulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PostRulebase&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; PostRulebase;
+    PreRulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PreRulebase&quot; target=&quot;_top&quot;];
+    DeviceGroup -&gt; PreRulebase;
+    Panorama [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.Panorama&quot; target=&quot;_top&quot;];
+    Administrator [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.Administrator&quot; target=&quot;_top&quot;];
+    Panorama -&gt; Administrator;
+    CertificateProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.CertificateProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; CertificateProfile;
+    EmailServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.EmailServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; EmailServerProfile;
+    HttpServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.HttpServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; HttpServerProfile;
+    LdapServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LdapServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; LdapServerProfile;
+    PasswordProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.PasswordProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; PasswordProfile;
+    SnmpServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SnmpServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; SnmpServerProfile;
+    SslDecrypt [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SslDecrypt&quot; target=&quot;_top&quot;];
+    Panorama -&gt; SslDecrypt;
+    SyslogServerProfile [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SyslogServerProfile&quot; target=&quot;_top&quot;];
+    Panorama -&gt; SyslogServerProfile;
+    Panorama -&gt; Firewall;
+    Panorama -&gt; AddressGroup;
+    Panorama -&gt; AddressObject;
+    ApplicationContainer [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.ApplicationContainer&quot; target=&quot;_top&quot;];
+    Panorama -&gt; ApplicationContainer;
+    Panorama -&gt; ApplicationFilter;
+    Panorama -&gt; ApplicationGroup;
+    Panorama -&gt; ApplicationObject;
+    Panorama -&gt; ApplicationTag;
+    Panorama -&gt; CustomUrlCategory;
+    DynamicUserGroup [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.DynamicUserGroup&quot; target=&quot;_top&quot;];
+    Panorama -&gt; DynamicUserGroup;
+    Panorama -&gt; Edl;
+    Panorama -&gt; LogForwardingProfile;
+    Panorama -&gt; Region;
+    Panorama -&gt; ScheduleObject;
+    Panorama -&gt; SecurityProfileGroup;
+    Panorama -&gt; ServiceGroup;
+    Panorama -&gt; ServiceObject;
+    Tag [style=filled fillcolor=lemonchiffon URL=&quot;../module-objects.html#panos.objects.Tag&quot; target=&quot;_top&quot;];
+    Panorama -&gt; Tag;
+    Panorama -&gt; DeviceGroup;
+    Template [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.Template&quot; target=&quot;_top&quot;];
+    Panorama -&gt; Template;
+    TemplateStack [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.TemplateStack&quot; target=&quot;_top&quot;];
+    Panorama -&gt; TemplateStack;
+    CloudServicesPlugin [style=filled fillcolor=wheat URL=&quot;../module-plugins.html#panos.plugins.CloudServicesPlugin&quot; target=&quot;_top&quot;];
+    Panorama -&gt; CloudServicesPlugin;
+    Rulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.Rulebase&quot; target=&quot;_top&quot;];
+    Panorama -&gt; Rulebase;
+    Template -&gt; Administrator;
+    LocalUserDatabaseGroup [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LocalUserDatabaseGroup&quot; target=&quot;_top&quot;];
+    Template -&gt; LocalUserDatabaseGroup;
+    LocalUserDatabaseUser [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LocalUserDatabaseUser&quot; target=&quot;_top&quot;];
+    Template -&gt; LocalUserDatabaseUser;
+    LogSettingsConfig [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LogSettingsConfig&quot; target=&quot;_top&quot;];
+    Template -&gt; LogSettingsConfig;
+    LogSettingsSystem [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.LogSettingsSystem&quot; target=&quot;_top&quot;];
+    Template -&gt; LogSettingsSystem;
+    Template -&gt; PasswordProfile;
+    Template -&gt; SslDecrypt;
+    SystemSettings [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.SystemSettings&quot; target=&quot;_top&quot;];
+    Template -&gt; SystemSettings;
+    Vsys [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.Vsys&quot; target=&quot;_top&quot;];
+    Template -&gt; Vsys;
+    VsysResources [style=filled fillcolor=lightpink URL=&quot;../module-device.html#panos.device.VsysResources&quot; target=&quot;_top&quot;];
+    Template -&gt; VsysResources;
+    HighAvailability [style=filled fillcolor=lavender URL=&quot;../module-ha.html#panos.ha.HighAvailability&quot; target=&quot;_top&quot;];
+    Template -&gt; HighAvailability;
+    AggregateInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.AggregateInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; AggregateInterface;
+    EthernetInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.EthernetInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; EthernetInterface;
+    GreTunnel [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.GreTunnel&quot; target=&quot;_top&quot;];
+    Template -&gt; GreTunnel;
+    IkeCryptoProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IkeCryptoProfile&quot; target=&quot;_top&quot;];
+    Template -&gt; IkeCryptoProfile;
+    IkeGateway [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IkeGateway&quot; target=&quot;_top&quot;];
+    Template -&gt; IkeGateway;
+    IpsecCryptoProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecCryptoProfile&quot; target=&quot;_top&quot;];
+    Template -&gt; IpsecCryptoProfile;
+    IpsecTunnel [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnel&quot; target=&quot;_top&quot;];
+    Template -&gt; IpsecTunnel;
+    IpsecTunnelIpv4ProxyId [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnelIpv4ProxyId&quot; target=&quot;_top&quot;];
+    Template -&gt; IpsecTunnelIpv4ProxyId;
+    IpsecTunnelIpv6ProxyId [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.IpsecTunnelIpv6ProxyId&quot; target=&quot;_top&quot;];
+    Template -&gt; IpsecTunnelIpv6ProxyId;
+    Layer2Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer2Subinterface&quot; target=&quot;_top&quot;];
+    Template -&gt; Layer2Subinterface;
+    Layer3Subinterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Layer3Subinterface&quot; target=&quot;_top&quot;];
+    Template -&gt; Layer3Subinterface;
+    LogicalRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LogicalRouter&quot; target=&quot;_top&quot;];
+    Template -&gt; LogicalRouter;
+    LoopbackInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.LoopbackInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; LoopbackInterface;
+    ManagementProfile [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.ManagementProfile&quot; target=&quot;_top&quot;];
+    Template -&gt; ManagementProfile;
+    TunnelInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.TunnelInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; TunnelInterface;
+    VirtualRouter [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VirtualRouter&quot; target=&quot;_top&quot;];
+    Template -&gt; VirtualRouter;
+    VirtualWire [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VirtualWire&quot; target=&quot;_top&quot;];
+    Template -&gt; VirtualWire;
+    Vlan [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vlan&quot; target=&quot;_top&quot;];
+    Template -&gt; Vlan;
+    VlanInterface [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.VlanInterface&quot; target=&quot;_top&quot;];
+    Template -&gt; VlanInterface;
+    Vrf [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Vrf&quot; target=&quot;_top&quot;];
+    Template -&gt; Vrf;
+    Zone [style=filled fillcolor=lightcyan URL=&quot;../module-network.html#panos.network.Zone&quot; target=&quot;_top&quot;];
+    Template -&gt; Zone;
+    TemplateVariable [style=filled fillcolor=darkseagreen2 URL=&quot;../module-panorama.html#panos.panorama.TemplateVariable&quot; target=&quot;_top&quot;];
+    Template -&gt; TemplateVariable;
+    TemplateStack -&gt; Administrator;
+    TemplateStack -&gt; LogSettingsConfig;
+    TemplateStack -&gt; LogSettingsSystem;
+    TemplateStack -&gt; PasswordProfile;
+    TemplateStack -&gt; SystemSettings;
+    TemplateStack -&gt; Vsys;
+    TemplateStack -&gt; HighAvailability;
+    TemplateStack -&gt; AggregateInterface;
+    TemplateStack -&gt; EthernetInterface;
+    TemplateStack -&gt; GreTunnel;
+    TemplateStack -&gt; IkeCryptoProfile;
+    TemplateStack -&gt; IkeGateway;
+    TemplateStack -&gt; IpsecCryptoProfile;
+    TemplateStack -&gt; IpsecTunnel;
+    TemplateStack -&gt; IpsecTunnelIpv4ProxyId;
+    TemplateStack -&gt; IpsecTunnelIpv6ProxyId;
+    TemplateStack -&gt; Layer2Subinterface;
+    TemplateStack -&gt; Layer3Subinterface;
+    TemplateStack -&gt; LogicalRouter;
+    TemplateStack -&gt; LoopbackInterface;
+    TemplateStack -&gt; ManagementProfile;
+    TemplateStack -&gt; TunnelInterface;
+    TemplateStack -&gt; VirtualRouter;
+    TemplateStack -&gt; VirtualWire;
+    TemplateStack -&gt; Vlan;
+    TemplateStack -&gt; VlanInterface;
+    TemplateStack -&gt; Vrf;
+    TemplateStack -&gt; Zone;
+    TemplateStack -&gt; TemplateVariable;
+}</p></object></div>
+</section>
+<section id="module-panos.panorama">
+<span id="class-reference"></span><h2>Class Reference<a class="headerlink" href="#module-panos.panorama" title="Link to this heading">¶</a></h2>
+<p>Panorama and all Panorama related objects</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="module-objects.html" class="btn btn-neutral float-left" title="Module: objects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="module-plugins.html" class="btn btn-neutral float-right" title="Module: plugins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, Brian Torres-Gil.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

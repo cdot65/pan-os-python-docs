@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module: policies &mdash; Palo Alto Networks PAN-OS SDK for Python 1.11.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=6cf1fb80"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module: predefined" href="module-predefined.html" />
+    <link rel="prev" title="Module: plugins" href="module-plugins.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Palo Alto Networks PAN-OS SDK for Python
+          </a>
+              <div class="version">
+                1.11.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Palo Alto Networks PAN-OS SDK for Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="useful-methods.html">Useful Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configtree.html">Configuration tree diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-base.html">Module: base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-device.html">Module: device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-errors.html">Module: errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-firewall.html">Module: firewall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-ha.html">Module: ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-network.html">Module: network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-objects.html">Module: objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-panorama.html">Module: panorama</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-plugins.html">Module: plugins</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Module: policies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#inheritance-diagram">Inheritance diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuration-tree-diagram">Configuration tree diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-panos.policies">Class Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="module-predefined.html">Module: predefined</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-updater.html">Module: updater</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-userid.html">Module: userid</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Palo Alto Networks PAN-OS SDK for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="reference.html">API Reference</a></li>
+      <li class="breadcrumb-item active">Module: policies</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/module-policies.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-policies">
+<h1>Module: policies<a class="headerlink" href="#module-policies" title="Link to this heading">¶</a></h1>
+<section id="inheritance-diagram">
+<h2>Inheritance diagram<a class="headerlink" href="#inheritance-diagram" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/inheritance-43be033c86d00be49986922fea551664037c4eb2.svg" type="image/svg+xml" class="inheritance graphviz">
+<p class="warning">Inheritance diagram of panos.policies</p></object></div>
+</section>
+<section id="configuration-tree-diagram">
+<h2>Configuration tree diagram<a class="headerlink" href="#configuration-tree-diagram" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><object data="_images/graphviz-f5666598e8ccf0fc7e753a5bdedefffa937210fe.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph configtree {
+    graph [rankdir=LR, fontsize=10, margin=0.001];
+    node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];    PostRulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PostRulebase&quot; target=&quot;_top&quot;];
+    ApplicationOverride [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.ApplicationOverride&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; ApplicationOverride;
+    AuthenticationRule [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.AuthenticationRule&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; AuthenticationRule;
+    DecryptionRule [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.DecryptionRule&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; DecryptionRule;
+    NatRule [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.NatRule&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; NatRule;
+    PolicyBasedForwarding [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PolicyBasedForwarding&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; PolicyBasedForwarding;
+    SecurityRule [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.SecurityRule&quot; target=&quot;_top&quot;];
+    PostRulebase -&gt; SecurityRule;
+    PreRulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.PreRulebase&quot; target=&quot;_top&quot;];
+    PreRulebase -&gt; ApplicationOverride;
+    PreRulebase -&gt; AuthenticationRule;
+    PreRulebase -&gt; DecryptionRule;
+    PreRulebase -&gt; NatRule;
+    PreRulebase -&gt; PolicyBasedForwarding;
+    PreRulebase -&gt; SecurityRule;
+    Rulebase [style=filled fillcolor=lightsalmon URL=&quot;../module-policies.html#panos.policies.Rulebase&quot; target=&quot;_top&quot;];
+    Rulebase -&gt; ApplicationOverride;
+    Rulebase -&gt; AuthenticationRule;
+    Rulebase -&gt; DecryptionRule;
+    Rulebase -&gt; NatRule;
+    Rulebase -&gt; PolicyBasedForwarding;
+    Rulebase -&gt; SecurityRule;
+}</p></object></div>
+</section>
+<section id="module-panos.policies">
+<span id="class-reference"></span><h2>Class Reference<a class="headerlink" href="#module-panos.policies" title="Link to this heading">¶</a></h2>
+<p>Policies module contains policies and rules that exist in the ‘Policies’ tab in the firewall GUI</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="module-plugins.html" class="btn btn-neutral float-left" title="Module: plugins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="module-predefined.html" class="btn btn-neutral float-right" title="Module: predefined" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, Brian Torres-Gil.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

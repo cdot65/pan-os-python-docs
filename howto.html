@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How-to Guides &mdash; Palo Alto Networks PAN-OS SDK for Python 1.11.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=6cf1fb80"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples" href="examples.html" />
+    <link rel="prev" title="Getting Started" href="getting-started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Palo Alto Networks PAN-OS SDK for Python
+          </a>
+              <div class="version">
+                1.11.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Palo Alto Networks PAN-OS SDK for Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How-to Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#connect-via-panorama">Connect via Panorama</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#work-with-virtual-systems-vsys">Work with Virtual Systems (VSYS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#high-availability-pairs">High Availability Pairs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optimize-with-bulk-operations">Optimize with Bulk Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-to-pan-os-8-0-and-higher">Connect to PAN-OS 8.0 and higher</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Palo Alto Networks PAN-OS SDK for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How-to Guides</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/howto.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-guides">
+<span id="howto"></span><h1>How-to Guides<a class="headerlink" href="#how-to-guides" title="Link to this heading">¶</a></h1>
+<section id="connect-via-panorama">
+<h2>Connect via Panorama<a class="headerlink" href="#connect-via-panorama" title="Link to this heading">¶</a></h2>
+<p>Making changes to Panorama is always done the same way, with a connection to Panorama.
+But, there are a different options to make local changes to a Firewall.</p>
+<p><strong>Option 1: Connect to the Firewall and Panorama directly</strong></p>
+<p>When making changes to Panorama, connect to Panorama.
+When making changes to the Firewall, connect directly to the Firewall.</p>
+<div class="graphviz"><object data="_images/graphviz-f8053095c35d3fbe5cceb977413157d7446479fc.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph directconnect {
+   graph [rankdir=LR, fontsize=10, margin=0.001];
+   node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];
+   &quot;python script&quot; -&gt; &quot;Panorama&quot;;
+   &quot;python script&quot; -&gt; &quot;Firewall&quot;;
+   Panorama [style=filled];
+   Firewall [style=filled];
+}</p></object></div>
+<p>This method is best in the following cases:</p>
+<ul class="simple">
+<li><p>Firewall managment IP is accessible to the script</p></li>
+<li><p>The credentials for both devices are known</p></li>
+<li><p>The permissions/role for the user are set on both devices</p></li>
+<li><p>The serial of the firewall is unknown, but the management IP is known</p></li>
+</ul>
+<p>To use this method:</p>
+<ol class="arabic simple">
+<li><p>Create a <code class="xref py py-class docutils literal notranslate"><span class="pre">panos.firewall.Firewall</span></code> instance and a
+<code class="xref py py-class docutils literal notranslate"><span class="pre">panos.panorama.Panorama</span></code> instance.</p></li>
+<li><p>In both instances, set the ‘hostname’ attribute and either the
+‘api_key’ or the ‘api_username’ and ‘api_password’ attributes.</p></li>
+</ol>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate a Firewall with hostname and credentials</span>
+<span class="n">fw</span> <span class="o">=</span> <span class="n">firewall</span><span class="o">.</span><span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">)</span>
+<span class="c1"># Instantiate a Panorama with hostname and credentials</span>
+<span class="n">pano</span> <span class="o">=</span> <span class="n">panorama</span><span class="o">.</span><span class="n">Panorama</span><span class="p">(</span><span class="s2">&quot;10.0.0.5&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">)</span>
+<span class="c1"># Change to Firewall</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">objects</span><span class="o">.</span><span class="n">AddressObject</span><span class="p">(</span><span class="s2">&quot;Server&quot;</span><span class="p">,</span> <span class="s2">&quot;2.2.2.2&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+<span class="c1"># Change to Panorama</span>
+<span class="n">pano</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">panorama</span><span class="o">.</span><span class="n">DeviceGroup</span><span class="p">(</span><span class="s2">&quot;CustomerA&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>In this example, the address object is added to the Firewall directly, without
+any connection to Panorama. Then a device-group is created on Panorama directly,
+without any connection to the Firewall.</p>
+<p><strong>Option 2: Connect to Firewall via Panorama</strong></p>
+<p>When making changes to the Firewall, connect to Panorama which
+will proxy the connection to the Firewall. Meaning all connections
+are to Panorama.</p>
+<div class="graphviz"><object data="_images/graphviz-ed0927b355b699f6ca0146aea72dbb6943463edd.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph directconnect {
+   graph [rankdir=LR, fontsize=10, margin=0.001];
+   node [shape=box, fontsize=10, height=0.001, margin=0.1, ordering=out];
+   &quot;pan-os-python script&quot; -&gt; &quot;Panorama&quot; -&gt; &quot;Firewall&quot;;
+   Panorama [style=filled];
+   Firewall [style=filled];
+}</p></object></div>
+<p>This method is best in the following cases:</p>
+<ul class="simple">
+<li><p>The Firewall management IP is unknown or not reachable from the script</p></li>
+<li><p>You only store one set of credentials (Panorama)</p></li>
+<li><p>The serial of the firewall is known or can be determined from Panorama</p></li>
+</ul>
+<p>To use this method:</p>
+<ol class="arabic simple">
+<li><p>Create a <code class="xref py py-class docutils literal notranslate"><span class="pre">panos.firewall.Firewall</span></code> instance and a
+<code class="xref py py-class docutils literal notranslate"><span class="pre">panos.panorama.Panorama</span></code> instance.</p></li>
+<li><p>In the Panorama instance, set the ‘hostname’ attribute and either the
+‘api_key’ or the ‘api_username’ and ‘api_password’ attributes.</p></li>
+<li><p>In the Firewall instance, set the ‘serial’ attribute.</p></li>
+<li><p>Add the Firewall as a child of Panorama, or as a child of a DeviceGroup under Panorama.</p></li>
+</ol>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate a Firewall with serial</span>
+<span class="n">fw</span> <span class="o">=</span> <span class="n">firewall</span><span class="o">.</span><span class="n">Firewall</span><span class="p">(</span><span class="n">serial</span><span class="o">=</span><span class="s2">&quot;0002487YR3880&quot;</span><span class="p">)</span>
+<span class="c1"># Instantiate a Panorama with hostname and credentials</span>
+<span class="n">pano</span> <span class="o">=</span> <span class="n">panorama</span><span class="o">.</span><span class="n">Panorama</span><span class="p">(</span><span class="s2">&quot;10.0.0.5&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">)</span>
+<span class="c1"># Add the Firewall as a child of Panorama</span>
+<span class="n">pano</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">fw</span><span class="p">)</span>
+<span class="c1"># Change to Firewall via Panorama</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">objects</span><span class="o">.</span><span class="n">AddressObject</span><span class="p">(</span><span class="s2">&quot;Server&quot;</span><span class="p">,</span> <span class="s2">&quot;2.2.2.2&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+<span class="c1"># Change to Panorama directly</span>
+<span class="n">pano</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">panorama</span><span class="o">.</span><span class="n">DeviceGroup</span><span class="p">(</span><span class="s2">&quot;CustomerA&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>In this example, both changes are made with connections to Panorama. First, the
+address object is added to the Firewall by connecting to Panorama which proxies the
+API call to the Firewall. Then a device-group is created on Panorama directly.</p>
+</section>
+<section id="work-with-virtual-systems-vsys">
+<h2>Work with Virtual Systems (VSYS)<a class="headerlink" href="#work-with-virtual-systems-vsys" title="Link to this heading">¶</a></h2>
+<p>There’s a great blog post by the Developer Relations team on how to work with
+vsys in python. You can read it here:</p>
+<p><a class="reference external" href="https://medium.com/palo-alto-networks-developer-blog/handling-pan-os-vsys-in-pandevice-212fe892d303">https://medium.com/palo-alto-networks-developer-blog/handling-pan-os-vsys-in-pandevice-212fe892d303</a></p>
+<p>A Firewall PanDevice can represent a firewall or a virtual system (vsys). By default, a Firewall
+instance represents a single context firewall, or ‘vsys1’ on a multi-vsys firewall.</p>
+<p>When working with a firewall with multi-vsys mode enabled, there are two methods to work with vsys:</p>
+<p><strong>Method 1: A different Firewall instance for each vsys</strong></p>
+<p>Each Firewall object has a ‘vsys’ attribute which is assigned the vsys id.  For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fw_vsys2</span> <span class="o">=</span> <span class="n">firewall</span><span class="o">.</span><span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">,</span> <span class="n">vsys</span><span class="o">=</span><span class="s2">&quot;vsys2&quot;</span><span class="p">)</span>
+<span class="n">fw_vsys3</span> <span class="o">=</span> <span class="n">firewall</span><span class="o">.</span><span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">,</span> <span class="n">vsys</span><span class="o">=</span><span class="s2">&quot;vsys3&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>When using this method, non-vsys-specific configuration should be modified using a ‘shared’ PanDevice:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fw</span> <span class="o">=</span> <span class="n">firewall</span><span class="o">.</span><span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">,</span> <span class="n">vsys</span><span class="o">=</span><span class="s2">&quot;shared&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To create or delete an entire vsys, use the create_vsys() and delete_vsys() methods:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fw_vsys2</span><span class="o">.</span><span class="n">create_vsys</span><span class="p">()</span>
+<span class="n">fw_vsys3</span><span class="o">.</span><span class="n">delete_vsys</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Method 2: A single Firewall instance with Vsys child instances</strong></p>
+<p>Create Vsys instances and add them to a ‘shared’ PanDevice:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fw</span> <span class="o">=</span> <span class="n">firewall</span><span class="o">.</span><span class="n">Firewall</span><span class="p">(</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;mypassword&quot;</span><span class="p">,</span> <span class="n">vsys</span><span class="o">=</span><span class="s2">&quot;shared&quot;</span><span class="p">)</span>
+<span class="n">vsys2</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">Vsys</span><span class="p">(</span><span class="s2">&quot;vsys2&quot;</span><span class="p">)</span>
+<span class="n">vsys3</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">Vsys</span><span class="p">(</span><span class="s2">&quot;vsys3&quot;</span><span class="p">)</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">vsys2</span><span class="p">)</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">vsys3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Configuration objects are added to the Vsys instances instead of the Firewall instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ao</span> <span class="o">=</span> <span class="n">vsys2</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">objects</span><span class="o">.</span><span class="n">AddressObject</span><span class="p">(</span><span class="s2">&quot;MyIP&quot;</span><span class="p">,</span> <span class="s2">&quot;2.2.2.2&quot;</span><span class="p">))</span>
+<span class="n">ao</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The vsys itself can be created and deleted using the standard configuration tree methods:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vsys2</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+<span class="n">vsys3</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="high-availability-pairs">
+<h2>High Availability Pairs<a class="headerlink" href="#high-availability-pairs" title="Link to this heading">¶</a></h2>
+<p>This library tries to handle High Availability (HA) pairs of devices as
+elegantly as possible. Having two devices can pose challenges because some
+configuration needs to be applied to both firewalls, while other configuration
+should be applied only to the active firewall. Also, two devices implies two
+pan-os-python configuration trees. But, pan-os-python offers a few features to make
+working with HA pairs easier:</p>
+<ul class="simple">
+<li><p>Only one configuration tree to manage for an HA pair</p></li>
+<li><p>Automatically knows which firewall to talk to</p></li>
+<li><p>Detects when a firewall is not reachable and automatically switches to the other firewall</p></li>
+<li><p>Knows which configuration should be applied to the active firewall and which
+should be made on both firewalls, and handles this for you under the hood</p></li>
+</ul>
+<p>There’s just a couple extra steps to ensure your HA experience is smooth. While
+not strictly necessary, it’s a good idea to verify the state of the HA before
+making configuration changes, so you know configuration will sync properly to
+the standby device.</p>
+<p>Here’s an example of configuration with an HA pair of firewalls:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+<span class="kn">from</span> <span class="nn">panos.objects</span> <span class="kn">import</span> <span class="n">AddressObject</span>
+
+<span class="c1"># Don&#39;t assume either firewall is primary or active.</span>
+<span class="c1"># Just start by telling pan-os-python they are an HA pair</span>
+<span class="c1"># and how to connect to them.</span>
+<span class="n">fw</span> <span class="o">=</span> <span class="n">Firewall</span><span class="p">(</span><span class="s1">&#39;10.0.0.1&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;password&#39;</span><span class="p">)</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">set_ha_peers</span><span class="p">(</span><span class="n">Firewall</span><span class="p">(</span><span class="s1">&#39;10.0.0.2&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;password&#39;</span><span class="p">))</span>
+
+<span class="c1"># Notice I didn&#39;t save the second firewall to a variable, because I don&#39;t need it.</span>
+<span class="c1"># The point is to treat the HA pair as one firewall, so we only need one variable.</span>
+<span class="c1"># This way, we have only one pan-os-python configuration tree to manage,</span>
+<span class="c1"># NOT one tree for each fw in the pair.</span>
+
+<span class="c1"># At this point, it&#39;s a good idea to collect the active/passive state from</span>
+<span class="c1"># the live devices. This stores which firewall is active to an internal</span>
+<span class="c1"># state machine in the Firewall object.</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">refresh_ha_active</span><span class="p">()</span>
+
+<span class="c1"># Now, verify the config is synced between the devices.</span>
+<span class="c1"># If it&#39;s not synced, force config synchronization from active to standby</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">fw</span><span class="o">.</span><span class="n">config_synced</span><span class="p">():</span>
+    <span class="n">fw</span><span class="o">.</span><span class="n">synchronize_config</span><span class="p">()</span>  <span class="c1"># blocks until synced or error</span>
+
+<span class="c1"># Now, it&#39;s completely safe to use all the configuration methods as usual</span>
+<span class="c1"># on the one fw variable.</span>
+<span class="n">obj</span> <span class="o">=</span> <span class="n">AddressObject</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">,</span> <span class="s1">&#39;10.0.1.1&#39;</span><span class="p">)</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="n">obj</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>In the above code, we added the AddressObject to the <code class="docutils literal notranslate"><span class="pre">fw</span></code> variable. Even
+though we created this above with the IP of 10.0.0.1, it represents both
+firewalls in the pair. So when we create the AddressObject on the live device,
+pan-os-python will reach out to the active firewall in the pair. It will
+automatically detect if the active failed and switch to standby.</p>
+<p>Note: We didn’t save the second firewall to a variable, because our <code class="docutils literal notranslate"><span class="pre">fw</span></code> variable
+represents both firewalls, but if you need to access the second firewall as a
+variable, it’s available to you at <code class="docutils literal notranslate"><span class="pre">fw.ha_peer</span></code>.</p>
+</section>
+<section id="optimize-with-bulk-operations">
+<h2>Optimize with Bulk Operations<a class="headerlink" href="#optimize-with-bulk-operations" title="Link to this heading">¶</a></h2>
+<p>Each API call takes time and consumes management plane resources on the
+firewall or Panorama. While this won’t affect traffic, it does limit the number
+of changes that can take place in a time period.</p>
+<p><strong>Example:</strong> if you’re adding policy for all your branch offices and need to add
+200 address groups with 20 address objects each, creating them individually
+would be 200 x 20 + 200 = 4200 API calls. If your device can process an API call in 1
+second, then this operation would take <em>over an hour</em> to complete. Even if you
+applied concurrency up to 5 API calls simultaneously, it’s still over 10 minutes
+of waiting.</p>
+<p>We can do this faster with <strong>bulk operations</strong>.</p>
+<p>The methods used to push these objects to a live device individually are <code class="docutils literal notranslate"><span class="pre">create()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">apply()</span></code>, and <code class="docutils literal notranslate"><span class="pre">delete()</span></code>. Each of these has a bulk counterpart:
+<code class="docutils literal notranslate"><span class="pre">create_similar()</span></code>, <code class="docutils literal notranslate"><span class="pre">apply_similar()</span></code>, and <code class="docutils literal notranslate"><span class="pre">delete_similar()</span></code>.</p>
+<p>The bulk version of the method is called exactly the same way as the individual
+version, but the behavior is different. Instead of sending this single object to
+the device, all objects in the configuration tree with this type and location in
+the tree are pushed to the live device in a single API call.</p>
+<p>Here’s code for the above example using individual API calls and using bulk operations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">panos.firewall</span> <span class="kn">import</span> <span class="n">Firewall</span>
+<span class="kn">from</span> <span class="nn">panos.objects</span> <span class="kn">import</span> <span class="n">AddressObject</span><span class="p">,</span> <span class="n">AddressGroup</span>
+
+<span class="c1"># Build out the configuration tree with a Firewall object at the root and an</span>
+<span class="c1"># array of AddressObjects and AddressGroups as children of the Firewall</span>
+<span class="n">fw1</span> <span class="o">=</span> <span class="n">Firewall</span><span class="p">(</span><span class="s1">&#39;10.0.0.1&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;password&#39;</span><span class="p">)</span>
+<span class="c1"># Create 200 AddressGroups with 20 AddressObjects each</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">):</span>
+    <span class="n">addr_objects</span> <span class="o">=</span> <span class="p">[</span><span class="n">AddressObject</span><span class="p">(</span><span class="s1">&#39;object</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">20</span><span class="o">+</span><span class="n">j</span><span class="p">),</span> <span class="s1">&#39;192.168.</span><span class="si">{0}</span><span class="s1">.</span><span class="si">{1}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">)]</span>
+    <span class="n">fw</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">addr_objects</span><span class="p">)</span>
+    <span class="n">grp</span> <span class="o">=</span> <span class="n">AddressGroup</span><span class="p">(</span><span class="s1">&#39;group</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">addr_objects</span><span class="p">)</span>
+    <span class="n">fw</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grp</span><span class="p">)</span>
+
+<span class="c1"># The config tree is built, now we need to push it to the live device.</span>
+
+<span class="c1"># Option 1: Push each address object and group one at a time</span>
+<span class="c1">#           (takes over 1 hour)</span>
+<span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">fw</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">AddressObject</span><span class="p">):</span>
+    <span class="n">obj</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">grp</span> <span class="ow">in</span> <span class="n">fw</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">AddressGroup</span><span class="p">):</span>
+    <span class="n">grp</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+
+<span class="c1"># Option 2: Push all the address objects at once, then all the address groups at once</span>
+<span class="c1">#           (takes 2-3 seconds)</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;object1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">create_similar</span><span class="p">()</span>
+<span class="n">fw</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;group1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">create_similar</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Bulk operations for the win!</p>
+<p>One thing to keep in mind when using bulk operations is that the methods will
+push any objects that share the same type and <strong>location</strong>. This means if you
+call a bulk operation method on an AddressObject in vsys2, pan-os-python will NOT
+push the AddressObjects in vsys3, or Device Group 7, or the shared scope. Under
+the hood, it verifies that the objects share the same XPath and type before they
+are pushed to the live device.</p>
+</section>
+<section id="connect-to-pan-os-8-0-and-higher">
+<h2>Connect to PAN-OS 8.0 and higher<a class="headerlink" href="#connect-to-pan-os-8-0-and-higher" title="Link to this heading">¶</a></h2>
+<p>Starting in PAN-OS 8.0, the default TLS version has changed from 1.0 to 1.1 to enhance the security of
+the management connection. This can cause connection problems for systems with older OpenSSL versions
+that don’t support TLS 1.1, such as MacOSX Sierra. TLS 1.1 is supported in OpenSSL 1.0.1 and higher.</p>
+<p><strong>Suggestions for connecting to PAN-OS 8.0</strong></p>
+<p><strong>Options 1:</strong></p>
+<p>If using OSX, install <a class="reference external" href="https://brew.sh">homebrew</a>, then use homebrew to install python.  Python from homebrew will come with an updated
+OpenSSL version, and it is best practice to install it anyway to prevent pollution of your system python.</p>
+<p>After installing homebrew using the <a class="reference external" href="https://brew.sh">instructions</a> on their website, type the following in an OSX termainal
+to install python:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">python</span>
+</pre></div>
+</div>
+<p><strong>Option 2:</strong></p>
+<p>Upgrade OpenSSL using your OS package manager. For example, in Ubuntu you would type <cite>apt-get install openssl</cite>.
+If a newer OpenSSL is not available, upgrade the OS distribution to a newer version. The procedure will differ
+depending on your OS distro. Please refer to the instructions for upgrading your OS.</p>
+<p><strong>Option 3:</strong></p>
+<p>Set the firewall minimum TLS version back to TLS 1.0. To do this, in the Device tab, create a self-signed CA certificate
+on the firewall and assign it to a new SSL/TLS Service Profile with the Minimum TLS version set to TLS 1.0. Then,
+assign the SSL/TLS Server Profile to the management interface at Device tab -&gt; Setup -&gt; Management -&gt; General Settings.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="getting-started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, Brian Torres-Gil.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

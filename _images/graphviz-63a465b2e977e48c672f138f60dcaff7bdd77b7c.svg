@@ -1,0 +1,1257 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="415pt" height="2545pt" viewBox="0.07 0.07 415.07 2544.55">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4.07 2540.55)">
+<ns0:title>configtree</ns0:title>
+<ns0:polygon fill="white" stroke="transparent" points="-4,4 -4,-2540.47 411,-2540.47 411,4 -4,4" />
+
+<ns0:g id="node1" class="node">
+<ns0:title>DeviceGroup</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../../module-panorama.html#panos.panorama.DeviceGroup" ns1:title="DeviceGroup" target="_top">
+<ns0:polygon fill="#b4eeb4" stroke="black" points="204,-1461 123,-1461 123,-1436 204,-1436 204,-1461" />
+<ns0:text text-anchor="middle" x="163.5" y="-1446" font-family="Times,serif" font-size="10.00">DeviceGroup</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>Firewall</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../../module-firewall.html#panos.firewall.Firewall" ns1:title="Firewall" target="_top">
+<ns0:polygon fill="lightblue" stroke="black" points="361.5,-2161 306.5,-2161 306.5,-2136 361.5,-2136 361.5,-2161" />
+<ns0:text text-anchor="middle" x="334" y="-2146" font-family="Times,serif" font-size="10.00">Firewall</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>DeviceGroup-&gt;Firewall</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.04,-1455.47C212.16,-1458.72 219.8,-1463.5 225,-1470.5 311.24,-1586.65 176.05,-2003.4 261,-2120.5 269.35,-2132.01 283.12,-2138.78 296.4,-2142.78" />
+<ns0:polygon fill="black" stroke="black" points="295.81,-2146.24 306.36,-2145.32 297.54,-2139.45 295.81,-2146.24" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>AddressGroup</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../../module-objects.html#panos.objects.AddressGroup" ns1:title="AddressGroup" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="378.5,-2111 289.5,-2111 289.5,-2086 378.5,-2086 378.5,-2111" />
+<ns0:text text-anchor="middle" x="334" y="-2096" font-family="Times,serif" font-size="10.00">AddressGroup</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>DeviceGroup-&gt;AddressGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.01,-1455.49C212.13,-1458.74 219.78,-1463.51 225,-1470.5 303.98,-1576.29 187.61,-1953.76 261,-2063.5 265.89,-2070.81 272.75,-2076.64 280.33,-2081.28" />
+<ns0:polygon fill="black" stroke="black" points="278.99,-2084.54 289.46,-2086.2 282.31,-2078.38 278.99,-2084.54" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>AddressObject</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../../module-objects.html#panos.objects.AddressObject" ns1:title="AddressObject" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="379,-2054 289,-2054 289,-2029 379,-2029 379,-2054" />
+<ns0:text text-anchor="middle" x="334" y="-2039" font-family="Times,serif" font-size="10.00">AddressObject</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>DeviceGroup-&gt;AddressObject</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.29,-1455.63C212.3,-1458.89 219.83,-1463.62 225,-1470.5 298,-1567.75 187.29,-1919.79 261,-2016.5 265.79,-2022.79 272.27,-2027.51 279.39,-2031.04" />
+<ns0:polygon fill="black" stroke="black" points="278.09,-2034.29 288.67,-2034.91 280.79,-2027.83 278.09,-2034.29" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>ApplicationFilter</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../../module-objects.html#panos.objects.ApplicationFilter" ns1:title="ApplicationFilter" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="383.5,-2007 284.5,-2007 284.5,-1982 383.5,-1982 383.5,-2007" />
+<ns0:text text-anchor="middle" x="334" y="-1992" font-family="Times,serif" font-size="10.00">ApplicationFilter</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>DeviceGroup-&gt;ApplicationFilter</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.27,-1455.65C212.27,-1458.91 219.81,-1463.63 225,-1470.5 292.53,-1559.93 190.6,-1886.31 261,-1973.5 264.83,-1978.24 269.66,-1981.95 275,-1984.84" />
+<ns0:polygon fill="black" stroke="black" points="273.82,-1988.15 284.38,-1988.99 276.65,-1981.74 273.82,-1988.15" />
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>ApplicationGroup</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:href="../../module-objects.html#panos.objects.ApplicationGroup" ns1:title="ApplicationGroup" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="386.5,-1964 281.5,-1964 281.5,-1939 386.5,-1939 386.5,-1964" />
+<ns0:text text-anchor="middle" x="334" y="-1949" font-family="Times,serif" font-size="10.00">ApplicationGroup</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>DeviceGroup-&gt;ApplicationGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.23,-1455.68C212.24,-1458.93 219.79,-1463.65 225,-1470.5 287.06,-1552.12 196.32,-1850.94 261,-1930.5 264.17,-1934.4 268.02,-1937.6 272.27,-1940.22" />
+<ns0:polygon fill="black" stroke="black" points="270.98,-1943.49 281.48,-1944.84 274.11,-1937.23 270.98,-1943.49" />
+</ns0:g>
+
+<ns0:g id="node7" class="node">
+<ns0:title>ApplicationObject</ns0:title>
+<ns0:g id="a_node7"><ns0:a ns1:href="../../module-objects.html#panos.objects.ApplicationObject" ns1:title="ApplicationObject" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="386.5,-1921 281.5,-1921 281.5,-1896 386.5,-1896 386.5,-1921" />
+<ns0:text text-anchor="middle" x="334" y="-1906" font-family="Times,serif" font-size="10.00">ApplicationObject</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge6" class="edge">
+<ns0:title>DeviceGroup-&gt;ApplicationObject</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.19,-1455.71C212.2,-1458.96 219.76,-1463.67 225,-1470.5 281.46,-1544.13 202.63,-1814.37 261,-1886.5 264.17,-1890.42 268.03,-1893.66 272.28,-1896.33" />
+<ns0:polygon fill="black" stroke="black" points="271,-1899.61 281.49,-1901.06 274.2,-1893.38 271,-1899.61" />
+</ns0:g>
+
+<ns0:g id="node8" class="node">
+<ns0:title>ApplicationTag</ns0:title>
+<ns0:g id="a_node8"><ns0:a ns1:href="../../module-objects.html#panos.objects.ApplicationTag" ns1:title="ApplicationTag" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="379.5,-1877 288.5,-1877 288.5,-1852 379.5,-1852 379.5,-1877" />
+<ns0:text text-anchor="middle" x="334" y="-1862" font-family="Times,serif" font-size="10.00">ApplicationTag</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge7" class="edge">
+<ns0:title>DeviceGroup-&gt;ApplicationTag</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.14,-1455.75C212.15,-1459 219.73,-1463.7 225,-1470.5 326.49,-1601.44 156.94,-1712.6 261,-1841.5 265.7,-1847.33 271.89,-1851.7 278.66,-1854.97" />
+<ns0:polygon fill="black" stroke="black" points="277.59,-1858.32 288.17,-1858.8 280.2,-1851.82 277.59,-1858.32" />
+</ns0:g>
+
+<ns0:g id="node9" class="node">
+<ns0:title>CustomUrlCategory</ns0:title>
+<ns0:g id="a_node9"><ns0:a ns1:href="../../module-objects.html#panos.objects.CustomUrlCategory" ns1:title="CustomUrlCategory" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="392,-1832 276,-1832 276,-1807 392,-1807 392,-1832" />
+<ns0:text text-anchor="middle" x="334" y="-1817" font-family="Times,serif" font-size="10.00">CustomUrlCategory</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge8" class="edge">
+<ns0:title>DeviceGroup-&gt;CustomUrlCategory</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.08,-1455.8C212.09,-1459.05 219.68,-1463.73 225,-1470.5 315.32,-1585.48 167.71,-1684.92 261,-1797.5 262.92,-1799.81 265.07,-1801.89 267.4,-1803.75" />
+<ns0:polygon fill="black" stroke="black" points="265.63,-1806.77 275.92,-1809.28 269.44,-1800.9 265.63,-1806.77" />
+</ns0:g>
+
+<ns0:g id="node10" class="node">
+<ns0:title>Edl</ns0:title>
+<ns0:g id="a_node10"><ns0:a ns1:href="../../module-objects.html#panos.objects.Edl" ns1:title="Edl" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="361,-1788 307,-1788 307,-1763 361,-1763 361,-1788" />
+<ns0:text text-anchor="middle" x="334" y="-1773" font-family="Times,serif" font-size="10.00">Edl</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge9" class="edge">
+<ns0:title>DeviceGroup-&gt;Edl</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.31,-1455.99C212.21,-1459.23 219.7,-1463.86 225,-1470.5 304.41,-1569.91 178.4,-1657.73 261,-1754.5 269.87,-1764.89 283.57,-1770.29 296.65,-1773.05" />
+<ns0:polygon fill="black" stroke="black" points="296.46,-1776.57 306.89,-1774.74 297.6,-1769.66 296.46,-1776.57" />
+</ns0:g>
+
+<ns0:g id="node11" class="node">
+<ns0:title>LogForwardingProfile</ns0:title>
+<ns0:g id="a_node11"><ns0:a ns1:href="../../module-objects.html#panos.objects.LogForwardingProfile" ns1:title="LogForwardingProfile" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="397,-1745 271,-1745 271,-1720 397,-1720 397,-1745" />
+<ns0:text text-anchor="middle" x="334" y="-1730" font-family="Times,serif" font-size="10.00">LogForwardingProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge10" class="edge">
+<ns0:title>DeviceGroup-&gt;LogForwardingProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.2,-1456.08C212.11,-1459.31 219.63,-1463.92 225,-1470.5 293.53,-1554.36 189.78,-1629.91 261,-1711.5 261.62,-1712.21 262.26,-1712.89 262.92,-1713.56" />
+<ns0:polygon fill="black" stroke="black" points="260.73,-1716.28 270.71,-1719.83 265.12,-1710.83 260.73,-1716.28" />
+</ns0:g>
+
+<ns0:g id="node12" class="node">
+<ns0:title>Region</ns0:title>
+<ns0:g id="a_node12"><ns0:a ns1:href="../../module-objects.html#panos.objects.Region" ns1:title="Region" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="361,-1702 307,-1702 307,-1677 361,-1677 361,-1702" />
+<ns0:text text-anchor="middle" x="334" y="-1687" font-family="Times,serif" font-size="10.00">Region</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge11" class="edge">
+<ns0:title>DeviceGroup-&gt;Region</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.04,-1456.21C211.96,-1459.43 219.52,-1464.01 225,-1470.5 282.68,-1538.86 201.13,-1602.05 261,-1668.5 270.08,-1678.58 283.69,-1683.93 296.64,-1686.73" />
+<ns0:polygon fill="black" stroke="black" points="296.34,-1690.23 306.79,-1688.48 297.52,-1683.33 296.34,-1690.23" />
+</ns0:g>
+
+<ns0:g id="node13" class="node">
+<ns0:title>ScheduleObject</ns0:title>
+<ns0:g id="a_node13"><ns0:a ns1:href="../../module-objects.html#panos.objects.ScheduleObject" ns1:title="ScheduleObject" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="381.5,-1659 286.5,-1659 286.5,-1634 381.5,-1634 381.5,-1659" />
+<ns0:text text-anchor="middle" x="334" y="-1644" font-family="Times,serif" font-size="10.00">ScheduleObject</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge12" class="edge">
+<ns0:title>DeviceGroup-&gt;ScheduleObject</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.13,-1456.53C211.95,-1459.74 219.44,-1464.23 225,-1470.5 271.9,-1523.43 212.4,-1574.12 261,-1625.5 265.46,-1630.22 270.92,-1633.89 276.81,-1636.76" />
+<ns0:polygon fill="black" stroke="black" points="275.77,-1640.11 286.36,-1640.62 278.4,-1633.62 275.77,-1640.11" />
+</ns0:g>
+
+<ns0:g id="node14" class="node">
+<ns0:title>SecurityProfileGroup</ns0:title>
+<ns0:g id="a_node14"><ns0:a ns1:href="../../module-objects.html#panos.objects.SecurityProfileGroup" ns1:title="SecurityProfileGroup" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="395,-1616 273,-1616 273,-1591 395,-1591 395,-1616" />
+<ns0:text text-anchor="middle" x="334" y="-1601" font-family="Times,serif" font-size="10.00">SecurityProfileGroup</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge13" class="edge">
+<ns0:title>DeviceGroup-&gt;SecurityProfileGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.06,-1457.01C211.79,-1460.19 219.26,-1464.54 225,-1470.5 261.27,-1508.16 223.53,-1546.03 261,-1582.5 261.97,-1583.44 262.98,-1584.35 264.03,-1585.21" />
+<ns0:polygon fill="black" stroke="black" points="262.42,-1588.35 272.66,-1591.07 266.35,-1582.55 262.42,-1588.35" />
+</ns0:g>
+
+<ns0:g id="node15" class="node">
+<ns0:title>ServiceGroup</ns0:title>
+<ns0:g id="a_node15"><ns0:a ns1:href="../../module-objects.html#panos.objects.ServiceGroup" ns1:title="ServiceGroup" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="376,-1573 292,-1573 292,-1548 376,-1548 376,-1573" />
+<ns0:text text-anchor="middle" x="334" y="-1558" font-family="Times,serif" font-size="10.00">ServiceGroup</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge14" class="edge">
+<ns0:title>DeviceGroup-&gt;ServiceGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.27,-1458.17C211.72,-1461.25 219.03,-1465.27 225,-1470.5 251.02,-1493.29 234.25,-1517.57 261,-1539.5 267.16,-1544.55 274.49,-1548.39 282.07,-1551.3" />
+<ns0:polygon fill="black" stroke="black" points="281.15,-1554.68 291.75,-1554.52 283.36,-1548.04 281.15,-1554.68" />
+</ns0:g>
+
+<ns0:g id="node16" class="node">
+<ns0:title>ServiceObject</ns0:title>
+<ns0:g id="a_node16"><ns0:a ns1:href="../../module-objects.html#panos.objects.ServiceObject" ns1:title="ServiceObject" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="376.5,-1530 291.5,-1530 291.5,-1505 376.5,-1505 376.5,-1530" />
+<ns0:text text-anchor="middle" x="334" y="-1515" font-family="Times,serif" font-size="10.00">ServiceObject</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge15" class="edge">
+<ns0:title>DeviceGroup-&gt;ServiceObject</ns0:title>
+<ns0:path fill="none" stroke="black" d="M203.92,-1461.04C211.09,-1463.82 218.38,-1466.99 225,-1470.5 242.44,-1479.74 243.27,-1487.83 261,-1496.5 267.51,-1499.68 274.6,-1502.48 281.7,-1504.9" />
+<ns0:polygon fill="black" stroke="black" points="280.76,-1508.27 291.35,-1507.97 282.88,-1501.6 280.76,-1508.27" />
+</ns0:g>
+
+<ns0:g id="node17" class="node">
+<ns0:title>PostRulebase</ns0:title>
+<ns0:g id="a_node17"><ns0:a ns1:href="../../module-policies.html#panos.policies.PostRulebase" ns1:title="PostRulebase" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="375.5,-1487 292.5,-1487 292.5,-1462 375.5,-1462 375.5,-1487" />
+<ns0:text text-anchor="middle" x="334" y="-1472" font-family="Times,serif" font-size="10.00">PostRulebase</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge16" class="edge">
+<ns0:title>DeviceGroup-&gt;PostRulebase</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.01,-1454.6C227.35,-1458.2 257.14,-1462.79 282.21,-1466.66" />
+<ns0:polygon fill="black" stroke="black" points="281.86,-1470.15 292.28,-1468.22 282.93,-1463.23 281.86,-1470.15" />
+</ns0:g>
+
+<ns0:g id="node18" class="node">
+<ns0:title>PreRulebase</ns0:title>
+<ns0:g id="a_node18"><ns0:a ns1:href="../../module-policies.html#panos.policies.PreRulebase" ns1:title="PreRulebase" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="373.5,-1444 294.5,-1444 294.5,-1419 373.5,-1419 373.5,-1444" />
+<ns0:text text-anchor="middle" x="334" y="-1429" font-family="Times,serif" font-size="10.00">PreRulebase</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge17" class="edge">
+<ns0:title>DeviceGroup-&gt;PreRulebase</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.01,-1444.51C227.94,-1442.1 258.67,-1439 284.13,-1436.43" />
+<ns0:polygon fill="black" stroke="black" points="284.72,-1439.89 294.32,-1435.4 284.02,-1432.92 284.72,-1439.89" />
+</ns0:g>
+
+<ns0:g id="node19" class="node">
+<ns0:title>Panorama</ns0:title>
+<ns0:g id="a_node19"><ns0:a ns1:href="../../module-panorama.html#panos.panorama.Panorama" ns1:title="Panorama" target="_top">
+<ns0:polygon fill="#b4eeb4" stroke="black" points="66,-1912 0,-1912 0,-1887 66,-1887 66,-1912" />
+<ns0:text text-anchor="middle" x="33" y="-1897" font-family="Times,serif" font-size="10.00">Panorama</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge45" class="edge">
+<ns0:title>Panorama-&gt;DeviceGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.32,-1886.77C36.2,-1822.77 47.54,-1536.53 102,-1470.5 105.29,-1466.51 109.37,-1463.24 113.85,-1460.56" />
+<ns0:polygon fill="black" stroke="black" points="115.43,-1463.69 122.85,-1456.12 112.33,-1457.41 115.43,-1463.69" />
+</ns0:g>
+
+<ns0:g id="edge27" class="edge">
+<ns0:title>Panorama-&gt;Firewall</ns0:title>
+<ns0:path fill="none" stroke="black" d="M33.83,-1912.19C34.08,-1949.32 40.28,-2058.49 102,-2111.5 156.51,-2158.32 246,-2158.1 296.09,-2153.49" />
+<ns0:polygon fill="black" stroke="black" points="296.57,-2156.96 306.16,-2152.46 295.85,-2150 296.57,-2156.96" />
+</ns0:g>
+
+<ns0:g id="edge28" class="edge">
+<ns0:title>Panorama-&gt;AddressGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.38,-1912.35C36.15,-1946.47 46.14,-2039.62 102,-2081.5 152.72,-2119.53 228.57,-2117.17 279.36,-2109.74" />
+<ns0:polygon fill="black" stroke="black" points="280.16,-2113.16 289.49,-2108.15 279.07,-2106.24 280.16,-2113.16" />
+</ns0:g>
+
+<ns0:g id="edge29" class="edge">
+<ns0:title>Panorama-&gt;AddressObject</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.98,-1912.26C38.15,-1943.56 51.12,-2024 102,-2057.5 159.96,-2095.65 244.78,-2075.08 293.88,-2057.63" />
+<ns0:polygon fill="black" stroke="black" points="295.33,-2060.83 303.5,-2054.09 292.91,-2054.26 295.33,-2060.83" />
+</ns0:g>
+
+<ns0:g id="edge31" class="edge">
+<ns0:title>Panorama-&gt;ApplicationFilter</ns0:title>
+<ns0:path fill="none" stroke="black" d="M51.38,-1912.07C64.66,-1921.15 83.74,-1933.08 102,-1940.5 158.34,-1963.4 226.54,-1977.85 274.18,-1985.98" />
+<ns0:polygon fill="black" stroke="black" points="273.88,-1989.48 284.32,-1987.67 275.03,-1982.57 273.88,-1989.48" />
+</ns0:g>
+
+<ns0:g id="edge32" class="edge">
+<ns0:title>Panorama-&gt;ApplicationGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M66.03,-1908.17C77.34,-1911.06 90.19,-1914.13 102,-1916.5 159.06,-1927.93 224.72,-1937.54 271.42,-1943.78" />
+<ns0:polygon fill="black" stroke="black" points="271,-1947.26 281.38,-1945.1 271.92,-1940.32 271,-1947.26" />
+</ns0:g>
+
+<ns0:g id="edge33" class="edge">
+<ns0:title>Panorama-&gt;ApplicationObject</ns0:title>
+<ns0:path fill="none" stroke="black" d="M66.28,-1900.47C115.2,-1901.94 209,-1904.77 271.3,-1906.64" />
+<ns0:polygon fill="black" stroke="black" points="271.29,-1910.14 281.39,-1906.95 271.5,-1903.15 271.29,-1910.14" />
+</ns0:g>
+
+<ns0:g id="edge34" class="edge">
+<ns0:title>Panorama-&gt;ApplicationTag</ns0:title>
+<ns0:path fill="none" stroke="black" d="M66.28,-1895.72C117.06,-1889.78 216.19,-1878.17 278.26,-1870.91" />
+<ns0:polygon fill="black" stroke="black" points="278.74,-1874.38 288.27,-1869.74 277.93,-1867.42 278.74,-1874.38" />
+</ns0:g>
+
+<ns0:g id="edge35" class="edge">
+<ns0:title>Panorama-&gt;CustomUrlCategory</ns0:title>
+<ns0:path fill="none" stroke="black" d="M64.16,-1886.96C75.85,-1882.37 89.43,-1877.35 102,-1873.5 156.48,-1856.8 219.54,-1842.38 266,-1832.65" />
+<ns0:polygon fill="black" stroke="black" points="266.86,-1836.05 275.94,-1830.59 265.44,-1829.19 266.86,-1836.05" />
+</ns0:g>
+
+<ns0:g id="edge37" class="edge">
+<ns0:title>Panorama-&gt;Edl</ns0:title>
+<ns0:path fill="none" stroke="black" d="M36.85,-1886.88C43.35,-1861.43 61.92,-1804.34 102,-1780.5 162.54,-1744.48 248.73,-1755.53 296.88,-1766.02" />
+<ns0:polygon fill="black" stroke="black" points="296.31,-1769.48 306.84,-1768.3 297.88,-1762.65 296.31,-1769.48" />
+</ns0:g>
+
+<ns0:g id="edge38" class="edge">
+<ns0:title>Panorama-&gt;LogForwardingProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M35.56,-1886.9C39.93,-1857.47 55.22,-1784.27 102,-1751.5 147.69,-1719.49 211.64,-1716.58 260.68,-1720.64" />
+<ns0:polygon fill="black" stroke="black" points="260.62,-1724.15 270.9,-1721.6 261.27,-1717.18 260.62,-1724.15" />
+</ns0:g>
+
+<ns0:g id="edge39" class="edge">
+<ns0:title>Panorama-&gt;Region</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.37,-1886.8C36.12,-1852.61 46.05,-1758.21 102,-1714.5 158.39,-1670.45 247.54,-1675.44 296.98,-1682.66" />
+<ns0:polygon fill="black" stroke="black" points="296.48,-1686.13 306.9,-1684.22 297.56,-1679.21 296.48,-1686.13" />
+</ns0:g>
+
+<ns0:g id="edge40" class="edge">
+<ns0:title>Panorama-&gt;ScheduleObject</ns0:title>
+<ns0:path fill="none" stroke="black" d="M33.44,-1886.99C32.47,-1848.23 35.26,-1729.42 102,-1673.5 150.16,-1633.14 225.14,-1631.87 276.52,-1637.08" />
+<ns0:polygon fill="black" stroke="black" points="276.14,-1640.56 286.47,-1638.2 276.93,-1633.61 276.14,-1640.56" />
+</ns0:g>
+
+<ns0:g id="edge41" class="edge">
+<ns0:title>Panorama-&gt;SecurityProfileGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M35.33,-1886.78C40.67,-1838.2 62.25,-1665.35 102,-1630.5 145.32,-1592.52 212.1,-1588.49 262.74,-1592.36" />
+<ns0:polygon fill="black" stroke="black" points="262.69,-1595.87 272.96,-1593.27 263.31,-1588.9 262.69,-1595.87" />
+</ns0:g>
+
+<ns0:g id="edge42" class="edge">
+<ns0:title>Panorama-&gt;ServiceGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.83,-1886.95C38.62,-1833.79 56.09,-1627.96 102,-1586.5 150.44,-1542.76 229.86,-1543.91 281.79,-1550.68" />
+<ns0:polygon fill="black" stroke="black" points="281.4,-1554.16 291.8,-1552.1 282.39,-1547.23 281.4,-1554.16" />
+</ns0:g>
+
+<ns0:g id="edge43" class="edge">
+<ns0:title>Panorama-&gt;ServiceObject</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.51,-1886.96C37.12,-1829.76 50.87,-1594.39 102,-1546.5 127.1,-1522.99 220.89,-1517.92 280.96,-1517.17" />
+<ns0:polygon fill="black" stroke="black" points="281.06,-1520.67 291.03,-1517.08 281,-1513.67 281.06,-1520.67" />
+</ns0:g>
+
+<ns0:g id="node20" class="node">
+<ns0:title>Administrator</ns0:title>
+<ns0:g id="a_node20"><ns0:a ns1:href="../../module-device.html#panos.device.Administrator" ns1:title="Administrator" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="376.5,-1401 291.5,-1401 291.5,-1376 376.5,-1376 376.5,-1401" />
+<ns0:text text-anchor="middle" x="334" y="-1386" font-family="Times,serif" font-size="10.00">Administrator</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge18" class="edge">
+<ns0:title>Panorama-&gt;Administrator</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.42,-1912.09C37.33,-1995.58 55.76,-2467.14 102,-2508.5 142.74,-2544.95 185.72,-2546.52 225,-2508.5 312.72,-2423.61 186.79,-1507.41 261,-1410.5 266.25,-1403.64 273.6,-1398.85 281.6,-1395.53" />
+<ns0:polygon fill="black" stroke="black" points="282.87,-1398.8 291.21,-1392.26 280.62,-1392.17 282.87,-1398.8" />
+</ns0:g>
+
+<ns0:g id="node21" class="node">
+<ns0:title>CertificateProfile</ns0:title>
+<ns0:g id="a_node21"><ns0:a ns1:href="../../module-device.html#panos.device.CertificateProfile" ns1:title="CertificateProfile" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="213.5,-2499 113.5,-2499 113.5,-2474 213.5,-2474 213.5,-2499" />
+<ns0:text text-anchor="middle" x="163.5" y="-2484" font-family="Times,serif" font-size="10.00">CertificateProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge19" class="edge">
+<ns0:title>Panorama-&gt;CertificateProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M33.77,-1912.09C32.63,-1987.26 30.29,-2376.48 102,-2465.5 102.98,-2466.72 104.04,-2467.86 105.16,-2468.95" />
+<ns0:polygon fill="black" stroke="black" points="103.27,-2471.9 113.35,-2475.16 107.5,-2466.33 103.27,-2471.9" />
+</ns0:g>
+
+<ns0:g id="node22" class="node">
+<ns0:title>EmailServerProfile</ns0:title>
+<ns0:g id="a_node22"><ns0:a ns1:href="../../module-device.html#panos.device.EmailServerProfile" ns1:title="EmailServerProfile" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="219,-2456 108,-2456 108,-2431 219,-2431 219,-2456" />
+<ns0:text text-anchor="middle" x="163.5" y="-2441" font-family="Times,serif" font-size="10.00">EmailServerProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge20" class="edge">
+<ns0:title>Panorama-&gt;EmailServerProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M33.91,-1912.06C33.61,-1983.75 35.54,-2340.82 102,-2422.5 102.5,-2423.11 103.02,-2423.71 103.56,-2424.29" />
+<ns0:polygon fill="black" stroke="black" points="101.5,-2427.13 111.4,-2430.88 106,-2421.77 101.5,-2427.13" />
+</ns0:g>
+
+<ns0:g id="node23" class="node">
+<ns0:title>HttpServerProfile</ns0:title>
+<ns0:g id="a_node23"><ns0:a ns1:href="../../module-device.html#panos.device.HttpServerProfile" ns1:title="HttpServerProfile" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="216,-2413 111,-2413 111,-2388 216,-2388 216,-2413" />
+<ns0:text text-anchor="middle" x="163.5" y="-2398" font-family="Times,serif" font-size="10.00">HttpServerProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge21" class="edge">
+<ns0:title>Panorama-&gt;HttpServerProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.07,-1912.36C34.69,-1981.14 40.89,-2305.26 102,-2379.5 102.5,-2380.11 103.03,-2380.71 103.57,-2381.28" />
+<ns0:polygon fill="black" stroke="black" points="101.52,-2384.13 111.44,-2387.85 106,-2378.76 101.52,-2384.13" />
+</ns0:g>
+
+<ns0:g id="node24" class="node">
+<ns0:title>LdapServerProfile</ns0:title>
+<ns0:g id="a_node24"><ns0:a ns1:href="../../module-device.html#panos.device.LdapServerProfile" ns1:title="LdapServerProfile" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="217.5,-2370 109.5,-2370 109.5,-2345 217.5,-2345 217.5,-2370" />
+<ns0:text text-anchor="middle" x="163.5" y="-2355" font-family="Times,serif" font-size="10.00">LdapServerProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge22" class="edge">
+<ns0:title>Panorama-&gt;LdapServerProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.41,-1912.21C36.69,-1976.15 49.71,-2262.25 102,-2330.5 104.6,-2333.89 107.71,-2336.86 111.14,-2339.47" />
+<ns0:polygon fill="black" stroke="black" points="109.31,-2342.46 119.62,-2344.92 113.1,-2336.57 109.31,-2342.46" />
+</ns0:g>
+
+<ns0:g id="node25" class="node">
+<ns0:title>PasswordProfile</ns0:title>
+<ns0:g id="a_node25"><ns0:a ns1:href="../../module-device.html#panos.device.PasswordProfile" ns1:title="PasswordProfile" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="382,-1186 286,-1186 286,-1161 382,-1161 382,-1186" />
+<ns0:text text-anchor="middle" x="334" y="-1171" font-family="Times,serif" font-size="10.00">PasswordProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge23" class="edge">
+<ns0:title>Panorama-&gt;PasswordProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.08,-1912.1C34.78,-1974.14 41.32,-2246.31 102,-2297.5 143.78,-2332.75 185.72,-2335.52 225,-2297.5 313.03,-2212.3 186.52,-1292.77 261,-1195.5 265.16,-1190.06 270.64,-1185.93 276.72,-1182.79" />
+<ns0:polygon fill="black" stroke="black" points="278.12,-1186 285.97,-1178.88 275.4,-1179.55 278.12,-1186" />
+</ns0:g>
+
+<ns0:g id="node26" class="node">
+<ns0:title>SnmpServerProfile</ns0:title>
+<ns0:g id="a_node26"><ns0:a ns1:href="../../module-device.html#panos.device.SnmpServerProfile" ns1:title="SnmpServerProfile" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="219,-2288 108,-2288 108,-2263 219,-2263 219,-2288" />
+<ns0:text text-anchor="middle" x="163.5" y="-2273" font-family="Times,serif" font-size="10.00">SnmpServerProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge24" class="edge">
+<ns0:title>Panorama-&gt;SnmpServerProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.93,-1912.34C39.27,-1968.78 59.07,-2194.5 102,-2248.5 104.7,-2251.89 107.91,-2254.87 111.43,-2257.49" />
+<ns0:polygon fill="black" stroke="black" points="109.78,-2260.58 120.11,-2262.94 113.51,-2254.65 109.78,-2260.58" />
+</ns0:g>
+
+<ns0:g id="node27" class="node">
+<ns0:title>SslDecrypt</ns0:title>
+<ns0:g id="a_node27"><ns0:a ns1:href="../../module-device.html#panos.device.SslDecrypt" ns1:title="SslDecrypt" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="369,-1143 299,-1143 299,-1118 369,-1118 369,-1143" />
+<ns0:text text-anchor="middle" x="334" y="-1128" font-family="Times,serif" font-size="10.00">SslDecrypt</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge25" class="edge">
+<ns0:title>Panorama-&gt;SslDecrypt</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.69,-1912.3C37.92,-1966.53 53.43,-2176.27 102,-2215.5 144.53,-2249.85 185.7,-2253.5 225,-2215.5 309.97,-2133.36 189.1,-1246.29 261,-1152.5 267.82,-1143.61 278.15,-1138.2 288.87,-1134.95" />
+<ns0:polygon fill="black" stroke="black" points="289.86,-1138.31 298.74,-1132.52 288.19,-1131.51 289.86,-1138.31" />
+</ns0:g>
+
+<ns0:g id="node28" class="node">
+<ns0:title>SyslogServerProfile</ns0:title>
+<ns0:g id="a_node28"><ns0:a ns1:href="../../module-device.html#panos.device.SyslogServerProfile" ns1:title="SyslogServerProfile" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="221,-2206 106,-2206 106,-2181 221,-2181 221,-2206" />
+<ns0:text text-anchor="middle" x="163.5" y="-2191" font-family="Times,serif" font-size="10.00">SyslogServerProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge26" class="edge">
+<ns0:title>Panorama-&gt;SyslogServerProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M33.57,-1912.09C32.82,-1953.61 35.88,-2088.04 102,-2166.5 104.91,-2169.96 108.36,-2172.99 112.1,-2175.65" />
+<ns0:polygon fill="black" stroke="black" points="110.33,-2178.66 120.69,-2180.88 113.97,-2172.69 110.33,-2178.66" />
+</ns0:g>
+
+<ns0:g id="node29" class="node">
+<ns0:title>ApplicationContainer</ns0:title>
+<ns0:g id="a_node29"><ns0:a ns1:href="../../module-objects.html#panos.objects.ApplicationContainer" ns1:title="ApplicationContainer" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="225,-2048 102,-2048 102,-2023 225,-2023 225,-2048" />
+<ns0:text text-anchor="middle" x="163.5" y="-2033" font-family="Times,serif" font-size="10.00">ApplicationContainer</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge30" class="edge">
+<ns0:title>Panorama-&gt;ApplicationContainer</ns0:title>
+<ns0:path fill="none" stroke="black" d="M39,-1912.3C48.29,-1934.6 70.21,-1980.82 102,-2008.5 106.17,-2012.13 110.92,-2015.36 115.87,-2018.19" />
+<ns0:polygon fill="black" stroke="black" points="114.44,-2021.39 124.92,-2022.89 117.66,-2015.18 114.44,-2021.39" />
+</ns0:g>
+
+<ns0:g id="node30" class="node">
+<ns0:title>DynamicUserGroup</ns0:title>
+<ns0:g id="a_node30"><ns0:a ns1:href="../../module-objects.html#panos.objects.DynamicUserGroup" ns1:title="DynamicUserGroup" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="221.5,-1814 105.5,-1814 105.5,-1789 221.5,-1789 221.5,-1814" />
+<ns0:text text-anchor="middle" x="163.5" y="-1799" font-family="Times,serif" font-size="10.00">DynamicUserGroup</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge36" class="edge">
+<ns0:title>Panorama-&gt;DynamicUserGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M43.62,-1886.77C55.81,-1871.34 78.13,-1845.3 102,-1828.5 107.25,-1824.81 113.08,-1821.44 118.99,-1818.44" />
+<ns0:polygon fill="black" stroke="black" points="120.76,-1821.47 128.28,-1814.01 117.75,-1815.15 120.76,-1821.47" />
+</ns0:g>
+
+<ns0:g id="node31" class="node">
+<ns0:title>Tag</ns0:title>
+<ns0:g id="a_node31"><ns0:a ns1:href="../../module-objects.html#panos.objects.Tag" ns1:title="Tag" target="_top">
+<ns0:polygon fill="lemonchiffon" stroke="black" points="190.5,-1504 136.5,-1504 136.5,-1479 190.5,-1479 190.5,-1504" />
+<ns0:text text-anchor="middle" x="163.5" y="-1489" font-family="Times,serif" font-size="10.00">Tag</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge44" class="edge">
+<ns0:title>Panorama-&gt;Tag</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.7,-1886.71C38.19,-1827.23 55.43,-1578.04 102,-1518.5 108.26,-1510.5 117.4,-1504.8 126.69,-1500.78" />
+<ns0:polygon fill="black" stroke="black" points="128.18,-1503.96 136.31,-1497.16 125.72,-1497.4 128.18,-1503.96" />
+</ns0:g>
+
+<ns0:g id="node32" class="node">
+<ns0:title>Template</ns0:title>
+<ns0:g id="a_node32"><ns0:a ns1:href="../../module-panorama.html#panos.panorama.Template" ns1:title="Template" target="_top">
+<ns0:polygon fill="#b4eeb4" stroke="black" points="194.5,-756 132.5,-756 132.5,-731 194.5,-731 194.5,-756" />
+<ns0:text text-anchor="middle" x="163.5" y="-741" font-family="Times,serif" font-size="10.00">Template</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge46" class="edge">
+<ns0:title>Panorama-&gt;Template</ns0:title>
+<ns0:path fill="none" stroke="black" d="M35.4,-1886.91C48.08,-1772.8 143.11,-917.95 159.95,-766.43" />
+<ns0:polygon fill="black" stroke="black" points="163.48,-766.37 161.11,-756.04 156.52,-765.59 163.48,-766.37" />
+</ns0:g>
+
+<ns0:g id="node33" class="node">
+<ns0:title>TemplateStack</ns0:title>
+<ns0:g id="a_node33"><ns0:a ns1:href="../../module-panorama.html#panos.panorama.TemplateStack" ns1:title="TemplateStack" target="_top">
+<ns0:polygon fill="#b4eeb4" stroke="black" points="208.5,-692 118.5,-692 118.5,-667 208.5,-667 208.5,-692" />
+<ns0:text text-anchor="middle" x="163.5" y="-677" font-family="Times,serif" font-size="10.00">TemplateStack</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge47" class="edge">
+<ns0:title>Panorama-&gt;TemplateStack</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.07,-1886.8C34.84,-1766.49 42.68,-829.74 102,-722.5 107.59,-712.4 116.67,-704.1 126.12,-697.58" />
+<ns0:polygon fill="black" stroke="black" points="128.23,-700.39 134.82,-692.1 124.49,-694.48 128.23,-700.39" />
+</ns0:g>
+
+<ns0:g id="node34" class="node">
+<ns0:title>CloudServicesPlugin</ns0:title>
+<ns0:g id="a_node34"><ns0:a ns1:href="../../module-plugins.html#panos.plugins.CloudServicesPlugin" ns1:title="CloudServicesPlugin" target="_top">
+<ns0:polygon fill="wheat" stroke="black" points="223.5,-649 103.5,-649 103.5,-624 223.5,-624 223.5,-649" />
+<ns0:text text-anchor="middle" x="163.5" y="-634" font-family="Times,serif" font-size="10.00">CloudServicesPlugin</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge48" class="edge">
+<ns0:title>Panorama-&gt;CloudServicesPlugin</ns0:title>
+<ns0:path fill="none" stroke="black" d="M33.86,-1886.78C32.59,-1762.22 24.85,-762.47 102,-658.5 102.79,-657.44 103.63,-656.43 104.52,-655.47" />
+<ns0:polygon fill="black" stroke="black" points="106.8,-658.12 112.21,-649.02 102.3,-652.76 106.8,-658.12" />
+</ns0:g>
+
+<ns0:g id="node35" class="node">
+<ns0:title>Rulebase</ns0:title>
+<ns0:g id="a_node35"><ns0:a ns1:href="../../module-policies.html#panos.policies.Rulebase" ns1:title="Rulebase" target="_top">
+<ns0:polygon fill="lightsalmon" stroke="black" points="194.5,-606 132.5,-606 132.5,-581 194.5,-581 194.5,-606" />
+<ns0:text text-anchor="middle" x="163.5" y="-591" font-family="Times,serif" font-size="10.00">Rulebase</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge49" class="edge">
+<ns0:title>Panorama-&gt;Rulebase</ns0:title>
+<ns0:path fill="none" stroke="black" d="M34.27,-1886.95C37.1,-1757.51 62.02,-669.48 102,-615.5 107.16,-608.53 114.76,-603.76 122.83,-600.5" />
+<ns0:polygon fill="black" stroke="black" points="124.03,-603.8 132.42,-597.33 121.83,-597.15 124.03,-603.8" />
+</ns0:g>
+
+<ns0:g id="edge50" class="edge">
+<ns0:title>Template-&gt;Administrator</ns0:title>
+<ns0:path fill="none" stroke="black" d="M164.67,-756.14C166,-836.16 177.04,-1271.82 261,-1367.5 266.49,-1373.76 273.74,-1378.21 281.52,-1381.35" />
+<ns0:polygon fill="black" stroke="black" points="280.6,-1384.73 291.19,-1384.57 282.81,-1378.09 280.6,-1384.73" />
+</ns0:g>
+
+<ns0:g id="edge55" class="edge">
+<ns0:title>Template-&gt;PasswordProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M165.78,-756.15C172.35,-818.52 204.12,-1092.57 261,-1152.5 265.35,-1157.09 270.65,-1160.69 276.36,-1163.51" />
+<ns0:polygon fill="black" stroke="black" points="275.05,-1166.76 285.63,-1167.35 277.73,-1160.29 275.05,-1166.76" />
+</ns0:g>
+
+<ns0:g id="edge56" class="edge">
+<ns0:title>Template-&gt;SslDecrypt</ns0:title>
+<ns0:path fill="none" stroke="black" d="M166.19,-756.36C174.12,-815.03 209.52,-1056.67 261,-1109.5 268.51,-1117.2 278.66,-1122.12 288.98,-1125.25" />
+<ns0:polygon fill="black" stroke="black" points="288.29,-1128.69 298.84,-1127.73 290,-1121.9 288.29,-1128.69" />
+</ns0:g>
+
+<ns0:g id="node36" class="node">
+<ns0:title>LocalUserDatabaseGroup</ns0:title>
+<ns0:g id="a_node36"><ns0:a ns1:href="../../module-device.html#panos.device.LocalUserDatabaseGroup" ns1:title="LocalUserDatabaseGroup" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="407,-1358 261,-1358 261,-1333 407,-1333 407,-1358" />
+<ns0:text text-anchor="middle" x="334" y="-1343" font-family="Times,serif" font-size="10.00">LocalUserDatabaseGroup</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge51" class="edge">
+<ns0:title>Template-&gt;LocalUserDatabaseGroup</ns0:title>
+<ns0:path fill="none" stroke="black" d="M164.82,-756.01C167.05,-832.44 182.44,-1235.97 261,-1324.5 261.64,-1325.22 262.31,-1325.92 263,-1326.6" />
+<ns0:polygon fill="black" stroke="black" points="261.08,-1329.55 271.1,-1332.98 265.41,-1324.05 261.08,-1329.55" />
+</ns0:g>
+
+<ns0:g id="node37" class="node">
+<ns0:title>LocalUserDatabaseUser</ns0:title>
+<ns0:g id="a_node37"><ns0:a ns1:href="../../module-device.html#panos.device.LocalUserDatabaseUser" ns1:title="LocalUserDatabaseUser" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="403,-1315 265,-1315 265,-1290 403,-1290 403,-1315" />
+<ns0:text text-anchor="middle" x="334" y="-1300" font-family="Times,serif" font-size="10.00">LocalUserDatabaseUser</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge52" class="edge">
+<ns0:title>Template-&gt;LocalUserDatabaseUser</ns0:title>
+<ns0:path fill="none" stroke="black" d="M165.01,-756.03C168.2,-829.14 187.89,-1200.17 261,-1281.5 261.65,-1282.22 262.32,-1282.92 263.01,-1283.59" />
+<ns0:polygon fill="black" stroke="black" points="261.11,-1286.55 271.15,-1289.94 265.42,-1281.03 261.11,-1286.55" />
+</ns0:g>
+
+<ns0:g id="node38" class="node">
+<ns0:title>LogSettingsConfig</ns0:title>
+<ns0:g id="a_node38"><ns0:a ns1:href="../../module-device.html#panos.device.LogSettingsConfig" ns1:title="LogSettingsConfig" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="389,-1272 279,-1272 279,-1247 389,-1247 389,-1272" />
+<ns0:text text-anchor="middle" x="334" y="-1257" font-family="Times,serif" font-size="10.00">LogSettingsConfig</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge53" class="edge">
+<ns0:title>Template-&gt;LogSettingsConfig</ns0:title>
+<ns0:path fill="none" stroke="black" d="M165.24,-756.39C169.53,-826.79 193.42,-1164.45 261,-1238.5 263.61,-1241.36 266.59,-1243.84 269.81,-1245.99" />
+<ns0:polygon fill="black" stroke="black" points="268.38,-1249.2 278.83,-1250.94 271.74,-1243.06 268.38,-1249.2" />
+</ns0:g>
+
+<ns0:g id="node39" class="node">
+<ns0:title>LogSettingsSystem</ns0:title>
+<ns0:g id="a_node39"><ns0:a ns1:href="../../module-device.html#panos.device.LogSettingsSystem" ns1:title="LogSettingsSystem" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="391,-1229 277,-1229 277,-1204 391,-1204 391,-1229" />
+<ns0:text text-anchor="middle" x="334" y="-1214" font-family="Times,serif" font-size="10.00">LogSettingsSystem</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge54" class="edge">
+<ns0:title>Template-&gt;LogSettingsSystem</ns0:title>
+<ns0:path fill="none" stroke="black" d="M165.48,-756.13C170.83,-822.31 198.74,-1128.49 261,-1195.5 263.08,-1197.74 265.38,-1199.74 267.84,-1201.53" />
+<ns0:polygon fill="black" stroke="black" points="266.39,-1204.74 276.78,-1206.86 269.98,-1198.73 266.39,-1204.74" />
+</ns0:g>
+
+<ns0:g id="node40" class="node">
+<ns0:title>SystemSettings</ns0:title>
+<ns0:g id="a_node40"><ns0:a ns1:href="../../module-device.html#panos.device.SystemSettings" ns1:title="SystemSettings" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="381,-1100 287,-1100 287,-1075 381,-1075 381,-1100" />
+<ns0:text text-anchor="middle" x="334" y="-1085" font-family="Times,serif" font-size="10.00">SystemSettings</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge57" class="edge">
+<ns0:title>Template-&gt;SystemSettings</ns0:title>
+<ns0:path fill="none" stroke="black" d="M164.27,-756.13C164.1,-804.01 170.07,-976.17 261,-1066.5 265.61,-1071.08 271.15,-1074.67 277.09,-1077.48" />
+<ns0:polygon fill="black" stroke="black" points="276.1,-1080.85 286.68,-1081.3 278.68,-1074.35 276.1,-1080.85" />
+</ns0:g>
+
+<ns0:g id="node41" class="node">
+<ns0:title>Vsys</ns0:title>
+<ns0:g id="a_node41"><ns0:a ns1:href="../../module-device.html#panos.device.Vsys" ns1:title="Vsys" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="361,-1057 307,-1057 307,-1032 361,-1032 361,-1057" />
+<ns0:text text-anchor="middle" x="334" y="-1042" font-family="Times,serif" font-size="10.00">Vsys</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge58" class="edge">
+<ns0:title>Template-&gt;Vsys</ns0:title>
+<ns0:path fill="none" stroke="black" d="M164.94,-756.26C167.18,-800.22 180.6,-946.88 261,-1023.5 270.67,-1032.71 284.15,-1037.92 296.83,-1040.84" />
+<ns0:polygon fill="black" stroke="black" points="296.27,-1044.3 306.75,-1042.73 297.58,-1037.42 296.27,-1044.3" />
+</ns0:g>
+
+<ns0:g id="node42" class="node">
+<ns0:title>VsysResources</ns0:title>
+<ns0:g id="a_node42"><ns0:a ns1:href="../../module-device.html#panos.device.VsysResources" ns1:title="VsysResources" target="_top">
+<ns0:polygon fill="lightpink" stroke="black" points="379.5,-1014 288.5,-1014 288.5,-989 379.5,-989 379.5,-1014" />
+<ns0:text text-anchor="middle" x="334" y="-999" font-family="Times,serif" font-size="10.00">VsysResources</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge59" class="edge">
+<ns0:title>Template-&gt;VsysResources</ns0:title>
+<ns0:path fill="none" stroke="black" d="M165.84,-756.23C170.69,-795.71 190.9,-917.27 261,-980.5 266.13,-985.13 272.23,-988.74 278.68,-991.56" />
+<ns0:polygon fill="black" stroke="black" points="277.7,-994.93 288.29,-995.15 280.15,-988.37 277.7,-994.93" />
+</ns0:g>
+
+<ns0:g id="node43" class="node">
+<ns0:title>HighAvailability</ns0:title>
+<ns0:g id="a_node43"><ns0:a ns1:href="../../module-ha.html#panos.ha.HighAvailability" ns1:title="HighAvailability" target="_top">
+<ns0:polygon fill="lavender" stroke="black" points="382,-971 286,-971 286,-946 382,-946 382,-971" />
+<ns0:text text-anchor="middle" x="334" y="-956" font-family="Times,serif" font-size="10.00">HighAvailability</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge60" class="edge">
+<ns0:title>Template-&gt;HighAvailability</ns0:title>
+<ns0:path fill="none" stroke="black" d="M167.08,-756.11C174.79,-790.61 200.98,-887.3 261,-937.5 265.54,-941.3 270.74,-944.41 276.23,-946.96" />
+<ns0:polygon fill="black" stroke="black" points="275.07,-950.27 285.65,-950.74 277.67,-943.77 275.07,-950.27" />
+</ns0:g>
+
+<ns0:g id="node44" class="node">
+<ns0:title>AggregateInterface</ns0:title>
+<ns0:g id="a_node44"><ns0:a ns1:href="../../module-network.html#panos.network.AggregateInterface" ns1:title="AggregateInterface" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="391,-928 277,-928 277,-903 391,-903 391,-928" />
+<ns0:text text-anchor="middle" x="334" y="-913" font-family="Times,serif" font-size="10.00">AggregateInterface</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge61" class="edge">
+<ns0:title>Template-&gt;AggregateInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M169.02,-756.22C180.01,-785.3 210.95,-857.01 261,-894.5 263.1,-896.07 265.31,-897.53 267.61,-898.87" />
+<ns0:polygon fill="black" stroke="black" points="266.31,-902.14 276.82,-903.54 269.48,-895.9 266.31,-902.14" />
+</ns0:g>
+
+<ns0:g id="node45" class="node">
+<ns0:title>EthernetInterface</ns0:title>
+<ns0:g id="a_node45"><ns0:a ns1:href="../../module-network.html#panos.network.EthernetInterface" ns1:title="EthernetInterface" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="386.5,-885 281.5,-885 281.5,-860 386.5,-860 386.5,-885" />
+<ns0:text text-anchor="middle" x="334" y="-870" font-family="Times,serif" font-size="10.00">EthernetInterface</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge62" class="edge">
+<ns0:title>Template-&gt;EthernetInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M172.38,-756.25C187.01,-778.87 220.59,-826.01 261,-851.5 264.53,-853.73 268.31,-855.73 272.21,-857.52" />
+<ns0:polygon fill="black" stroke="black" points="270.92,-860.77 281.5,-861.34 273.58,-854.3 270.92,-860.77" />
+</ns0:g>
+
+<ns0:g id="node46" class="node">
+<ns0:title>GreTunnel</ns0:title>
+<ns0:g id="a_node46"><ns0:a ns1:href="../../module-network.html#panos.network.GreTunnel" ns1:title="GreTunnel" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="368.5,-842 299.5,-842 299.5,-817 368.5,-817 368.5,-842" />
+<ns0:text text-anchor="middle" x="334" y="-827" font-family="Times,serif" font-size="10.00">GreTunnel</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge63" class="edge">
+<ns0:title>Template-&gt;GreTunnel</ns0:title>
+<ns0:path fill="none" stroke="black" d="M179.98,-756.16C198.32,-770.61 230.27,-794.1 261,-808.5 269.93,-812.68 279.87,-816.23 289.45,-819.15" />
+<ns0:polygon fill="black" stroke="black" points="288.66,-822.56 299.24,-821.96 290.59,-815.84 288.66,-822.56" />
+</ns0:g>
+
+<ns0:g id="node47" class="node">
+<ns0:title>IkeCryptoProfile</ns0:title>
+<ns0:g id="a_node47"><ns0:a ns1:href="../../module-network.html#panos.network.IkeCryptoProfile" ns1:title="IkeCryptoProfile" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="383,-799 285,-799 285,-774 383,-774 383,-799" />
+<ns0:text text-anchor="middle" x="334" y="-784" font-family="Times,serif" font-size="10.00">IkeCryptoProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge64" class="edge">
+<ns0:title>Template-&gt;IkeCryptoProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M194.62,-751.19C216.97,-756.89 248.11,-764.84 275.2,-771.75" />
+<ns0:polygon fill="black" stroke="black" points="274.42,-775.16 284.97,-774.24 276.15,-768.38 274.42,-775.16" />
+</ns0:g>
+
+<ns0:g id="node48" class="node">
+<ns0:title>IkeGateway</ns0:title>
+<ns0:g id="a_node48"><ns0:a ns1:href="../../module-network.html#panos.network.IkeGateway" ns1:title="IkeGateway" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="371.5,-756 296.5,-756 296.5,-731 371.5,-731 371.5,-756" />
+<ns0:text text-anchor="middle" x="334" y="-741" font-family="Times,serif" font-size="10.00">IkeGateway</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge65" class="edge">
+<ns0:title>Template-&gt;IkeGateway</ns0:title>
+<ns0:path fill="none" stroke="black" d="M194.62,-743.5C220.11,-743.5 257.06,-743.5 286.37,-743.5" />
+<ns0:polygon fill="black" stroke="black" points="286.38,-747 296.38,-743.5 286.38,-740 286.38,-747" />
+</ns0:g>
+
+<ns0:g id="node49" class="node">
+<ns0:title>IpsecCryptoProfile</ns0:title>
+<ns0:g id="a_node49"><ns0:a ns1:href="../../module-network.html#panos.network.IpsecCryptoProfile" ns1:title="IpsecCryptoProfile" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="388.5,-713 279.5,-713 279.5,-688 388.5,-688 388.5,-713" />
+<ns0:text text-anchor="middle" x="334" y="-698" font-family="Times,serif" font-size="10.00">IpsecCryptoProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge66" class="edge">
+<ns0:title>Template-&gt;IpsecCryptoProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M194.62,-735.81C216.71,-730.18 247.41,-722.34 274.28,-715.48" />
+<ns0:polygon fill="black" stroke="black" points="275.16,-718.87 283.98,-713.01 273.43,-712.09 275.16,-718.87" />
+</ns0:g>
+
+<ns0:g id="node50" class="node">
+<ns0:title>IpsecTunnel</ns0:title>
+<ns0:g id="a_node50"><ns0:a ns1:href="../../module-network.html#panos.network.IpsecTunnel" ns1:title="IpsecTunnel" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="373,-670 295,-670 295,-645 373,-645 373,-670" />
+<ns0:text text-anchor="middle" x="334" y="-655" font-family="Times,serif" font-size="10.00">IpsecTunnel</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge67" class="edge">
+<ns0:title>Template-&gt;IpsecTunnel</ns0:title>
+<ns0:path fill="none" stroke="black" d="M182.8,-730.95C208.43,-713.43 252.82,-683.36 261,-679.5 268.65,-675.89 277.02,-672.7 285.28,-669.95" />
+<ns0:polygon fill="black" stroke="black" points="286.38,-673.27 294.86,-666.92 284.27,-666.6 286.38,-673.27" />
+</ns0:g>
+
+<ns0:g id="node51" class="node">
+<ns0:title>IpsecTunnelIpv4ProxyId</ns0:title>
+<ns0:g id="a_node51"><ns0:a ns1:href="../../module-network.html#panos.network.IpsecTunnelIpv4ProxyId" ns1:title="IpsecTunnelIpv4ProxyId" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="404,-627 264,-627 264,-602 404,-602 404,-627" />
+<ns0:text text-anchor="middle" x="334" y="-612" font-family="Times,serif" font-size="10.00">IpsecTunnelIpv4ProxyId</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge68" class="edge">
+<ns0:title>Template-&gt;IpsecTunnelIpv4ProxyId</ns0:title>
+<ns0:path fill="none" stroke="black" d="M187.69,-730.9C199.84,-723.48 214.37,-713.26 225,-701.5 247.14,-677 235.34,-657.29 261,-636.5 263,-634.88 265.12,-633.38 267.32,-631.99" />
+<ns0:polygon fill="black" stroke="black" points="269.1,-635.01 276.21,-627.16 265.75,-628.86 269.1,-635.01" />
+</ns0:g>
+
+<ns0:g id="node52" class="node">
+<ns0:title>IpsecTunnelIpv6ProxyId</ns0:title>
+<ns0:g id="a_node52"><ns0:a ns1:href="../../module-network.html#panos.network.IpsecTunnelIpv6ProxyId" ns1:title="IpsecTunnelIpv6ProxyId" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="404,-584 264,-584 264,-559 404,-559 404,-584" />
+<ns0:text text-anchor="middle" x="334" y="-569" font-family="Times,serif" font-size="10.00">IpsecTunnelIpv6ProxyId</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge69" class="edge">
+<ns0:title>Template-&gt;IpsecTunnelIpv6ProxyId</ns0:title>
+<ns0:path fill="none" stroke="black" d="M189.79,-730.93C201.93,-723.78 215.8,-713.78 225,-701.5 255.33,-661 224.77,-628.82 261,-593.5 262.44,-592.1 263.96,-590.78 265.56,-589.55" />
+<ns0:polygon fill="black" stroke="black" points="267.56,-592.43 274.07,-584.07 263.77,-586.55 267.56,-592.43" />
+</ns0:g>
+
+<ns0:g id="node53" class="node">
+<ns0:title>Layer2Subinterface</ns0:title>
+<ns0:g id="a_node53"><ns0:a ns1:href="../../module-network.html#panos.network.Layer2Subinterface" ns1:title="Layer2Subinterface" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="391.5,-541 276.5,-541 276.5,-516 391.5,-516 391.5,-541" />
+<ns0:text text-anchor="middle" x="334" y="-526" font-family="Times,serif" font-size="10.00">Layer2Subinterface</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge70" class="edge">
+<ns0:title>Template-&gt;Layer2Subinterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M190.87,-730.91C202.97,-723.86 216.49,-713.96 225,-701.5 263.9,-644.52 213.76,-600.79 261,-550.5 263.01,-548.36 265.23,-546.42 267.6,-544.67" />
+<ns0:polygon fill="black" stroke="black" points="269.46,-547.63 276.15,-539.41 265.8,-541.67 269.46,-547.63" />
+</ns0:g>
+
+<ns0:g id="node54" class="node">
+<ns0:title>Layer3Subinterface</ns0:title>
+<ns0:g id="a_node54"><ns0:a ns1:href="../../module-network.html#panos.network.Layer3Subinterface" ns1:title="Layer3Subinterface" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="391.5,-498 276.5,-498 276.5,-473 391.5,-473 391.5,-498" />
+<ns0:text text-anchor="middle" x="334" y="-483" font-family="Times,serif" font-size="10.00">Layer3Subinterface</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge71" class="edge">
+<ns0:title>Template-&gt;Layer3Subinterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M191.46,-730.91C203.55,-723.92 216.88,-714.06 225,-701.5 272.6,-627.85 202.59,-572.91 261,-507.5 263,-505.26 265.22,-503.25 267.61,-501.43" />
+<ns0:polygon fill="black" stroke="black" points="269.64,-504.29 276.27,-496.02 265.94,-498.35 269.64,-504.29" />
+</ns0:g>
+
+<ns0:g id="node55" class="node">
+<ns0:title>LogicalRouter</ns0:title>
+<ns0:g id="a_node55"><ns0:a ns1:href="../../module-network.html#panos.network.LogicalRouter" ns1:title="LogicalRouter" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="377,-455 291,-455 291,-430 377,-430 377,-455" />
+<ns0:text text-anchor="middle" x="334" y="-440" font-family="Times,serif" font-size="10.00">LogicalRouter</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge72" class="edge">
+<ns0:title>Template-&gt;LogicalRouter</ns0:title>
+<ns0:path fill="none" stroke="black" d="M191.95,-730.85C204,-723.89 217.15,-714.09 225,-701.5 281.35,-611.08 191.35,-545.12 261,-464.5 266.41,-458.24 273.54,-453.73 281.21,-450.49" />
+<ns0:polygon fill="black" stroke="black" points="282.49,-453.75 290.76,-447.13 280.17,-447.15 282.49,-453.75" />
+</ns0:g>
+
+<ns0:g id="node56" class="node">
+<ns0:title>LoopbackInterface</ns0:title>
+<ns0:g id="a_node56"><ns0:a ns1:href="../../module-network.html#panos.network.LoopbackInterface" ns1:title="LoopbackInterface" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="389,-412 279,-412 279,-387 389,-387 389,-412" />
+<ns0:text text-anchor="middle" x="334" y="-397" font-family="Times,serif" font-size="10.00">LoopbackInterface</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge73" class="edge">
+<ns0:title>Template-&gt;LoopbackInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.08,-730.93C204.16,-723.99 217.3,-714.18 225,-701.5 290.14,-594.27 180.07,-517.38 261,-421.5 263.63,-418.39 266.68,-415.71 270.02,-413.4" />
+<ns0:polygon fill="black" stroke="black" points="271.86,-416.38 278.83,-408.39 268.41,-410.29 271.86,-416.38" />
+</ns0:g>
+
+<ns0:g id="node57" class="node">
+<ns0:title>ManagementProfile</ns0:title>
+<ns0:g id="a_node57"><ns0:a ns1:href="../../module-network.html#panos.network.ManagementProfile" ns1:title="ManagementProfile" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="392,-369 276,-369 276,-344 392,-344 392,-369" />
+<ns0:text text-anchor="middle" x="334" y="-354" font-family="Times,serif" font-size="10.00">ManagementProfile</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge74" class="edge">
+<ns0:title>Template-&gt;ManagementProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.18,-730.99C204.27,-724.06 217.41,-714.24 225,-701.5 298.95,-577.42 168.76,-489.66 261,-378.5 262.92,-376.19 265.07,-374.12 267.4,-372.26" />
+<ns0:polygon fill="black" stroke="black" points="269.44,-375.1 275.93,-366.72 265.63,-369.23 269.44,-375.1" />
+</ns0:g>
+
+<ns0:g id="node58" class="node">
+<ns0:title>TunnelInterface</ns0:title>
+<ns0:g id="a_node58"><ns0:a ns1:href="../../module-network.html#panos.network.TunnelInterface" ns1:title="TunnelInterface" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="382,-326 286,-326 286,-301 382,-301 382,-326" />
+<ns0:text text-anchor="middle" x="334" y="-311" font-family="Times,serif" font-size="10.00">TunnelInterface</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge75" class="edge">
+<ns0:title>Template-&gt;TunnelInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.57,-730.85C204.59,-723.94 217.55,-714.18 225,-701.5 266.39,-631.03 209.22,-398.73 261,-335.5 265.18,-330.39 270.52,-326.44 276.4,-323.39" />
+<ns0:polygon fill="black" stroke="black" points="278.15,-326.45 285.98,-319.31 275.4,-320.01 278.15,-326.45" />
+</ns0:g>
+
+<ns0:g id="node59" class="node">
+<ns0:title>VirtualRouter</ns0:title>
+<ns0:g id="a_node59"><ns0:a ns1:href="../../module-network.html#panos.network.VirtualRouter" ns1:title="VirtualRouter" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="375.5,-283 292.5,-283 292.5,-258 375.5,-258 375.5,-283" />
+<ns0:text text-anchor="middle" x="334" y="-268" font-family="Times,serif" font-size="10.00">VirtualRouter</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge76" class="edge">
+<ns0:title>Template-&gt;VirtualRouter</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.63,-730.89C204.66,-723.98 217.62,-714.22 225,-701.5 270.8,-622.59 203.56,-363.39 261,-292.5 266.62,-285.56 274.37,-280.76 282.7,-277.45" />
+<ns0:polygon fill="black" stroke="black" points="283.87,-280.75 292.29,-274.31 281.69,-274.1 283.87,-280.75" />
+</ns0:g>
+
+<ns0:g id="node60" class="node">
+<ns0:title>VirtualWire</ns0:title>
+<ns0:g id="a_node60"><ns0:a ns1:href="../../module-network.html#panos.network.VirtualWire" ns1:title="VirtualWire" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="370,-240 298,-240 298,-215 370,-215 370,-240" />
+<ns0:text text-anchor="middle" x="334" y="-225" font-family="Times,serif" font-size="10.00">VirtualWire</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge77" class="edge">
+<ns0:title>Template-&gt;VirtualWire</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.67,-730.91C204.72,-724.02 217.67,-714.25 225,-701.5 275.22,-614.14 197.89,-328.05 261,-249.5 267.76,-241.08 277.66,-235.81 287.96,-232.52" />
+<ns0:polygon fill="black" stroke="black" points="289.07,-235.85 297.87,-229.95 287.31,-229.07 289.07,-235.85" />
+</ns0:g>
+
+<ns0:g id="node61" class="node">
+<ns0:title>Vlan</ns0:title>
+<ns0:g id="a_node61"><ns0:a ns1:href="../../module-network.html#panos.network.Vlan" ns1:title="Vlan" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="361,-197 307,-197 307,-172 361,-172 361,-197" />
+<ns0:text text-anchor="middle" x="334" y="-182" font-family="Times,serif" font-size="10.00">Vlan</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge78" class="edge">
+<ns0:title>Template-&gt;Vlan</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.71,-730.94C204.77,-724.05 217.72,-714.27 225,-701.5 279.64,-605.69 192.22,-292.71 261,-206.5 269.7,-195.59 283.67,-189.95 297,-187.09" />
+<ns0:polygon fill="black" stroke="black" points="297.7,-190.52 306.97,-185.4 296.53,-183.62 297.7,-190.52" />
+</ns0:g>
+
+<ns0:g id="node62" class="node">
+<ns0:title>VlanInterface</ns0:title>
+<ns0:g id="a_node62"><ns0:a ns1:href="../../module-network.html#panos.network.VlanInterface" ns1:title="VlanInterface" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="376,-154 292,-154 292,-129 376,-129 376,-154" />
+<ns0:text text-anchor="middle" x="334" y="-139" font-family="Times,serif" font-size="10.00">VlanInterface</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge79" class="edge">
+<ns0:title>Template-&gt;VlanInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.75,-730.96C204.81,-724.07 217.75,-714.29 225,-701.5 284.16,-597.05 185.81,-256.08 261,-162.5 266.45,-155.72 273.96,-151.04 282.09,-147.84" />
+<ns0:polygon fill="black" stroke="black" points="283.37,-151.1 291.83,-144.72 281.24,-144.44 283.37,-151.1" />
+</ns0:g>
+
+<ns0:g id="node63" class="node">
+<ns0:title>Vrf</ns0:title>
+<ns0:g id="a_node63"><ns0:a ns1:href="../../module-network.html#panos.network.Vrf" ns1:title="Vrf" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="361,-111 307,-111 307,-86 361,-86 361,-111" />
+<ns0:text text-anchor="middle" x="334" y="-96" font-family="Times,serif" font-size="10.00">Vrf</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge80" class="edge">
+<ns0:title>Template-&gt;Vrf</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.78,-730.97C204.84,-724.09 217.78,-714.31 225,-701.5 288.58,-588.59 180.09,-220.71 261,-119.5 269.68,-108.64 283.65,-103.19 296.98,-100.52" />
+<ns0:polygon fill="black" stroke="black" points="297.6,-103.96 306.95,-98.98 296.54,-97.04 297.6,-103.96" />
+</ns0:g>
+
+<ns0:g id="node64" class="node">
+<ns0:title>Zone</ns0:title>
+<ns0:g id="a_node64"><ns0:a ns1:href="../../module-network.html#panos.network.Zone" ns1:title="Zone" target="_top">
+<ns0:polygon fill="lightcyan" stroke="black" points="361,-68 307,-68 307,-43 361,-43 361,-68" />
+<ns0:text text-anchor="middle" x="334" y="-53" font-family="Times,serif" font-size="10.00">Zone</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge81" class="edge">
+<ns0:title>Template-&gt;Zone</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.8,-730.99C204.87,-724.11 217.81,-714.33 225,-701.5 293.01,-580.14 174.36,-185.35 261,-76.5 269.66,-65.62 283.62,-60.16 296.96,-57.5" />
+<ns0:polygon fill="black" stroke="black" points="297.58,-60.94 306.93,-55.96 296.52,-54.03 297.58,-60.94" />
+</ns0:g>
+
+<ns0:g id="node65" class="node">
+<ns0:title>TemplateVariable</ns0:title>
+<ns0:g id="a_node65"><ns0:a ns1:href="../../module-panorama.html#panos.panorama.TemplateVariable" ns1:title="TemplateVariable" target="_top">
+<ns0:polygon fill="#b4eeb4" stroke="black" points="385.5,-25 282.5,-25 282.5,0 385.5,0 385.5,-25" />
+<ns0:text text-anchor="middle" x="334" y="-10" font-family="Times,serif" font-size="10.00">TemplateVariable</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge82" class="edge">
+<ns0:title>Template-&gt;TemplateVariable</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.82,-731C204.9,-724.12 217.84,-714.34 225,-701.5 297.43,-571.68 168.64,-149.98 261,-33.5 264.35,-29.27 268.51,-25.86 273.11,-23.12" />
+<ns0:polygon fill="black" stroke="black" points="274.96,-26.11 282.44,-18.62 271.91,-19.81 274.96,-26.11" />
+</ns0:g>
+
+<ns0:g id="edge83" class="edge">
+<ns0:title>TemplateStack-&gt;Administrator</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.2,-692.09C204.45,-699.18 217.71,-709.3 225,-722.5 294.37,-848.18 171.7,-1255.1 261,-1367.5 266.36,-1374.24 273.75,-1378.9 281.77,-1382.11" />
+<ns0:polygon fill="black" stroke="black" points="280.8,-1385.47 291.39,-1385.23 282.96,-1378.81 280.8,-1385.47" />
+</ns0:g>
+
+<ns0:g id="edge86" class="edge">
+<ns0:title>TemplateStack-&gt;PasswordProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.03,-692.18C204.25,-699.3 217.53,-709.4 225,-722.5 272.5,-805.8 200.31,-1078.26 261,-1152.5 265.16,-1157.59 270.49,-1161.5 276.36,-1164.48" />
+<ns0:polygon fill="black" stroke="black" points="275.35,-1167.85 285.93,-1168.44 278.03,-1161.38 275.35,-1167.85" />
+</ns0:g>
+
+<ns0:g id="edge84" class="edge">
+<ns0:title>TemplateStack-&gt;LogSettingsConfig</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.12,-692.14C204.35,-699.24 217.62,-709.35 225,-722.5 281.24,-822.75 188.87,-1149 261,-1238.5 263.59,-1241.72 266.65,-1244.46 270.01,-1246.79" />
+<ns0:polygon fill="black" stroke="black" points="268.48,-1249.95 278.92,-1251.8 271.91,-1243.85 268.48,-1249.95" />
+</ns0:g>
+
+<ns0:g id="edge85" class="edge">
+<ns0:title>TemplateStack-&gt;LogSettingsSystem</ns0:title>
+<ns0:path fill="none" stroke="black" d="M192.08,-692.16C204.31,-699.26 217.58,-709.37 225,-722.5 276.87,-814.27 194.59,-1113.63 261,-1195.5 263.13,-1198.13 265.57,-1200.44 268.24,-1202.47" />
+<ns0:polygon fill="black" stroke="black" points="266.48,-1205.5 276.83,-1207.76 270.15,-1199.54 266.48,-1205.5" />
+</ns0:g>
+
+<ns0:g id="edge87" class="edge">
+<ns0:title>TemplateStack-&gt;SystemSettings</ns0:title>
+<ns0:path fill="none" stroke="black" d="M191.6,-692.07C203.88,-699.21 217.33,-709.37 225,-722.5 263.76,-788.87 211.74,-1007.5 261,-1066.5 265.43,-1071.81 271.12,-1075.81 277.35,-1078.83" />
+<ns0:polygon fill="black" stroke="black" points="276.21,-1082.15 286.79,-1082.59 278.79,-1075.64 276.21,-1082.15" />
+</ns0:g>
+
+<ns0:g id="edge88" class="edge">
+<ns0:title>TemplateStack-&gt;Vsys</ns0:title>
+<ns0:path fill="none" stroke="black" d="M191.52,-692.12C203.77,-699.27 217.23,-709.43 225,-722.5 293.8,-838.34 173.89,-920.71 261,-1023.5 269.83,-1033.92 283.53,-1039.33 296.61,-1042.08" />
+<ns0:polygon fill="black" stroke="black" points="296.43,-1045.6 306.86,-1043.76 297.56,-1038.69 296.43,-1045.6" />
+</ns0:g>
+
+<ns0:g id="edge89" class="edge">
+<ns0:title>TemplateStack-&gt;HighAvailability</ns0:title>
+<ns0:path fill="none" stroke="black" d="M190.94,-692.1C203.22,-699.3 216.86,-709.5 225,-722.5 276.42,-804.62 196.65,-865.07 261,-937.5 265.26,-942.29 270.54,-946.02 276.29,-948.91" />
+<ns0:polygon fill="black" stroke="black" points="275.07,-952.19 285.65,-952.8 277.76,-945.73 275.07,-952.19" />
+</ns0:g>
+
+<ns0:g id="edge90" class="edge">
+<ns0:title>TemplateStack-&gt;AggregateInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M190.41,-692.06C202.71,-699.31 216.53,-709.56 225,-722.5 267.78,-787.85 207.95,-837.18 261,-894.5 263.07,-896.74 265.37,-898.75 267.83,-900.54" />
+<ns0:polygon fill="black" stroke="black" points="266.38,-903.75 276.76,-905.87 269.97,-897.74 266.38,-903.75" />
+</ns0:g>
+
+<ns0:g id="edge91" class="edge">
+<ns0:title>TemplateStack-&gt;EthernetInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M189.75,-692.12C202.03,-699.44 216.04,-709.74 225,-722.5 259.22,-771.2 219.16,-809.17 261,-851.5 264.28,-854.82 268.05,-857.62 272.12,-859.98" />
+<ns0:polygon fill="black" stroke="black" points="270.88,-863.27 281.4,-864.49 273.93,-856.97 270.88,-863.27" />
+</ns0:g>
+
+<ns0:g id="edge92" class="edge">
+<ns0:title>TemplateStack-&gt;GreTunnel</ns0:title>
+<ns0:path fill="none" stroke="black" d="M188.21,-692.05C200.51,-699.54 215.02,-710.02 225,-722.5 250.88,-754.86 230.1,-780.9 261,-808.5 268.95,-815.6 279.17,-820.31 289.41,-823.42" />
+<ns0:polygon fill="black" stroke="black" points="288.59,-826.83 299.15,-825.95 290.35,-820.05 288.59,-826.83" />
+</ns0:g>
+
+<ns0:g id="edge93" class="edge">
+<ns0:title>TemplateStack-&gt;IkeCryptoProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M184.82,-692.05C197.05,-700.05 212.6,-711.04 225,-722.5 243.31,-739.41 240.13,-751.87 261,-765.5 265.38,-768.36 270.17,-770.85 275.12,-773" />
+<ns0:polygon fill="black" stroke="black" points="274.19,-776.39 284.78,-776.74 276.71,-769.86 274.19,-776.39" />
+</ns0:g>
+
+<ns0:g id="edge94" class="edge">
+<ns0:title>TemplateStack-&gt;IkeGateway</ns0:title>
+<ns0:path fill="none" stroke="black" d="M190.32,-692.15C209.53,-701.28 236.55,-713.53 261,-722.5 269.26,-725.53 278.18,-728.42 286.83,-731.04" />
+<ns0:polygon fill="black" stroke="black" points="285.85,-734.4 296.43,-733.87 287.83,-727.69 285.85,-734.4" />
+</ns0:g>
+
+<ns0:g id="edge95" class="edge">
+<ns0:title>TemplateStack-&gt;IpsecCryptoProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.77,-685.02C227.29,-687.33 249.16,-690.05 269.35,-692.57" />
+<ns0:polygon fill="black" stroke="black" points="269.06,-696.06 279.42,-693.82 269.93,-689.11 269.06,-696.06" />
+</ns0:g>
+
+<ns0:g id="edge96" class="edge">
+<ns0:title>TemplateStack-&gt;IpsecTunnel</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.77,-673.72C232.15,-670.67 260.87,-666.92 284.81,-663.79" />
+<ns0:polygon fill="black" stroke="black" points="285.28,-667.26 294.74,-662.49 284.38,-660.32 285.28,-667.26" />
+</ns0:g>
+
+<ns0:g id="edge97" class="edge">
+<ns0:title>TemplateStack-&gt;IpsecTunnelIpv4ProxyId</ns0:title>
+<ns0:path fill="none" stroke="black" d="M204.69,-666.91C211.57,-664.37 218.57,-661.54 225,-658.5 241.95,-650.49 243.9,-644.19 261,-636.5 265.92,-634.29 271.12,-632.22 276.39,-630.3" />
+<ns0:polygon fill="black" stroke="black" points="277.58,-633.59 285.89,-627.02 275.3,-626.98 277.58,-633.59" />
+</ns0:g>
+
+<ns0:g id="edge98" class="edge">
+<ns0:title>TemplateStack-&gt;IpsecTunnelIpv6ProxyId</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.55,-668.56C214.46,-665.88 220.15,-662.58 225,-658.5 250.27,-637.24 235.34,-614.29 261,-593.5 263,-591.88 265.12,-590.38 267.32,-588.99" />
+<ns0:polygon fill="black" stroke="black" points="269.1,-592.01 276.21,-584.16 265.75,-585.86 269.1,-592.01" />
+</ns0:g>
+
+<ns0:g id="edge99" class="edge">
+<ns0:title>TemplateStack-&gt;Layer2Subinterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.65,-669.62C214.69,-666.8 220.39,-663.17 225,-658.5 260.56,-622.5 224.77,-585.82 261,-550.5 262.92,-548.62 265,-546.91 267.2,-545.34" />
+<ns0:polygon fill="black" stroke="black" points="269.39,-548.1 276.18,-539.97 265.8,-542.09 269.39,-548.1" />
+</ns0:g>
+
+<ns0:g id="edge100" class="edge">
+<ns0:title>TemplateStack-&gt;Layer3Subinterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.72,-670.12C214.82,-667.23 220.52,-663.45 225,-658.5 271.28,-607.34 213.76,-557.79 261,-507.5 263.01,-505.36 265.23,-503.42 267.6,-501.67" />
+<ns0:polygon fill="black" stroke="black" points="269.46,-504.63 276.15,-496.41 265.8,-498.67 269.46,-504.63" />
+</ns0:g>
+
+<ns0:g id="edge101" class="edge">
+<ns0:title>TemplateStack-&gt;LogicalRouter</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.64,-670.46C214.83,-667.53 220.58,-663.64 225,-658.5 282.17,-592 202.59,-529.91 261,-464.5 266.51,-458.33 273.69,-453.87 281.39,-450.64" />
+<ns0:polygon fill="black" stroke="black" points="282.67,-453.9 290.95,-447.29 280.35,-447.3 282.67,-453.9" />
+</ns0:g>
+
+<ns0:g id="edge102" class="edge">
+<ns0:title>TemplateStack-&gt;LoopbackInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.78,-670.59C214.96,-667.64 220.66,-663.71 225,-658.5 293.12,-576.58 191.35,-502.12 261,-421.5 263.66,-418.42 266.75,-415.76 270.11,-413.47" />
+<ns0:polygon fill="black" stroke="black" points="271.95,-416.45 278.95,-408.49 268.52,-410.35 271.95,-416.45" />
+</ns0:g>
+
+<ns0:g id="edge103" class="edge">
+<ns0:title>TemplateStack-&gt;ManagementProfile</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.58,-670.82C214.86,-667.84 220.65,-663.85 225,-658.5 304.12,-561.12 180.07,-474.38 261,-378.5 262.77,-376.4 264.73,-374.5 266.85,-372.78" />
+<ns0:polygon fill="black" stroke="black" points="269.23,-375.4 275.66,-366.97 265.38,-369.55 269.23,-375.4" />
+</ns0:g>
+
+<ns0:g id="edge104" class="edge">
+<ns0:title>TemplateStack-&gt;TunnelInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.66,-670.88C214.93,-667.9 220.7,-663.89 225,-658.5 315.13,-545.63 168.76,-446.66 261,-335.5 265.16,-330.48 270.44,-326.59 276.23,-323.56" />
+<ns0:polygon fill="black" stroke="black" points="277.88,-326.66 285.68,-319.5 275.11,-320.24 277.88,-326.66" />
+</ns0:g>
+
+<ns0:g id="edge105" class="edge">
+<ns0:title>TemplateStack-&gt;VirtualRouter</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.72,-670.93C214.99,-667.94 220.73,-663.91 225,-658.5 326.16,-530.12 157.44,-418.96 261,-292.5 266.66,-285.59 274.42,-280.81 282.76,-277.5" />
+<ns0:polygon fill="black" stroke="black" points="283.93,-280.8 292.35,-274.36 281.75,-274.15 283.93,-280.8" />
+</ns0:g>
+
+<ns0:g id="edge106" class="edge">
+<ns0:title>TemplateStack-&gt;VirtualWire</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.77,-670.96C215.03,-667.97 220.76,-663.94 225,-658.5 281.1,-586.55 203.56,-320.39 261,-249.5 267.8,-241.11 277.7,-235.85 288.01,-232.56" />
+<ns0:polygon fill="black" stroke="black" points="289.12,-235.89 297.92,-229.98 287.36,-229.11 289.12,-235.89" />
+</ns0:g>
+
+<ns0:g id="edge107" class="edge">
+<ns0:title>TemplateStack-&gt;Vlan</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.51,-671.14C214.88,-668.13 220.72,-664.04 225,-658.5 286.63,-578.78 197.89,-285.05 261,-206.5 269.68,-195.7 283.51,-190.07 296.74,-187.19" />
+<ns0:polygon fill="black" stroke="black" points="297.39,-190.62 306.65,-185.47 296.2,-183.73 297.39,-190.62" />
+</ns0:g>
+
+<ns0:g id="edge108" class="edge">
+<ns0:title>TemplateStack-&gt;VlanInterface</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.54,-671.16C214.91,-668.15 220.74,-664.06 225,-658.5 292.28,-570.83 191.53,-248.45 261,-162.5 266.47,-155.73 273.99,-151.06 282.12,-147.87" />
+<ns0:polygon fill="black" stroke="black" points="283.41,-151.13 291.86,-144.74 281.27,-144.46 283.41,-151.13" />
+</ns0:g>
+
+<ns0:g id="edge109" class="edge">
+<ns0:title>TemplateStack-&gt;Vrf</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.57,-671.19C214.93,-668.17 220.75,-664.07 225,-658.5 297.81,-563.06 185.81,-213.08 261,-119.5 269.71,-108.66 283.68,-103.21 297.01,-100.54" />
+<ns0:polygon fill="black" stroke="black" points="297.63,-103.98 306.98,-99 296.56,-97.07 297.63,-103.98" />
+</ns0:g>
+
+<ns0:g id="edge110" class="edge">
+<ns0:title>TemplateStack-&gt;Zone</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.59,-671.2C214.95,-668.18 220.77,-664.08 225,-658.5 303.34,-555.28 180.09,-177.71 261,-76.5 269.68,-65.64 283.65,-60.19 296.98,-57.52" />
+<ns0:polygon fill="black" stroke="black" points="297.6,-60.96 306.95,-55.98 296.54,-54.04 297.6,-60.96" />
+</ns0:g>
+
+<ns0:g id="edge111" class="edge">
+<ns0:title>TemplateStack-&gt;TemplateVariable</ns0:title>
+<ns0:path fill="none" stroke="black" d="M208.61,-671.22C214.97,-668.2 220.78,-664.09 225,-658.5 308.87,-547.51 174.36,-142.35 261,-33.5 264.36,-29.28 268.52,-25.87 273.13,-23.13" />
+<ns0:polygon fill="black" stroke="black" points="274.97,-26.13 282.46,-18.63 271.93,-19.82 274.97,-26.13" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

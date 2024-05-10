@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Useful Methods &mdash; Palo Alto Networks PAN-OS SDK for Python 1.11.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=6cf1fb80"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Configuration tree diagrams" href="configtree.html" />
+    <link rel="prev" title="API Reference" href="reference.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Palo Alto Networks PAN-OS SDK for Python
+          </a>
+              <div class="version">
+                1.11.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Palo Alto Networks PAN-OS SDK for Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Useful Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configuration-methods">Configuration Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#navigation-methods">Navigation Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#informational-methods">Informational Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#device-methods">Device Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="configtree.html">Configuration tree diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-base.html">Module: base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-device.html">Module: device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-errors.html">Module: errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-firewall.html">Module: firewall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-ha.html">Module: ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-network.html">Module: network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-objects.html">Module: objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-panorama.html">Module: panorama</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-plugins.html">Module: plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-policies.html">Module: policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-predefined.html">Module: predefined</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-updater.html">Module: updater</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module-userid.html">Module: userid</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Palo Alto Networks PAN-OS SDK for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="reference.html">API Reference</a></li>
+      <li class="breadcrumb-item active">Useful Methods</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/useful-methods.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="useful-methods">
+<span id="id1"></span><h1>Useful Methods<a class="headerlink" href="#useful-methods" title="Link to this heading">¶</a></h1>
+<p>These methods are the most commonly used and can be called on any object in a
+configuration tree.</p>
+<section id="configuration-methods">
+<h2>Configuration Methods<a class="headerlink" href="#configuration-methods" title="Link to this heading">¶</a></h2>
+<p>Modify the configuration tree or the live device with these methods.</p>
+<ul class="simple">
+<li><p><strong>C:</strong> Changes the pan-os-python configuration tree</p></li>
+<li><p><strong>L:</strong> Connects to a live device (firewall or Panorama) via the API</p></li>
+<li><p><strong>M:</strong> Modifies the live device by making a change to the device’s configuration</p></li>
+<li><p><strong>B:</strong> Bulk operation modifies more than one object in a single API call</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Method</p></th>
+<th class="head"><p>C</p></th>
+<th class="head"><p>L</p></th>
+<th class="head"><p>M</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">add()</span></code></p></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Add an object as a child of this object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">extend()</span></code></p></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Add a list of objects as children</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">insert()</span></code></p></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Insert an object as a child at an index</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">pop()</span></code></p></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Remove a child object at an index</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">remove()</span></code></p></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Remove a child object from this object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">remove_by_name()</span></code></p></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Remove a child object by its name</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">removeall()</span></code></p></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Remove all children of this object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">refresh()</span></code></p></td>
+<td></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td><p>Set params of object from live device</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">refreshall()</span></code></p></td>
+<td></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td><p>Pull all children from the live device</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">refresh_variable()</span></code></p></td>
+<td></td>
+<td><p>✅</p></td>
+<td></td>
+<td></td>
+<td><p>Set a single param from the live device</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code></p></td>
+<td></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td></td>
+<td><p>Push object to the live device (nd)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">apply()</span></code></p></td>
+<td></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td></td>
+<td><p>Push object to the live device (d)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">update()</span></code></p></td>
+<td></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td></td>
+<td><p>Push single object param to live device</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">delete()</span></code></p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td></td>
+<td><p>Delete from live device and config tree</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">rename()</span></code></p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td></td>
+<td><p>Rename on live device and config tree</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">move()</span></code></p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td></td>
+<td><p>Reorder on live device and config tree</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_similar()</span></code></p></td>
+<td></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>Push objects of this type to live device (nd)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">apply_similar()</span></code></p></td>
+<td></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>Push objects of this type to live device (d)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">delete_similar()</span></code></p></td>
+<td></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>Delete objects of this type from live device</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>(d):  Destructive     - Method <em>overwrites</em> an object on the live device with the same name</p></li>
+<li><p>(nd): Non-destructive - Method <em>combines</em> object with one on live device with the same name</p></li>
+</ul>
+</section>
+<section id="navigation-methods">
+<h2>Navigation Methods<a class="headerlink" href="#navigation-methods" title="Link to this heading">¶</a></h2>
+<p>These methods help you locate objects and information in an existing
+configuration tree. These are commonly used when you have used <code class="docutils literal notranslate"><span class="pre">refreshall</span></code> to
+pull a lot of nested objects and you’re either looking for a specific object or
+aggregate stats on the objects.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Method</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">find()</span></code></p></td>
+<td><p>Return object by name and type</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">findall()</span></code></p></td>
+<td><p>Return all objects of a type</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">find_index()</span></code></p></td>
+<td><p>Return the index of a child object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">find_or_create()</span></code></p></td>
+<td><p>Return object by name and type, creates object if not in config tree</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">findall_or_create()</span></code></p></td>
+<td><p>Return all objects of type, creates an object if none exist</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">nearest_pandevice()</span></code></p></td>
+<td><p>Return the nearest parent Firewall or Panorama object in tree</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">panorama()</span></code></p></td>
+<td><p>Return the nearest parent Panorama object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">devicegroup()</span></code></p></td>
+<td><p>Return the nearest parent DeviceGroup object</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">vsys</span></code></p></td>
+<td><p>Return the vsys that contains this object</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="informational-methods">
+<h2>Informational Methods<a class="headerlink" href="#informational-methods" title="Link to this heading">¶</a></h2>
+<p>These methods provide information about an object in the configuration tree.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Method</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">about()</span></code></p></td>
+<td><p>Return all the params set on this object and their values</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">equal()</span></code></p></td>
+<td><p>Test if two objects are equal and return a boolean</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">xpath()</span></code></p></td>
+<td><p>Return the XPath of this object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">element()</span></code></p></td>
+<td><p>Return the XML of this object as an ElementTree</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">element_str()</span></code></p></td>
+<td><p>Return the XML of this object as a string</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">hierarchy_info()</span></code></p></td>
+<td><p>Return hierarchical information about this object</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="device-methods">
+<h2>Device Methods<a class="headerlink" href="#device-methods" title="Link to this heading">¶</a></h2>
+<p>These methods can be called on a PanDevice object (a Firewall or Panorama), but
+not on any other PanObject.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Method</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">refresh_system_info()</span></code></p></td>
+<td><p>Return and retain important information about the device</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">commit()</span></code></p></td>
+<td><p>Trigger a commit on a Firewall or Panorama</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">commit_all()</span></code></p></td>
+<td><p>Trigger a configuration push from Panorama to the Firewalls</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">syncjob()</span></code></p></td>
+<td><p>Wait for a job on the device to finish</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">refresh_devices()</span></code></p></td>
+<td><p>Pull all the devices attached to Panorama as Firewall objects</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">op()</span></code></p></td>
+<td><p>Execute an operational command</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">watch_op()</span></code></p></td>
+<td><p>Same as ‘op’, then watch for a specific result</p></td>
+</tr>
+</tbody>
+</table>
+<p>There are many other convenience methods available. They’re all documented in the
+<code class="xref py py-class docutils literal notranslate"><span class="pre">PanDevice</span></code> class.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="reference.html" class="btn btn-neutral float-left" title="API Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="configtree.html" class="btn btn-neutral float-right" title="Configuration tree diagrams" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, Brian Torres-Gil.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
